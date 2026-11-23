@@ -1,0 +1,7241 @@
+{
+  "version": 1,
+  "updated": "2026-11-16",
+  "classes": [
+    {
+      "id": "atypical",
+      "heading": "抗精神病藥（非典型）Atypical antipsychotics",
+      "short": "非典型抗精神病藥",
+      "accent": "#6b9ec4"
+    },
+    {
+      "id": "typical",
+      "heading": "抗精神病藥（典型）Typical antipsychotics",
+      "short": "典型抗精神病藥",
+      "accent": "#6b9ec4"
+    },
+    {
+      "id": "ssri",
+      "heading": "選擇性血清素再攝取抑制劑 SSRI",
+      "short": "SSRI",
+      "accent": "#87a889"
+    },
+    {
+      "id": "snri",
+      "heading": "血清素－去甲腎上腺素再攝取抑制劑 SNRI",
+      "short": "SNRI",
+      "accent": "#87a889"
+    },
+    {
+      "id": "ndri",
+      "heading": "去甲腎上腺素及多巴胺再回收抑制劑 NDRI",
+      "short": "NDRI",
+      "accent": "#87a889"
+    },
+    {
+      "id": "multimodal",
+      "heading": "多模式抗抑鬱藥 Multimodal",
+      "short": "多模式",
+      "accent": "#87a889"
+    },
+    {
+      "id": "sari",
+      "heading": "血清素拮抗及再攝取抑制劑 SARI",
+      "short": "SARI",
+      "accent": "#87a889"
+    },
+    {
+      "id": "nassa",
+      "heading": "去甲腎上腺素能及特異性血清素能抗抑鬱藥 NaSSA",
+      "short": "NaSSA",
+      "accent": "#87a889"
+    },
+    {
+      "id": "massa",
+      "heading": "褪黑激素激動及血清素拮抗劑 MASSA",
+      "short": "MASSA",
+      "accent": "#87a889"
+    },
+    {
+      "id": "tca",
+      "heading": "三環抗抑鬱藥 TCA",
+      "short": "TCA",
+      "accent": "#87a889"
+    },
+    {
+      "id": "mood",
+      "heading": "情緒穩定劑 Mood stabilisers",
+      "short": "情緒穩定劑",
+      "accent": "#6aaca6"
+    },
+    {
+      "id": "benzo",
+      "heading": "苯二氮䓬類 Benzodiazepines",
+      "short": "苯二氮䓬",
+      "accent": "#a39bc9"
+    },
+    {
+      "id": "anxiolytic",
+      "heading": "非苯二氮䓬抗焦慮藥 Anxiolytic",
+      "short": "抗焦慮",
+      "accent": "#a39bc9"
+    },
+    {
+      "id": "stimulant",
+      "heading": "中樞神經刺激劑 Stimulant",
+      "short": "刺激劑",
+      "accent": "#d2a07c"
+    },
+    {
+      "id": "combo",
+      "heading": "複方製劑 Combination",
+      "short": "複方",
+      "accent": "#6b9ec4"
+    },
+    {
+      "id": "antichol",
+      "heading": "抗膽鹼／緩解震顫 Anticholinergic",
+      "short": "抗膽鹼",
+      "accent": "#c4b392"
+    },
+    {
+      "id": "hypnotic",
+      "heading": "催眠藥（Z 類及其他）Hypnotics",
+      "short": "催眠藥",
+      "accent": "#a39bc9"
+    },
+    {
+      "id": "nmda",
+      "heading": "NMDA 拮抗劑 NMDA antagonists",
+      "short": "NMDA",
+      "accent": "#c9959a"
+    },
+    {
+      "id": "other",
+      "heading": "其他／輔助 Others",
+      "short": "其他",
+      "accent": "#c4b392"
+    }
+  ],
+  "drugs": [
+    {
+      "id": "olanzapine",
+      "generic": "Olanzapine",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Zyprexa",
+          "say": "Zyprexa",
+          "respell": "zye-PREX-uh"
+        }
+      ],
+      "aliases": [
+        "Olan",
+        "肥仔藥"
+      ],
+      "zh_hk": "奧氮平",
+      "zh_tw": "金普薩",
+      "respelling": "oh-LAN-zuh-peen",
+      "dose": {
+        "usual": "思覺失調／雙相躁期：常用目標約 10 mg 每日（範圍約 5–20 mg）",
+        "max": "20 mg 每日（試驗尚未評估更高劑量的安全性）",
+        "notes": "體弱或易低血壓者由 5 mg 開始。與 fluoxetine 合用治療雙相鬱期／難治抑鬱時，劑量另行計算。",
+        "source": "FDA 口服 olanzapine 標籤"
+      },
+      "receptors": [
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "ki": 7
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "ki": 4
+        },
+        {
+          "target": "5-HT2C",
+          "action": "結合",
+          "ki": 11
+        },
+        {
+          "target": "D2",
+          "action": "阻斷"
+        },
+        {
+          "target": "α1",
+          "action": "結合",
+          "ki": 19
+        },
+        {
+          "target": "M1",
+          "action": "阻斷",
+          "ki": 73
+        },
+        {
+          "target": "5-HT3",
+          "action": "阻斷",
+          "ki": 57
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA 口服 olanzapine 標籤"
+        },
+        {
+          "tag": "體重增加",
+          "text": "體重增加",
+          "source": "FDA 口服 olanzapine 標籤"
+        },
+        {
+          "tag": "胃口大增",
+          "text": "胃口大增",
+          "source": "FDA 口服 olanzapine 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA 口服 olanzapine 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA 口服 olanzapine 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA 口服 olanzapine 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "體重增加",
+            "眼瞓／嗜睡"
+          ],
+          "quote": "由一開始食Olanzapine》 肥20kg+眼訓",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "泌乳素高／溢乳"
+          ],
+          "quote": "Olan會 泌乳素激增",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "胃口大增"
+          ],
+          "quote": "OLANZAPINE : 胃口大",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "頭暈",
+            "眼瞓／嗜睡",
+            "胃口大增",
+            "體重增加"
+          ],
+          "quote": "檔案（Richmond 藥物表）：頭暈、嗜睡、食慾增加、體重增加等。檔案並以「肥仔藥」作為俗稱。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "olanzapine",
+      "ipa": "/oʊˈlænzəpiːn/",
+      "hook": "標籤寫對 5-HT2A、H1 等高親和力結合，並以 H1 拮抗解釋嗜睡；對 5-HT3 及毒蕈鹼 M1–5 為中等親和力拮抗（同一標籤用語）。5-HT2C、α1 在現摘錄中主要是結合數據。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Olanzapine（Zyprexa 類）標籤。"
+    },
+    {
+      "id": "lurasidone",
+      "generic": "Lurasidone",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Latuda",
+          "say": "Latuda",
+          "respell": "luh-TOO-duh"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "魯拉西酮",
+      "zh_tw": "樂途達",
+      "respelling": "loo-RAS-ih-done",
+      "dose": {
+        "usual": "思覺失調：40–160 mg 每日；雙相鬱期：20–120 mg 每日。必須與食物同時服用（至少約 350 kcal）",
+        "max": "思覺失調 160 mg／日；雙相鬱期 120 mg／日。中重度腎功能損害或中度肝功能損害最高 80 mg；重度肝功能損害最高 40 mg",
+        "notes": "成人雙相鬱期較高劑量範圍（80–120 mg）平均未必較 20–60 mg 更有效。",
+        "source": "FDA lurasidone 標籤"
+      },
+      "receptors": [
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "ki": 0.5
+        },
+        {
+          "target": "5-HT7",
+          "action": "阻斷",
+          "ki": 0.5
+        },
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "ki": 1
+        },
+        {
+          "target": "5-HT1A",
+          "action": "部分激動",
+          "ki": 6.4
+        },
+        {
+          "target": "α2C",
+          "action": "結合",
+          "ki": 11
+        },
+        {
+          "target": "α2A",
+          "action": "阻斷",
+          "ki": 41
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA lurasidone 標籤"
+        },
+        {
+          "tag": "靜坐不能（坐立不安）",
+          "text": "靜坐不能（坐立不安）",
+          "source": "FDA lurasidone 標籤"
+        },
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "FDA lurasidone 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA lurasidone 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "眼瞓／嗜睡",
+            "疲倦"
+          ],
+          "quote": "再轉Lurasidone 〉眼訓 ，攰",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "肝功能異常"
+          ],
+          "quote": "我食Latuda 60mg食到liver function 出事",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "眼瞓／嗜睡",
+            "手震",
+            "靜坐不能（坐立不安）",
+            "血糖↑",
+            "膽固醇↑",
+            "噁心／腸胃不適"
+          ],
+          "quote": "檔案（Richmond 藥物表）：嗜睡、錐體外系反應、靜坐不能、帕金森氏症候群、血清三酸甘油酯升高、血糖升高、血清膽固醇升高、噁心。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "lurasidone",
+      "ipa": "/lʊˈræsɪdoʊn/",
+      "hook": "標籤列 D2、5-HT2A、5-HT7 阻斷及 5-HT1A 部分激動；對 H1、M1 幾乎無親和力（IC50 大於 1000 nM），嗜睡及體重增加相對較少。須與食物同時服用。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Lurasidone（Latuda）標籤。對 H1、M1 標籤指 IC50>1000 nM，幾乎無親和力。"
+    },
+    {
+      "id": "aripiprazole",
+      "generic": "Aripiprazole",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Abilify / 安立復",
+          "say": "Abilify",
+          "respell": "uh-BIL-ih-fye"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "阿立哌唑",
+      "zh_tw": "安立復",
+      "respelling": "ay-ri-PIP-ray-zole",
+      "dose": {
+        "usual": "思覺失調／雙相躁期：10–15 mg 每日；抑鬱症輔助：5–10 mg 每日（由 2–5 mg 開始）",
+        "max": "思覺失調／躁期 30 mg／日（高於 10–15 mg 未必更有效）；抑鬱輔助 15 mg／日",
+        "notes": "CYP2D6 慢代謝者常用半量。",
+        "source": "FDA Abilify 標籤"
+      },
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "部分激動",
+          "ki": 0.34
+        },
+        {
+          "target": "5-HT1A",
+          "action": "部分激動",
+          "ki": 1.7
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "ki": 3.4
+        },
+        {
+          "target": "D3",
+          "action": "結合",
+          "ki": 0.8
+        },
+        {
+          "target": "H1",
+          "action": "結合",
+          "ki": 61
+        },
+        {
+          "target": "α1",
+          "action": "結合",
+          "ki": 57
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "靜坐不能（坐立不安）",
+          "text": "靜坐不能（坐立不安）",
+          "source": "FDA Abilify 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA Abilify 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Abilify 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA Abilify 標籤"
+        },
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "FDA Abilify 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "靜坐不能（坐立不安）"
+          ],
+          "quote": "轉Abilify 》 restless；Abilify 會坐立不安",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "手震"
+          ],
+          "quote": "Aripiprazole 20mg已經手震到柏金遜咁",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "心跳快"
+          ],
+          "quote": "心跳去到110左右…靜止會係95左右",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "便秘",
+            "噁心／腸胃不適",
+            "頭暈",
+            "失眠",
+            "眼瞓／嗜睡",
+            "疲倦",
+            "手震",
+            "姿勢性低血壓"
+          ],
+          "quote": "檔案（Richmond 藥物表）：便秘、噁心、嘔吐、頭暈、頭痛、失眠、嗜睡、疲勞；另條亦列嗜睡、頭痛、手震、姿勢性低血壓。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "aripiprazole",
+      "ipa": "/ˌɛrɪˈpɪprəzoʊl/",
+      "hook": "D2 及 5-HT1A 為部分激動，5-HT2A 為阻斷。標籤列 D3、H1、α1 結合，但未寫後兩者的功能方向，故不作已核實阻斷。部分激動的臨床後果視突觸多巴胺水平而定。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Aripiprazole 標籤。另有 5-HT2C Ki=15、5-HT7 Ki=39、D4 Ki=44、SERT Ki=98 nM 的結合，本頁不全部展開。"
+    },
+    {
+      "id": "quetiapine",
+      "generic": "Quetiapine",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Seroquel",
+          "say": "Seroquel",
+          "respell": "SAIR-uh-kwell"
+        }
+      ],
+      "aliases": [
+        "Q仔"
+      ],
+      "zh_hk": "喹硫平",
+      "zh_tw": "思樂康",
+      "respelling": "kweh-TYE-uh-peen",
+      "dose": {
+        "usual": "思覺失調（成人 IR）：150–750 mg／日；雙相躁期：400–800 mg／日；雙相鬱期：300 mg／日（晚間）",
+        "max": "思覺失調成人 IR 750 mg／日；青少年思覺失調及成人躁期 800 mg／日；雙相鬱期 300 mg／日",
+        "notes": "IR 與 XR 上限可以不同（XR 思覺失調常見最高 800 mg）。長者、肝功能損害須由較低劑量緩慢增加。",
+        "source": "FDA Seroquel（IR）標籤"
+      },
+      "receptors": [
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "ki": 4.4
+        },
+        {
+          "target": "α1",
+          "action": "結合",
+          "ki": 14.6
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "ki": 38
+        },
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "ki": 626
+        },
+        {
+          "target": "M1",
+          "action": "結合"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Seroquel 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Seroquel 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Seroquel 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA Seroquel 標籤"
+        },
+        {
+          "tag": "體重增加",
+          "text": "體重增加",
+          "source": "FDA Seroquel 標籤"
+        },
+        {
+          "tag": "姿勢性低血壓",
+          "text": "姿勢性低血壓",
+          "source": "FDA Seroquel 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "心電圖異常"
+          ],
+          "quote": "照心電圖發現有異常，所以需要減Q仔",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "體重增加"
+          ],
+          "quote": "Quetiapine超可怕欸，感覺變胖的人比olanzapine還多",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "便秘",
+            "頭暈",
+            "眼瞓／嗜睡",
+            "姿勢性低血壓",
+            "胃口大增"
+          ],
+          "quote": "檔案（Richmond 藥物表）：便秘、頭暈、嗜睡、姿勢性低血壓等。另有臨床分享指 quetiapine 可誘發睡眠相關飲食障礙，個案見於 50 mg 或 200 mg，停藥後症狀消失。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "quetiapine",
+      "ipa": "/kwɪˈtaɪəpiːn/",
+      "hook": "同一標籤結合表中，母體對 H1 的 Ki 明顯低於 D2；臨床上常有明顯嗜睡，亦可增加食慾及體重，震顫及泌乳素升高往往較少。不把這些數字寫成強／弱等級。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Quetiapine 標籤（同時列出母體／norquetiapine Ki）。條目以母體 Ki 數值列出，並註明代謝物。"
+    },
+    {
+      "id": "risperidone",
+      "generic": "Risperidone",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Risperdal",
+          "say": "Risperdal",
+          "respell": "ris-PER-dal"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "利培酮",
+      "zh_tw": "理思必妥",
+      "respelling": "ris-PER-ih-done",
+      "dose": {
+        "usual": "成人思覺失調：建議 4–8 mg／日（由 2 mg 開始）；成人躁期：1–6 mg／日",
+        "max": "成人思覺失調有效範圍載明 4–16 mg／日；超過 6 mg／日通常未必更有效，且副作用較多。躁期最高 6 mg／日",
+        "notes": "嚴重腎／肝功能損害由 0.5 mg 每日兩次開始。",
+        "source": "FDA Risperdal 標籤"
+      },
+      "receptors": [
+        {
+          "target": "5-HT2A",
+          "action": "阻斷"
+        },
+        {
+          "target": "D2",
+          "action": "阻斷"
+        },
+        {
+          "target": "α1",
+          "action": "阻斷"
+        },
+        {
+          "target": "α2",
+          "action": "阻斷"
+        },
+        {
+          "target": "H1",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Risperdal 標籤"
+        },
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "FDA Risperdal 標籤"
+        },
+        {
+          "tag": "靜坐不能（坐立不安）",
+          "text": "靜坐不能（坐立不安）",
+          "source": "FDA Risperdal 標籤"
+        },
+        {
+          "tag": "體重增加",
+          "text": "體重增加",
+          "source": "FDA Risperdal 標籤"
+        },
+        {
+          "tag": "泌乳素高／溢乳",
+          "text": "泌乳素高／溢乳",
+          "source": "FDA Risperdal 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Risperdal 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "心跳快"
+          ],
+          "quote": "RISPERIDONE : 心跳快",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "泌乳素高／溢乳",
+            "月經失調"
+          ],
+          "quote": "prolactin lv去到2230…溢乳好嚴重…有M但極唔準",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "失眠",
+            "手震",
+            "體重增加",
+            "頭暈"
+          ],
+          "quote": "檔案（Richmond 藥物表）：較少及較輕微。最常見為失眠、焦慮、手震或輕微肌肉僵硬，少數人體重會上升；服用初期可能出現頭暈，但很快便會消失。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "risperidone",
+      "ipa": "/rɪˈspɛrɪdoʊn/",
+      "hook": "標籤指對 5-HT2、D2、α1、α2、H1 為拮抗，泌乳素升高常見，亦可頭暈；對 M 與 β 受體無親和力。Ki 僅以組範圍列出，不另作強度分級。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Risperidone 標籤。對 5-HT2、D2、α1、α2、H1 為拮抗；Ki 僅以組範圍列出，不另作強度分級。M 與 β 受體標籤指無親和力。"
+    },
+    {
+      "id": "paliperidone",
+      "generic": "Paliperidone",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Invega",
+          "say": "Invega",
+          "respell": "in-VEE-guh"
+        },
+        {
+          "name": "Invega Trinza",
+          "say": "Invega Trinza",
+          "respell": "in-VEE-guh TRIN-zuh"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "帕利哌酮",
+      "zh_tw": "善思達",
+      "respelling": "pal-ee-PER-ih-done",
+      "dose": {
+        "usual": "口服（Invega）：成人思覺失調常用 6 mg 每日一次。針劑 Sustenna：維持常用 117 mg 每月（範圍 39–234 mg）。Trinza：在 Sustenna 穩定後每 3 個月一次（對應 273／410／546／819 mg）",
+        "max": "口服 12 mg／日。Sustenna 每月最高 234 mg。Trinza 每 3 個月最高 819 mg（對應 Sustenna 234 mg）",
+        "notes": "劑型完全不同，不可將口服劑量的毫克數直接換算為針劑毫克數。輕度腎功能損害時針劑上限較低。",
+        "source": "FDA Invega／Invega Sustenna／Invega Trinza 標籤"
+      },
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "ki": 2.2
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "ki": 1
+        },
+        {
+          "target": "α1",
+          "action": "阻斷"
+        },
+        {
+          "target": "α2",
+          "action": "阻斷"
+        },
+        {
+          "target": "H1",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Invega 標籤"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "FDA Invega 標籤"
+        },
+        {
+          "tag": "心跳快",
+          "text": "心跳快",
+          "source": "FDA Invega 標籤"
+        },
+        {
+          "tag": "靜坐不能（坐立不安）",
+          "text": "靜坐不能（坐立不安）",
+          "source": "FDA Invega 標籤"
+        },
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "FDA Invega 標籤"
+        },
+        {
+          "tag": "泌乳素高／溢乳",
+          "text": "泌乳素高／溢乳",
+          "source": "FDA Invega 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "泌乳素高／溢乳",
+            "反眼"
+          ],
+          "quote": "prolactin lv去到1390同埋會反眼所以停咗",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "眼瞓／嗜睡",
+            "泌乳素高／溢乳",
+            "手震"
+          ],
+          "quote": "檔案（Richmond 藥物表）：嗜睡、頭痛、流乳、手震等。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "paliperidone",
+      "ipa": "/ˌpæliˈpɛrɪdoʊn/",
+      "hook": "為 risperidone 的活性代謝物。標籤指對 D2、5-HT2A 為拮抗，亦為 α1、α2、H1 拮抗，泌乳素升高同樣常見；對 M 及 β 無親和力。劑型及劑量須獨立計算。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Paliperidone 標籤。標籤指對 M 及 β1／β2 無親和力。"
+    },
+    {
+      "id": "clozapine",
+      "generic": "Clozapine",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Clozaril",
+          "say": "Clozaril",
+          "respell": "KLOE-zuh-ril"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "氯氮平",
+      "zh_tw": "可洛平／可洛慮平",
+      "respelling": "KLOE-zuh-peen",
+      "dose": {
+        "usual": "目標常見 300–450 mg／日（分次；標籤寫目標 150–225 mg 每日兩次）",
+        "max": "900 mg／日（450 mg 每日兩次）",
+        "notes": "須定期檢驗白血球。劑量愈高，抽搐風險愈高。必須由低劑量緩慢增加。",
+        "source": "FDA Clozaril 標籤"
+      },
+      "receptors": [
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "ki": 1.1
+        },
+        {
+          "target": "M1",
+          "action": "阻斷",
+          "ki": 6.2
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "ki": 5.4
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "ki": 1.6
+        },
+        {
+          "target": "5-HT2C",
+          "action": "結合",
+          "ki": 9.4
+        },
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "ki": 160
+        },
+        {
+          "target": "D4",
+          "action": "結合",
+          "ki": 24
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Clozaril 標籤"
+        },
+        {
+          "tag": "流口水",
+          "text": "流口水",
+          "source": "FDA Clozaril 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA Clozaril 標籤"
+        },
+        {
+          "tag": "心跳快",
+          "text": "心跳快",
+          "source": "FDA Clozaril 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Clozaril 標籤"
+        },
+        {
+          "tag": "體重增加",
+          "text": "體重增加",
+          "source": "FDA Clozaril 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "抽筋"
+          ],
+          "quote": "Clozapem 會腦抽筋",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "尿失禁",
+            "手震",
+            "流口水",
+            "泌乳素高／溢乳"
+          ],
+          "quote": "副作用：瀨尿，神經反射太勁，個腦閃下閃下，手震，流口水，催乳素過高",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "白血球下降"
+          ],
+          "quote": "大約 1% 機會出現 Agranulocytosis —— 即係白血球幾乎清零",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "流口水",
+            "便秘",
+            "頭暈",
+            "體重增加",
+            "心跳快",
+            "疲倦",
+            "白血球下降"
+          ],
+          "quote": "檔案（Richmond 藥物表）：流口水、便秘、頭暈及體重增加、心跳加速、疲倦等；約百分之一受用者白血球減少。服用此藥者需要定時抽血。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "clozapine",
+      "ipa": "/ˈkloʊzəpiːn/",
+      "hook": "受體譜廣：標籤列 H1、M1、5-HT2A、α1 拮抗。同一結合表上 D2 的 Ki 高於上述靶點，錐體外症狀及泌乳素升高往往較少，但嗜睡、體重增加及抗膽鹼作用較明顯。不把表內數字寫成強／弱等級。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Clozapine 標籤。標籤另列 5-HT6、5-HT7、α2A 等結合，本頁不全部展開。"
+    },
+    {
+      "id": "haloperidol",
+      "generic": "Haloperidol",
+      "class": "typical",
+      "brands": [
+        {
+          "name": "Haldol",
+          "say": "Haldol",
+          "respell": "HAL-dol"
+        }
+      ],
+      "aliases": [
+        "Halo",
+        "打針Halo"
+      ],
+      "zh_hk": "氟哌啶醇",
+      "zh_tw": "好度",
+      "respelling": "ha-loe-PER-ih-dole",
+      "dose": {
+        "usual": "口服：由低劑量開始（可低至 0.5 mg／日），中度症狀常見數毫克級。癸酸酯針（decanoate）：通常每 4 週一次，維持劑量常見為原口服日劑量的 10–15 倍",
+        "max": "口服：該份 FDA 標籤寫「未確立最大有效劑量」，部分適應症指超過 6 mg／日未必更有效。癸酸酯：超過 450 mg／月的臨床經驗有限",
+        "notes": "舊文獻曾提及口服更高劑量，但現時多用較低有效劑量。此針劑不可作靜脈注射。",
+        "source": "FDA haloperidol 口服標籤；haloperidol decanoate 標籤"
+      },
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷"
+        },
+        {
+          "target": "α1",
+          "action": "結合"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "FDA haloperidol 標籤"
+        },
+        {
+          "tag": "靜坐不能（坐立不安）",
+          "text": "靜坐不能（坐立不安）",
+          "source": "FDA haloperidol 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA haloperidol 標籤"
+        },
+        {
+          "tag": "泌乳素高／溢乳",
+          "text": "泌乳素高／溢乳",
+          "source": "FDA haloperidol 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "泌乳素高／溢乳"
+          ],
+          "quote": "Halo會漏奶",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "NMS"
+          ],
+          "quote": "打咗一針 haloperidol…好大機會出現咗 NMS（抗精神病藥惡性症候群）",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "疲倦",
+            "心跳快",
+            "胃口下降",
+            "失眠",
+            "手震"
+          ],
+          "quote": "檔案（Richmond 藥物表）：倦怠、心跳過速、食慾不振、失眠，以及帕金遜徵狀如手震、肌肉僵硬等。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "haloperidol",
+      "ipa": "/ˌhæloʊˈpɛrɪdɒl/",
+      "hook": "以 D2 拮抗為主，較易出現震顫、坐立不安及泌乳素升高；對 H1、M 結合極低，並非借嗜睡發揮鎮靜。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Haloperidol decanoate 標籤：D2 拮抗；α1 結合較低；對 M 及 H1 結合極低。原 D3／D4／5-HT2A「阻斷強」來自 APA／PDSP 跨藥表，不見於此標籤，已移除。"
+    },
+    {
+      "id": "fluoxetine",
+      "generic": "Fluoxetine",
+      "class": "ssri",
+      "brands": [
+        {
+          "name": "Prozac",
+          "say": "Prozac",
+          "respell": "PRO-zak"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "氟西汀",
+      "zh_tw": "百憂解",
+      "respelling": "floo-OX-eh-teen",
+      "dose": {
+        "usual": "抑鬱症：20 mg 每日（清晨）；暴食症常用 60 mg 每日",
+        "max": "80 mg 每日",
+        "notes": "長者、肝功能損害或多藥併用建議較低或較疏劑量。",
+        "source": "FDA Prozac 標籤"
+      },
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制"
+        },
+        {
+          "target": "NET",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA Prozac 標籤／MedlinePlus"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Prozac 標籤／MedlinePlus"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "FDA Prozac 標籤／MedlinePlus"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Prozac 標籤／MedlinePlus"
+        },
+        {
+          "tag": "性功能障礙",
+          "text": "性功能障礙",
+          "source": "FDA Prozac 標籤／MedlinePlus"
+        },
+        {
+          "tag": "胃口下降",
+          "text": "胃口下降",
+          "source": "FDA Prozac 標籤／MedlinePlus"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "失眠"
+          ],
+          "quote": "Fluoxetine會瞓唔到",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "噁心／腸胃不適",
+            "手震",
+            "口乾",
+            "胃口下降"
+          ],
+          "quote": "反胃副作用…手震同口乾…胃口方面個時我都無胃口",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "亢奮"
+          ],
+          "quote": "開頭我食咗個人會好興奮",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "疲倦"
+          ],
+          "quote": "你可能會覺得累…只想睡係床",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "抽筋"
+          ],
+          "quote": "感冒一齊食會抽筋（但問過醫生話係可以一齊食）",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [],
+          "quote": "離憂 (Leeyo)：吃了跟沒吃一樣",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "體重↓"
+          ],
+          "quote": "整理文提及：體重↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "心率↓"
+          ],
+          "quote": "整理文提及：心率↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "血壓↑"
+          ],
+          "quote": "整理文提及：血壓↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "失眠",
+            "疲倦"
+          ],
+          "quote": "檔案（Richmond 藥物表）：失眠、疲倦、神經緊張等。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "fluoxetine",
+      "ipa": "/fluːˈɒksɪtiːn/",
+      "hook": "標籤指藉抑制中樞血清素再攝取增強血清素活性，並引述動物研究指抑制血清素再攝取遠較去甲腎上腺素明顯。本頁不把跨藥表的 NET 強度寫成已核實。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Fluoxetine 標籤：藉抑制中樞 5-HT 再攝取增強血清素活性。不採用 Tatsumi 跨藥 Ki 作強度分級。NET 項證據不足。"
+    },
+    {
+      "id": "sertraline",
+      "generic": "Sertraline",
+      "class": "ssri",
+      "brands": [
+        {
+          "name": "Zoloft",
+          "say": "Zoloft",
+          "respell": "ZOH-loft"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "舍曲林",
+      "zh_tw": "樂復得",
+      "respelling": "SER-truh-leen",
+      "dose": {
+        "usual": "抑鬱症：50–200 mg 每日（常由 50 mg 開始）",
+        "max": "200 mg 每日（PMDD 連續用最高 150 mg；週期性用最高 100 mg）",
+        "notes": "輕度肝功能損害用半量；中重度肝功能損害不建議。",
+        "source": "FDA Zoloft 標籤"
+      },
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制"
+        },
+        {
+          "target": "DAT",
+          "action": "結合"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Zoloft 標籤／MedlinePlus"
+        },
+        {
+          "tag": "肚屙",
+          "text": "肚屙",
+          "source": "FDA Zoloft 標籤／MedlinePlus"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA Zoloft 標籤／MedlinePlus"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Zoloft 標籤／MedlinePlus"
+        },
+        {
+          "tag": "性功能障礙",
+          "text": "性功能障礙",
+          "source": "FDA Zoloft 標籤／MedlinePlus"
+        },
+        {
+          "tag": "出汗",
+          "text": "出汗",
+          "source": "FDA Zoloft 標籤／MedlinePlus"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "肚屙",
+            "噁心／腸胃不適"
+          ],
+          "quote": "Zoloft 會肚痾作嘔",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [],
+          "quote": "克憂寧 (Purtraline)：減藥時吃過這顆，但整個人狀態變超差，所以又吃回敏特思（檔案寫作克憂寧（Purtraline），推斷為舍曲林，待核實。）",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "體重↓"
+          ],
+          "quote": "整理文提及：體重↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "心率↓"
+          ],
+          "quote": "整理文提及：心率↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "噁心／腸胃不適",
+            "肚屙",
+            "頭暈",
+            "眼瞓／嗜睡",
+            "性功能障礙"
+          ],
+          "quote": "檔案（Richmond 藥物表）：噁心、腹瀉、消化不良、眩暈、嗜睡、男性性功能障礙等。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "sertraline",
+      "ipa": "/ˈsɜːtrəliːn/",
+      "hook": "標籤引述體外研究，指其為強力且選擇性的血清素再攝取抑制劑。本頁不把跨藥表的 DAT／NET 強度寫成已核實。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Sertraline 標籤：抑制中樞血清素再攝取。原 DAT／NET 強度來自 Tatsumi 1997，已撤下；DAT 改不確定。"
+    },
+    {
+      "id": "escitalopram",
+      "generic": "Escitalopram",
+      "class": "ssri",
+      "brands": [
+        {
+          "name": "Lexapro",
+          "say": "Lexapro",
+          "respell": "lek-SA-pro"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "艾司西酞普蘭",
+      "zh_tw": "來士普",
+      "respelling": "es-sye-TAL-oh-pram",
+      "dose": {
+        "usual": "抑鬱症／廣泛性焦慮：10 mg 每日一次，可加至 20 mg",
+        "max": "20 mg 每日一次",
+        "notes": "長者及肝功能損害建議 10 mg 每日。",
+        "source": "FDA Lexapro 標籤"
+      },
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Lexapro 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA Lexapro 標籤"
+        },
+        {
+          "tag": "性功能障礙",
+          "text": "性功能障礙",
+          "source": "FDA Lexapro 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Lexapro 標籤"
+        },
+        {
+          "tag": "出汗",
+          "text": "出汗",
+          "source": "FDA Lexapro 標籤"
+        },
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "FDA Lexapro 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "眼瞓／嗜睡",
+            "心跳快"
+          ],
+          "quote": "Escitalopram (oxalate)：眼瞓、心跳快",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [],
+          "quote": "易思坦 (Escitalo)：吃了跟沒吃一樣",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "膽固醇↑"
+          ],
+          "quote": "整理文提及：膽固醇↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "體重不變"
+          ],
+          "quote": "整理文提及：體重不變",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "心率↓"
+          ],
+          "quote": "整理文提及：心率↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "頭暈",
+            "噁心／腸胃不適",
+            "便秘",
+            "性功能障礙"
+          ],
+          "quote": "檔案（Richmond 藥物表）：眩暈、噁心、便秘、性功能障礙等。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "escitalopram",
+      "ipa": "/ˌɛsɪˈtæləpræm/",
+      "hook": "標籤指假定與抑制中樞 5-HT 再攝取、增強血清素活性有關；並指對 H1、M、α 及多巴胺受體親和力很低或沒有。不按跨藥 Ki 作強度分級。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Escitalopram（Lexapro）標籤：假定與抑制中樞 5-HT 再攝取、增強血清素活性有關。不按跨藥 Ki 作強度分級。"
+    },
+    {
+      "id": "citalopram",
+      "generic": "Citalopram",
+      "class": "ssri",
+      "brands": [
+        {
+          "name": "Cipram",
+          "say": "Cipram",
+          "respell": "SIP-ram"
+        },
+        {
+          "name": "Celexa",
+          "say": "Celexa",
+          "respell": "seh-LEX-uh"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "西酞普蘭",
+      "zh_tw": "喜普妙",
+      "respelling": "sye-TAL-oh-pram",
+      "dose": {
+        "usual": "由 20 mg 每日一次開始，可加至 40 mg",
+        "max": "40 mg 每日一次；60 歲以上、肝功能損害或 CYP2C19 慢代謝／抑制劑併用最高 20 mg",
+        "notes": "高劑量有劑量相關 QT 延長風險，所以有上述上限。",
+        "source": "FDA Celexa 標籤"
+      },
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Celexa 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Celexa 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Celexa 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA Celexa 標籤"
+        },
+        {
+          "tag": "出汗",
+          "text": "出汗",
+          "source": "FDA Celexa 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "體重↓"
+          ],
+          "quote": "整理文提及：體重↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "心率↓"
+          ],
+          "quote": "整理文提及：心率↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "口乾",
+            "手震",
+            "出汗"
+          ],
+          "quote": "檔案（Richmond 藥物表）：口乾、手震、出汗等。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "citalopram",
+      "ipa": "/saɪˈtæləpræm/",
+      "hook": "標籤指假定與抑制中樞 5-HT 再攝取有關。對 NET、DAT 不作已核實描述。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Citalopram 標籤：假定與抑制中樞 5-HT 再攝取有關。不另作強度分級。"
+    },
+    {
+      "id": "paroxetine",
+      "generic": "Paroxetine",
+      "class": "ssri",
+      "brands": [
+        {
+          "name": "Seroxat",
+          "say": "Seroxat",
+          "respell": "SEH-rox-at"
+        },
+        {
+          "name": "Paxil",
+          "say": "Paxil",
+          "respell": "PAX-il"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "帕羅西汀",
+      "zh_tw": "賽樂特",
+      "respelling": "pa-ROX-eh-teen",
+      "dose": {
+        "usual": "IR（Paxil）：抑鬱症常由 20 mg 每日開始。CR（Paxil CR）：抑鬱症常由 25 mg 開始",
+        "max": "IR：抑鬱症／PTSD 50 mg；強迫症／恐慌症 60 mg。CR：抑鬱症 62.5 mg；恐慌症 75 mg。長者／嚴重腎或肝功能損害 IR 最高 40 mg，CR 抑鬱／恐慌最高 50 mg",
+        "notes": "IR 與 CR 的毫克數不可按 1:1 直接對調。停藥須緩慢遞減。",
+        "source": "FDA Paxil 及 Paxil CR 標籤"
+      },
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制"
+        },
+        {
+          "target": "NET",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Paxil 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Paxil 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Paxil 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA Paxil 標籤"
+        },
+        {
+          "tag": "性功能障礙",
+          "text": "性功能障礙",
+          "source": "FDA Paxil 標籤"
+        },
+        {
+          "tag": "出汗",
+          "text": "出汗",
+          "source": "FDA Paxil 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "膽固醇↑"
+          ],
+          "quote": "整理文提及：膽固醇↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "體重↓"
+          ],
+          "quote": "整理文提及：體重↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "paroxetine",
+      "ipa": "/pəˈrɒksɪtiːn/",
+      "hook": "標籤引述體外動物研究，指其為強力且高選擇性的血清素再攝取抑制劑。NET 項僅文獻層級，不作已核實。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Paroxetine 標籤：與抑制中樞 5-HT 再攝取有關。NET 項僅文獻層級，確度未核實，亦不另作強度分級。"
+    },
+    {
+      "id": "fluvoxamine",
+      "generic": "Fluvoxamine",
+      "class": "ssri",
+      "brands": [
+        {
+          "name": "Faverin",
+          "say": "Faverin",
+          "respell": "FAV-er-in"
+        },
+        {
+          "name": "Luvox",
+          "say": "Luvox",
+          "respell": "LOO-vox"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "氟伏沙明",
+      "zh_tw": "無鬱寧",
+      "respelling": "floo-VOX-uh-meen",
+      "dose": {
+        "usual": "美國標籤主要為強迫症：常由 100 mg 睡前開始，每週可加 50 mg",
+        "max": "300 mg／日（較高劑量建議分次）",
+        "notes": "美國正式適應症是強迫症；其他地區亦用於抑鬱症，劑量範圍多數相近，但仍以當地標籤為準。",
+        "source": "FDA fluvoxamine 標籤"
+      },
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA fluvoxamine 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA fluvoxamine 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA fluvoxamine 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA fluvoxamine 標籤"
+        },
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "FDA fluvoxamine 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "體重增加"
+          ],
+          "quote": "整理文提及：體重↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "心率↓"
+          ],
+          "quote": "整理文提及：心率↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "fluvoxamine",
+      "ipa": "/fluːˈvɒksəmiːn/",
+      "hook": "標籤指特定血清素再攝取抑制，並引述臨床前研究稱其為強力的 SERT 抑制劑；即使標籤用 potent，也不自動寫成本頁的強度等級。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Fluvoxamine 標籤：特定血清素再攝取抑制。即使標籤用 potent，也不自動寫成強度等級「強」。"
+    },
+    {
+      "id": "venlafaxine",
+      "generic": "Venlafaxine",
+      "class": "snri",
+      "brands": [
+        {
+          "name": "Efexor",
+          "say": "Efexor",
+          "respell": "ef-FEX-or"
+        },
+        {
+          "name": "Effexor",
+          "say": "Effexor",
+          "respell": "ef-FEX-or"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "文拉法辛",
+      "zh_tw": "怡諾思",
+      "respelling": "VEN-luh-fax-een",
+      "dose": {
+        "usual": "XR（Effexor XR）：抑鬱／焦慮多數 75 mg 每日一次（可先 37.5 mg 數日），可加至 225 mg",
+        "max": "XR：抑鬱、廣泛性焦慮、恐慌症 225 mg／日；社交焦慮標籤建議劑量 75 mg／日",
+        "notes": "舊 IR 劑型有更高上限（常見載明 375 mg），不可與 XR 混淆。須與食物同時服用。",
+        "source": "FDA Effexor XR 標籤"
+      },
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制"
+        },
+        {
+          "target": "NET",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Effexor XR 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Effexor XR 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Effexor XR 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA Effexor XR 標籤"
+        },
+        {
+          "tag": "出汗",
+          "text": "出汗",
+          "source": "FDA Effexor XR 標籤"
+        },
+        {
+          "tag": "性功能障礙",
+          "text": "性功能障礙",
+          "source": "FDA Effexor XR 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "膽固醇↑"
+          ],
+          "quote": "整理文提及：膽固醇↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "體重↓"
+          ],
+          "quote": "整理文提及：體重↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "心率↑"
+          ],
+          "quote": "整理文提及：心率↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "血壓↑"
+          ],
+          "quote": "整理文提及：血壓↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "血鈉↓"
+          ],
+          "quote": "整理文提及：血鈉↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "噁心／腸胃不適",
+            "便秘",
+            "眼瞓／嗜睡",
+            "性功能障礙"
+          ],
+          "quote": "檔案（Richmond 藥物表）：嘔吐、便秘、嗜睡、男性性功能障礙、神經緊張。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "venlafaxine",
+      "ipa": "/vɛnˈlæfæksiːn/",
+      "hook": "標籤指抑制 5-HT 與去甲腎上腺素再攝取；對 M、H、α1 無明顯親和力。臨床前研究亦稱對多巴胺再攝取為較弱抑制劑。較高劑量時臨床上才較明顯表現去甲腎上腺素作用。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Venlafaxine 標籤：抑制 5-HT 與去甲腎上腺素再攝取；對 M、H、α1 無明顯親和力。原跨藥 Ki 強度已撤。"
+    },
+    {
+      "id": "duloxetine",
+      "generic": "Duloxetine",
+      "class": "snri",
+      "brands": [
+        {
+          "name": "Cymbalta",
+          "say": "Cymbalta",
+          "respell": "sim-BALL-tuh"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "度洛西汀",
+      "zh_tw": "千憂解",
+      "respelling": "doo-LOX-eh-teen",
+      "dose": {
+        "usual": "抑鬱症：40–60 mg／日（可一次或分兩次）；維持常用 60 mg 每日",
+        "max": "抑鬱症／廣泛性焦慮標籤最高 120 mg／日，但寫明超過 60 mg 未必更有效",
+        "notes": "糖尿病神經痛、纖維肌痛、慢性肌肉骨骼痛常用目標 60 mg，該等適應症標籤不建議為求效果再行加高。",
+        "source": "FDA duloxetine delayed-release 標籤"
+      },
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制"
+        },
+        {
+          "target": "NET",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA duloxetine 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA duloxetine 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA duloxetine 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA duloxetine 標籤"
+        },
+        {
+          "tag": "胃口下降",
+          "text": "胃口下降",
+          "source": "FDA duloxetine 標籤"
+        },
+        {
+          "tag": "出汗",
+          "text": "出汗",
+          "source": "FDA duloxetine 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [],
+          "quote": "萬憂停 (Duxetine)：還不錯，個人覺得沒什麼副作用",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "膽固醇↑"
+          ],
+          "quote": "整理文提及：膽固醇↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "血糖↑"
+          ],
+          "quote": "整理文提及：血糖↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "體重↓"
+          ],
+          "quote": "整理文提及：體重↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "心率↑"
+          ],
+          "quote": "整理文提及：心率↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "血壓↑"
+          ],
+          "quote": "整理文提及：血壓↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "肝酵素↑"
+          ],
+          "quote": "整理文提及：肝酵素↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "血鈉↓"
+          ],
+          "quote": "整理文提及：血鈉↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "噁心／腸胃不適",
+            "口乾",
+            "眼瞓／嗜睡",
+            "便秘",
+            "胃口下降",
+            "出汗"
+          ],
+          "quote": "檔案（Richmond 藥物表）：噁心、口乾、嗜睡、便秘、食慾降低、多汗。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "duloxetine",
+      "ipa": "/duːˈlɒksɪtiːn/",
+      "hook": "標籤指作用相信與增強中樞血清素及去甲腎上腺素活性有關，並引述臨床前研究稱其強力抑制 SERT 與 NET。不把未在此標籤成立的 DAT 項寫成已核實。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Duloxetine 標籤：作用相信與增強中樞血清素及去甲腎上腺素活性有關。原 DAT「弱」及「強／強」來自綜述 Ki 表，已撤；不把未在此標籤成立的 DAT 寫成已核實。"
+    },
+    {
+      "id": "desvenlafaxine",
+      "generic": "Desvenlafaxine",
+      "class": "snri",
+      "brands": [
+        {
+          "name": "Pristiq",
+          "say": "Pristiq",
+          "respell": "pris-TEEK"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "去甲文拉法辛",
+      "zh_tw": "倍思樂",
+      "respelling": "des-ven-luh-FAX-een",
+      "dose": {
+        "usual": "建議 50 mg 每日一次",
+        "max": "試驗曾用高至 400 mg，但超過 50 mg 未證明額外好處；中度腎功能損害最高 50 mg；重度腎功能損害／透析最高 25 mg／日或 50 mg 隔日；中重度肝功能損害劑量提升不建議超過 100 mg",
+        "notes": "常用劑量為 50 mg，並不表示須增至試驗所用上限。",
+        "source": "FDA Pristiq 標籤"
+      },
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制"
+        },
+        {
+          "target": "NET",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Pristiq 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Pristiq 標籤"
+        },
+        {
+          "tag": "出汗",
+          "text": "出汗",
+          "source": "FDA Pristiq 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Pristiq 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA Pristiq 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA Pristiq 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "眼瞓／嗜睡"
+          ],
+          "quote": "Desvenlafaxine…：眼瞓",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "噁心／腸胃不適",
+            "便秘",
+            "眼瞓／嗜睡"
+          ],
+          "quote": "檔案（Richmond 藥物表）：嘔吐、便秘、嗜睡、神經緊張等。檔案並註增加自殺風險（此為抗抑鬱藥類常見警告，並非本藥獨有）。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "desvenlafaxine",
+      "ipa": "/dɛsvɛnˈlæfæksiːn/",
+      "hook": "為 venlafaxine 的活性代謝物。標籤稱選擇性 SNRI，藉抑制再攝取增強 5-HT 與去甲腎上腺素；非臨床研究亦用 potent 一詞。無官方 Ki，不另作強度分級。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Desvenlafaxine 標籤：藉抑制再攝取增強 5-HT 與去甲腎上腺素；非臨床稱選擇性 SNRI。無標籤 Ki，不另作強度分級。"
+    },
+    {
+      "id": "vortioxetine",
+      "generic": "Vortioxetine",
+      "class": "multimodal",
+      "brands": [
+        {
+          "name": "Trintellix",
+          "say": "Trintellix",
+          "respell": "trin-TEL-ix"
+        },
+        {
+          "name": "Brintellix",
+          "say": "Brintellix",
+          "respell": "brin-TEL-ix"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "沃替西汀",
+      "zh_tw": "欣憂喜",
+      "respelling": "vor-tye-OX-eh-teen",
+      "dose": {
+        "usual": "常由 10 mg 每日開始，可加至 20 mg；不能耐受者可用 5 mg",
+        "max": "20 mg 每日（超過 20 mg 未在對照試驗中評估）。CYP2D6 慢代謝者最高 10 mg",
+        "notes": "",
+        "source": "FDA Trintellix 標籤"
+      },
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "ki": 1.6
+        },
+        {
+          "target": "5-HT3",
+          "action": "阻斷",
+          "ki": 3.7
+        },
+        {
+          "target": "5-HT1A",
+          "action": "激動",
+          "ki": 15
+        },
+        {
+          "target": "5-HT7",
+          "action": "阻斷",
+          "ki": 19
+        },
+        {
+          "target": "5-HT1B",
+          "action": "部分激動",
+          "ki": 33
+        },
+        {
+          "target": "5-HT1D",
+          "action": "阻斷",
+          "ki": 54
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Trintellix 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA Trintellix 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [],
+          "quote": "冇乜副作用對我黎講",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [],
+          "quote": "敏特思 (Brintellix)：目前吃過最有效的藥，真的大推！而且吃完記憶力會變很好^^",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "體重不變"
+          ],
+          "quote": "整理文提及：體重不變",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "噁心／腸胃不適"
+          ],
+          "quote": "檔案（Richmond 藥物表）：最常見之不良反應為噁心。檔案並指其強項為改善認知功能（如記憶、處理速度）。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "vortioxetine",
+      "ipa": "/ˌvɔːrtiˈɒksɪtiːn/",
+      "hook": "抑制 SERT，並對多個 5-HT 受體有作用（5-HT3 阻斷、5-HT1A 激動等），故歸為多模式抗抑鬱藥。標籤寫 vortioxetine potently and selectively inhibits reuptake of serotonin。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Vortioxetine（Trintellix）標籤。對 NET Ki=113 nM、DAT Ki>1000 nM，標籤寫「不是結合到」NET／DAT 的語氣下，刪除原「弱 NET 抑制」，以免誇大。"
+    },
+    {
+      "id": "mirtazapine",
+      "generic": "Mirtazapine",
+      "class": "nassa",
+      "brands": [
+        {
+          "name": "Remeron",
+          "say": "Remeron",
+          "respell": "REM-uh-ron"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "米氮平",
+      "zh_tw": "瑞美隆",
+      "respelling": "mir-TAZ-uh-peen",
+      "dose": {
+        "usual": "由 15 mg 每日一次開始，可加至 45 mg",
+        "max": "45 mg 每日一次",
+        "notes": "",
+        "source": "FDA Remeron／RemeronSolTab 標籤"
+      },
+      "receptors": [
+        {
+          "target": "H1",
+          "action": "阻斷"
+        },
+        {
+          "target": "α2",
+          "action": "阻斷"
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷"
+        },
+        {
+          "target": "5-HT3",
+          "action": "阻斷"
+        },
+        {
+          "target": "α1",
+          "action": "阻斷"
+        },
+        {
+          "target": "M",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Remeron 標籤"
+        },
+        {
+          "tag": "胃口大增",
+          "text": "胃口大增",
+          "source": "FDA Remeron 標籤"
+        },
+        {
+          "tag": "體重增加",
+          "text": "體重增加",
+          "source": "FDA Remeron 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Remeron 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA Remeron 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "體重增加"
+          ],
+          "quote": "整理文提及：體重↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "眼瞓／嗜睡",
+            "胃口大增",
+            "體重增加",
+            "姿勢性低血壓"
+          ],
+          "quote": "檔案（Richmond 藥物表）指其抗組胺作用可致嗜睡，並可增加食慾（特別是甜食及油炸食物）及體重，亦有姿勢性低血壓。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "mirtazapine",
+      "ipa": "/mɜːrˈtæzəpiːn/",
+      "hook": "說明書指對 H1 為拮抗，或可解釋明顯嗜睡，並可增加食慾及體重；主要藥理為中樞突觸前 α2 及 5-HT2／5-HT3 拮抗，對 SERT／NET 幾乎沒有抑制作用。現摘錄並未用「強力」或 Ki 來為 H1 分級。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Mirtazapine 標籤：α2、5-HT2、5-HT3、H1、α1、毒蕈鹼拮抗。無 Ki，不另作強度分級。對 5-HT1A／1B 無明顯親和力。"
+    },
+    {
+      "id": "bupropion",
+      "generic": "Bupropion",
+      "class": "ndri",
+      "brands": [
+        {
+          "name": "Wellbutrin",
+          "say": "Wellbutrin",
+          "respell": "well-BYOO-trin"
+        },
+        {
+          "name": "Wellbutrin XL",
+          "say": "Wellbutrin XL",
+          "respell": "well-BYOO-trin ex-el"
+        },
+        {
+          "name": "Wellbutrin SR",
+          "say": "Wellbutrin SR",
+          "respell": "well-BYOO-trin es-ar"
+        },
+        {
+          "name": "Zyban",
+          "say": "Zyban",
+          "respell": "ZYE-ban"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "安非他酮",
+      "zh_tw": "威博雋",
+      "respelling": "byoo-PROE-pee-on",
+      "dose": {
+        "usual": "XL：由 150 mg 每日一次開始，目標常為 300 mg 每日一次（第 4 日起可加）",
+        "max": "XL 最高 450 mg 每日一次。中重度肝功能損害最高 150 mg 隔日一次",
+        "notes": "SR／XL／戒煙用 Zyban 的上限與用法不同，不可任意互換。有抽搐風險，須遵守劑型上限。",
+        "source": "FDA Wellbutrin XL 標籤"
+      },
+      "receptors": [
+        {
+          "target": "NET",
+          "action": "抑制"
+        },
+        {
+          "target": "DAT",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Wellbutrin XL 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Wellbutrin XL 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA Wellbutrin XL 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA Wellbutrin XL 標籤"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "FDA Wellbutrin XL 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [],
+          "quote": "有用 Bupropion 但不知為何感覺專注力越來越差",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "體重↓"
+          ],
+          "quote": "整理文提及：體重↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "抽筋",
+            "口乾",
+            "噁心／腸胃不適",
+            "失眠"
+          ],
+          "quote": "檔案（Richmond 藥物表）：可有癲癇風險，以及口乾、噁心、嘔吐、頭痛、失眠等，亦有機會改變食慾。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "bupropion",
+      "ipa": "/bjuːˈproʊpiɒn/",
+      "hook": "標籤原文稱相對較弱抑制去甲腎上腺素及多巴胺攝取，不抑制 MAO，亦不抑制血清素再攝取。臨床 NDRI 作用部分來自代謝物 hydroxybupropion。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Bupropion 標籤：相對較弱抑制 NE、DA 攝取；不抑制 MAO，亦不抑制血清素再攝取。原跨藥表強度已改以標籤為準。"
+    },
+    {
+      "id": "agomelatine",
+      "generic": "Agomelatine",
+      "class": "massa",
+      "brands": [
+        {
+          "name": "Valdoxan",
+          "say": "Valdoxan",
+          "respell": "val-DOX-an"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "阿戈美拉汀",
+      "zh_tw": "梧桐／維度新",
+      "respelling": "a-go-MEL-uh-teen",
+      "dose": {
+        "usual": "25 mg 睡前，必要時可加至 50 mg 睡前",
+        "max": "50 mg 每日",
+        "notes": "美國未批准。須定期檢驗肝功能。",
+        "source": "EMA Valdoxan 產品特性摘要（SPC）"
+      },
+      "receptors": [
+        {
+          "target": "MT1",
+          "action": "激動"
+        },
+        {
+          "target": "MT2",
+          "action": "激動"
+        },
+        {
+          "target": "5-HT2C",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "EMA Valdoxan SPC"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "EMA Valdoxan SPC"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "EMA Valdoxan SPC"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "EMA Valdoxan SPC"
+        },
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "EMA Valdoxan SPC"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "體重↓"
+          ],
+          "quote": "整理文提及：體重↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "agomelatine",
+      "ipa": null,
+      "hook": "為 MT1／MT2 激動劑，並拮抗 5-HT2C。EMA／SmPC 未提供可作分級的官方 Ki 表。",
+      "rec_source": "EMA Valdoxan／英國 emc SmPC：MT1、MT2 激動及 5-HT2C 拮抗；不抑制單胺攝取；對 α、β、組胺、膽鹼、多巴胺、苯二氮䓬受體無親和力。原 MT「強」、5-HT2C「弱」無同一官方 Ki 表支撐，已撤。"
+    },
+    {
+      "id": "trazodone",
+      "generic": "Trazodone",
+      "class": "sari",
+      "brands": [
+        {
+          "name": "Trittico",
+          "say": "Trittico",
+          "respell": "TRIT-ih-ko"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "曲唑酮",
+      "zh_tw": "美舒鬱",
+      "respelling": "TRAZ-oh-done",
+      "dose": {
+        "usual": "抑鬱症常由 150 mg／日分次開始，每 3–4 日可加 50 mg",
+        "max": "門診通常不超過 400 mg／日（分次）；住院病人最高 600 mg／日（分次）",
+        "notes": "助眠時臨床常用更低劑量，但此為標籤外用法，須以醫生處方為準。",
+        "source": "FDA trazodone 標籤"
+      },
+      "receptors": [
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "ki": 35.6
+        },
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "ki": 367
+        },
+        {
+          "target": "5-HT1A",
+          "action": "部分激動",
+          "ki": 118
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "ki": 153
+        },
+        {
+          "target": "5-HT2C",
+          "action": "阻斷",
+          "ki": 224
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA trazodone 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA trazodone 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA trazodone 標籤"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "FDA trazodone 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA trazodone 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "體重不變"
+          ],
+          "quote": "整理文提及：體重不變",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "眼瞓／嗜睡",
+            "頭暈",
+            "疲倦",
+            "口乾",
+            "姿勢性低血壓"
+          ],
+          "quote": "檔案（Richmond 藥物表）兩處記載：嗜睡、眩暈、倦怠、口乾；以及疲勞、口乾、頭暈、頭痛等，亦有機會出現姿勢性低血壓。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "trazodone",
+      "ipa": "/ˈtræzədoʊn/",
+      "hook": "標籤結合表以 5-HT2A 及 α1 阻斷為主，並抑制 SERT；可有嗜睡及頭暈。不把表內 Ki 寫成強／弱等級。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Trazodone 標籤（臨床前 Ki）。原 H1「弱阻斷」不見於此結合表，已移除。"
+    },
+    {
+      "id": "moclobemide",
+      "generic": "Moclobemide",
+      "class": "other",
+      "brands": [
+        {
+          "name": "Aurorix",
+          "say": "Aurorix",
+          "respell": "OR-oh-rix"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "嗎氯貝胺",
+      "zh_tw": "朗天",
+      "respelling": "moe-KLOE-beh-mide",
+      "dose": {
+        "usual": "常用 300–600 mg／日，分次服用",
+        "max": "600 mg 每日",
+        "notes": "美國未批准。屬可逆性 MAOI，仍須注意飲食及藥物交互作用。",
+        "source": "多國 SPC（如 Aurorix）常見劑量"
+      },
+      "receptors": [
+        {
+          "target": "MAO-A",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "Aurorix 等常見 SPC／BNF"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "Aurorix 等常見 SPC／BNF"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "Aurorix 等常見 SPC／BNF"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "Aurorix 等常見 SPC／BNF"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "Aurorix 等常見 SPC／BNF"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "心率↓"
+          ],
+          "quote": "整理文提及：心率↓",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "moclobemide",
+      "ipa": null,
+      "hook": "可逆性單胺氧化酶 A 抑制劑（RIMA），並非以單胺轉運體或胺基受體阻斷為主。",
+      "rec_source": "英國 emc／愛爾蘭 HPRA moclobemide（Manerix 類）SmPC：可逆、選擇性單胺氧化酶 A 抑制。不另作強度分級。"
+    },
+    {
+      "id": "amitriptyline",
+      "generic": "Amitriptyline",
+      "class": "tca",
+      "brands": [
+        {
+          "name": "Elavil",
+          "say": "Elavil",
+          "respell": "EL-uh-vil"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "阿米替林",
+      "zh_tw": "安米替林（台灣商品名不一）",
+      "respelling": "a-mee-TRIP-ti-leen",
+      "dose": {
+        "usual": "門診常由 75 mg／日分次開始，可加至 150 mg；維持常見 50–100 mg／日（可晚間一次）",
+        "max": "門診標籤寫可加至合共 150 mg／日",
+        "notes": "住院重症傳統上可用更高劑量，但此標籤摘錄主要載明門診 150 mg。長者通常用較低劑量。",
+        "source": "FDA amitriptyline 標籤"
+      },
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制"
+        },
+        {
+          "target": "NET",
+          "action": "抑制"
+        },
+        {
+          "target": "H1",
+          "action": "阻斷"
+        },
+        {
+          "target": "M1",
+          "action": "阻斷"
+        },
+        {
+          "target": "α1",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA amitriptyline 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA amitriptyline 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA amitriptyline 標籤"
+        },
+        {
+          "tag": "視力模糊",
+          "text": "視力模糊",
+          "source": "FDA amitriptyline 標籤"
+        },
+        {
+          "tag": "體重增加",
+          "text": "體重增加",
+          "source": "FDA amitriptyline 標籤"
+        },
+        {
+          "tag": "姿勢性低血壓",
+          "text": "姿勢性低血壓",
+          "source": "FDA amitriptyline 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "體重增加"
+          ],
+          "quote": "整理文提及：體重↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "心率↑"
+          ],
+          "quote": "整理文提及：心率↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "血壓↑"
+          ],
+          "quote": "整理文提及：血壓↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "口乾",
+            "便秘",
+            "頭暈",
+            "姿勢性低血壓"
+          ],
+          "quote": "檔案（Richmond 藥物表）：口乾、便秘、眩暈、姿勢性低血壓、過敏反應。檔案並註不建議餵母乳。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "amitriptyline",
+      "ipa": "/ˌæmɪˈtrɪptɪliːn/",
+      "hook": "標籤指抑制 NE 與 5-HT 再攝取，並有鎮靜作用。H1／M／α1 來自類別藥理，非本標籤 Ki。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Amitriptyline 標籤：抑制 NE 與 5-HT 再攝取；機制在人仍未完全明瞭；並有鎮靜作用。H1／M／α1 來自類別藥理，非本標籤 Ki。原強度來自 Gillman／Tatsumi，原綜述強度分級已撤下。移除未在標籤出現的 5-HT2A「中」。"
+    },
+    {
+      "id": "imipramine",
+      "generic": "Imipramine",
+      "class": "tca",
+      "brands": [
+        {
+          "name": "Tofranil",
+          "say": "Tofranil",
+          "respell": "toe-FRAN-il"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "丙咪嗪",
+      "zh_tw": "妥富明",
+      "respelling": "im-IP-ruh-meen",
+      "dose": {
+        "usual": "門診常由 75 mg／日開始，可加至 150 mg；維持 50–150 mg／日。住院可由 100 mg 加至 200 mg",
+        "max": "門診不建議超過 200 mg／日；住院可加至 250–300 mg／日。青少年／長者通常不必超過 100 mg／日",
+        "notes": "",
+        "source": "FDA imipramine 標籤"
+      },
+      "receptors": [
+        {
+          "target": "NET",
+          "action": "抑制"
+        },
+        {
+          "target": "SERT",
+          "action": "抑制"
+        },
+        {
+          "target": "H1",
+          "action": "阻斷"
+        },
+        {
+          "target": "M1",
+          "action": "阻斷"
+        },
+        {
+          "target": "α1",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA imipramine 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA imipramine 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA imipramine 標籤"
+        },
+        {
+          "tag": "心跳快",
+          "text": "心跳快",
+          "source": "FDA imipramine 標籤"
+        },
+        {
+          "tag": "姿勢性低血壓",
+          "text": "姿勢性低血壓",
+          "source": "FDA imipramine 標籤"
+        },
+        {
+          "tag": "視力模糊",
+          "text": "視力模糊",
+          "source": "FDA imipramine 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "膽固醇↑"
+          ],
+          "quote": "整理文提及：膽固醇↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "體重不變"
+          ],
+          "quote": "整理文提及：體重不變",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "心率↑"
+          ],
+          "quote": "整理文提及：心率↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "血壓↑"
+          ],
+          "quote": "整理文提及：血壓↑",
+          "source": "檔案分享（心臟代謝統合分析整理文）",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "口乾",
+            "便秘",
+            "心跳快",
+            "姿勢性低血壓"
+          ],
+          "quote": "檔案（Richmond 藥物表）：口乾、便秘、心跳增加、姿勢性低血壓。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "imipramine",
+      "ipa": "/ɪˈmɪprəmiːn/",
+      "hook": "標籤推定與阻斷去甲腎上腺素攝取有關，並抑制 5-HT 再攝取。其餘 H1／M／α1 為類別藥理。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Imipramine 標籤：機制未完全確定；推定與阻斷去甲腎上腺素攝取有關。其餘項目為類別藥理，不另作強度分級。"
+    },
+    {
+      "id": "valproate",
+      "generic": "Sodium valproate",
+      "class": "mood",
+      "brands": [
+        {
+          "name": "Epilim",
+          "say": "Epilim",
+          "respell": "EP-ih-lim"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "丙戊酸鈉",
+      "zh_tw": "帝拔癲",
+      "respelling": "SO-dee-um val-PROE-ate",
+      "dose": {
+        "usual": "躁症：常由 750 mg／日開始，按臨床反應同血藥濃度調整。治療濃度通常 50–100 mcg/mL",
+        "max": "60 mg/kg／日",
+        "notes": "須以血藥濃度及臨床反應為準，不可僅依據毫克數。偏頭痛（如適用）標籤最高 1000 mg／日。育齡人士有重大致畸風險，必須遵從醫生指示。",
+        "source": "FDA Depakote（divalproex）標籤"
+      },
+      "receptors": [
+        {
+          "target": "GABA",
+          "action": "增加腦內濃度（機制未確立）"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Depakote 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Depakote 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Depakote 標籤"
+        },
+        {
+          "tag": "手震",
+          "text": "手震",
+          "source": "FDA Depakote 標籤"
+        },
+        {
+          "tag": "體重增加",
+          "text": "體重增加",
+          "source": "FDA Depakote 標籤"
+        },
+        {
+          "tag": "脫髮",
+          "text": "脫髮",
+          "source": "FDA Depakote 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "頭暈",
+            "眼瞓／嗜睡",
+            "噁心／腸胃不適",
+            "肝功能異常"
+          ],
+          "quote": "檔案（Richmond 藥物表）：頭暈、嗜睡、腸胃不適、過敏反應、影響肝功能。須定期抽血檢驗。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "sodium valproate",
+      "ipa": "/ˈsəʊdiəm vælˈprəʊeɪt/",
+      "hook": "主要並非單胺受體阻斷，而與電壓閘控鈉通道、GABA 能傳遞及表觀遺傳機制（如 HDAC）有關。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Divalproex／valproate 標籤：治療機制尚未確立；有指與腦內 GABA 濃度增加有關。原「Na通道抑制、GABA 增強、中」超過此標籤所能支持，已收窄。"
+    },
+    {
+      "id": "lithium",
+      "generic": "Lithium carbonate",
+      "class": "mood",
+      "brands": [
+        {
+          "name": "Camcolit",
+          "say": "Camcolit",
+          "respell": "KAM-ko-lit"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "碳酸鋰",
+      "zh_tw": "立定",
+      "respelling": "LITH-ee-um",
+      "dose": {
+        "usual": "按血藥濃度調整，並非固定毫克數。成人常由 300 mg 每日三次開始。急性期目標常見 0.8–1.2 mEq/L；維持常見 0.8–1.0 mEq/L。維持劑量常見 300–600 mg 每日兩至三次",
+        "max": "以血藥濃度同毒性為準，標籤無單一「每日毫克上限」",
+        "notes": "須於上次服藥後約 12 小時（谷底）抽血。腹瀉、脫水、利尿劑或 NSAID 可使濃度急升。",
+        "source": "FDA lithium carbonate 標籤"
+      },
+      "receptors": [],
+      "official_side_effects": [
+        {
+          "tag": "手震",
+          "text": "手震",
+          "source": "FDA lithium carbonate 標籤"
+        },
+        {
+          "tag": "口渴／尿頻",
+          "text": "口渴／尿頻",
+          "source": "FDA lithium carbonate 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA lithium carbonate 標籤"
+        },
+        {
+          "tag": "肚屙",
+          "text": "肚屙",
+          "source": "FDA lithium carbonate 標籤"
+        },
+        {
+          "tag": "體重增加",
+          "text": "體重增加",
+          "source": "FDA lithium carbonate 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "肚屙",
+            "噁心／腸胃不適",
+            "手震",
+            "口渴／尿頻",
+            "視力模糊",
+            "抽筋"
+          ],
+          "quote": "檔案（Richmond 藥物表）：暫時性的輕微腹瀉、作嘔、手震、口渴及尿頻，也會影響甲狀腺功能；中毒時可出現視力模糊、腸胃不適、手震加劇、昏迷及抽搐等。檔案並提及對胎兒的風險。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "lithium",
+      "ipa": "/ˈlɪθiəm/",
+      "hook": "並非以單一神經受體結合為主，而涉及肌醇耗竭、GSK-3 等細胞內訊息路徑。須按血藥濃度調整。",
+      "rec_source": "FDA lithium 標籤：作為情緒穩定劑的作用機制不明。本頁不編造受體帶或未充分確立的離子／酵素機制圖。"
+    },
+    {
+      "id": "topiramate",
+      "generic": "Topiramate",
+      "class": "mood",
+      "brands": [
+        {
+          "name": "Topamax",
+          "say": "Topamax",
+          "respell": "TOE-puh-max"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "托吡酯",
+      "zh_tw": "妥泰",
+      "respelling": "toe-PYRE-uh-mate",
+      "dose": {
+        "usual": "癲癇成人添加治療常見 200–400 mg／日（分兩次）；偏頭痛預防常用較低劑量（標籤常見目標 100 mg／日）",
+        "max": "癲癇成人單藥／添加治療常見總日劑量不超過 400 mg",
+        "notes": "精神科用作情緒穩定屬適應症外用法，劑量更須由醫生決定。腎功能損害須減量。",
+        "source": "FDA Topamax 標籤"
+      },
+      "receptors": [
+        {
+          "target": "Na通道",
+          "action": "抑制"
+        },
+        {
+          "target": "GABA-A",
+          "action": "正向調節"
+        },
+        {
+          "target": "AMPA",
+          "action": "阻斷"
+        },
+        {
+          "target": "碳酸酐酶",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "四肢發麻",
+          "text": "四肢發麻",
+          "source": "FDA Topamax 標籤"
+        },
+        {
+          "tag": "胃口下降",
+          "text": "胃口下降",
+          "source": "FDA Topamax 標籤"
+        },
+        {
+          "tag": "體重↓",
+          "text": "體重↓",
+          "source": "FDA Topamax 標籤"
+        },
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "FDA Topamax 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Topamax 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Topamax 標籤"
+        }
+      ],
+      "shares": [],
+      "say": "topiramate",
+      "ipa": "/toʊˈpɪrəmeɪt/",
+      "hook": "作用包括電壓閘控鈉通道、GABA-A 正向調節及 AMPA／海人酸受體抑制，並抑制碳酸酐酶。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Topiramate 標籤：精確機制未知；臨床前顯示鈉通道阻斷、在部分 GABA-A 亞型增強 GABA、拮抗 AMPA／kainate、抑制碳酸酐酶。全部無本頁 Ki，不另作強度分級。"
+    },
+    {
+      "id": "clonazepam",
+      "generic": "Clonazepam",
+      "class": "benzo",
+      "brands": [
+        {
+          "name": "Rivotril",
+          "say": "Rivotril",
+          "respell": "RIV-oh-tril"
+        },
+        {
+          "name": "Klonopin",
+          "say": "Klonopin",
+          "respell": "KLON-oh-pin"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "氯硝西泮",
+      "zh_tw": "利福全",
+      "respelling": "kloe-NAZ-eh-pam",
+      "dose": {
+        "usual": "恐慌症多數目標 1 mg／日（由低劑量慢加）；癲癇成人維持要個別化",
+        "max": "恐慌症最高 4 mg／日；癲癇成人最高建議 20 mg／日",
+        "notes": "兩個適應症的上限相差甚遠。停藥須緩慢遞減，以免抽搐。",
+        "source": "FDA Klonopin 標籤"
+      },
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Klonopin 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Klonopin 標籤"
+        },
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "FDA Klonopin 標籤"
+        },
+        {
+          "tag": "步態不穩",
+          "text": "步態不穩",
+          "source": "FDA Klonopin 標籤"
+        },
+        {
+          "tag": "失憶",
+          "text": "失憶",
+          "source": "FDA Klonopin 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "眼瞓／嗜睡",
+            "疲倦",
+            "易怒"
+          ],
+          "quote": "檔案（Richmond 藥物表）：嗜睡、頭痛、倦怠、易怒。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "clonazepam",
+      "ipa": "/kloʊˈnæzɪpæm/",
+      "hook": "苯二氮䓬類：作為 GABA-A 受體正向調節劑，增強 GABA 抑制性作用。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Clonazepam（Klonopin）標籤：相信與增強 GABA 活性有關。 苯二氮䓬類經 GABA-A 苯二氮䓬位點正向調節。不把類別機制寫成個別強度等級。"
+    },
+    {
+      "id": "lorazepam",
+      "generic": "Lorazepam",
+      "class": "benzo",
+      "brands": [
+        {
+          "name": "Ativan",
+          "say": "Ativan",
+          "respell": "AT-ih-van"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "勞拉西泮",
+      "zh_tw": "阿帝凡",
+      "respelling": "lor-AZ-eh-pam",
+      "dose": {
+        "usual": "焦慮：口服常用 2–6 mg／日，分次（多數由 2–3 mg／日開始）；睡前一劑可 2–4 mg",
+        "max": "口服每日劑量範圍標籤寫 1–10 mg／日",
+        "notes": "長者由 1–2 mg／日開始。針劑（癲癇持續狀態等）用法完全不同。",
+        "source": "FDA Ativan 口服標籤"
+      },
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Ativan 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Ativan 標籤"
+        },
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "FDA Ativan 標籤"
+        },
+        {
+          "tag": "步態不穩",
+          "text": "步態不穩",
+          "source": "FDA Ativan 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "依賴"
+          ],
+          "quote": "樂力靜 (Lorazin)：還行，一直都沒有停過這顆藥",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "頭暈",
+            "噁心／腸胃不適",
+            "依賴"
+          ],
+          "quote": "檔案（Richmond 藥物表）：眩暈、腸胃不適等；若長期服用會有依賴情況出現。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "lorazepam",
+      "ipa": "/lɔːˈræzɪpæm/",
+      "hook": "苯二氮䓬類：GABA-A 受體正向調節，產生抗焦慮、鎮靜及抗抽搐作用。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Lorazepam 標籤對中樞抑制作用有臨床描述；GABA-A 正向調節為苯二氮䓬類確立機制。本份 CP 摘錄未詳寫受體句，故機制按類別＋藥品身分核對。 苯二氮䓬類經 GABA-A 苯二氮䓬位點正向調節。不把類別機制寫成個別強度等級。"
+    },
+    {
+      "id": "alprazolam",
+      "generic": "Alprazolam",
+      "class": "benzo",
+      "brands": [
+        {
+          "name": "Xanax",
+          "say": "Xanax",
+          "respell": "ZAN-acks"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "阿普唑侖",
+      "zh_tw": "贊安諾",
+      "respelling": "al-PRAY-zoe-lam",
+      "dose": {
+        "usual": "焦慮症：由低劑量開始，可慢慢加",
+        "max": "焦慮症建議最高 4 mg／日（分次）。恐慌症對照試驗用過 1–10 mg／日（平均約 5–6 mg）；超過 4 mg／日要定期重新評估",
+        "notes": "停藥必須慢減。",
+        "source": "FDA Xanax 標籤"
+      },
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Xanax 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Xanax 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Xanax 標籤"
+        },
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "FDA Xanax 標籤"
+        },
+        {
+          "tag": "失憶",
+          "text": "失憶",
+          "source": "FDA Xanax 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "心跳快",
+            "噁心／腸胃不適",
+            "肚屙",
+            "頭暈"
+          ],
+          "quote": "曾經試過想唔食咁多藥，而醫生都同意可以試轉PRN(需要時食），但我試少食一餐，身體開始唔舒服，又心跳快又肚痛又屙又頭暈頭痛，所以我真係唔敢唔食",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "眼瞓／嗜睡",
+            "頭暈",
+            "口乾",
+            "耳鳴"
+          ],
+          "quote": "檔案（Richmond 藥物表）：有睡意、頭痛、頭暈、口乾、食慾改變、血壓降低、耳鳴、肌肉僵硬。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "alprazolam",
+      "ipa": "/ælˈpræzəlæm/",
+      "hook": "苯二氮䓬類：GABA-A 受體正向調節。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Alprazolam 標籤：結合 GABA-A 的苯二氮䓬位點，增強 GABA 介導的突觸抑制。 苯二氮䓬類經 GABA-A 苯二氮䓬位點正向調節。不把類別機制寫成個別強度等級。"
+    },
+    {
+      "id": "trihexyphenidyl",
+      "generic": "Trihexyphenidyl",
+      "class": "antichol",
+      "brands": [
+        {
+          "name": "Artane",
+          "say": "Artane",
+          "respell": "AR-tayne"
+        },
+        {
+          "name": "Benzhexol",
+          "say": "Benzhexol",
+          "respell": "benz-HEX-ol"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "苯海索",
+      "zh_tw": "Artane 阿坦",
+      "respelling": "trye-hex-ee-FEN-ih-dil",
+      "dose": {
+        "usual": "多數病人 6–10 mg／日；總日劑量通常 5–15 mg。與 levodopa 併用時，3–6 mg／日或已足夠",
+        "max": "部分（尤其腦炎後柏金遜）或需 12–15 mg／日",
+        "notes": "主要用以減輕抗精神病藥引起的震顫／肌張力異常。",
+        "source": "FDA trihexyphenidyl 標籤"
+      },
+      "receptors": [
+        {
+          "target": "M",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA trihexyphenidyl 標籤"
+        },
+        {
+          "tag": "視力模糊",
+          "text": "視力模糊",
+          "source": "FDA trihexyphenidyl 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA trihexyphenidyl 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA trihexyphenidyl 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA trihexyphenidyl 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "口乾",
+            "視力模糊",
+            "便秘",
+            "噁心／腸胃不適",
+            "頭暈"
+          ],
+          "quote": "檔案（Richmond 藥物表）：口乾、瞳孔放大及怕光、皮膚敏感、便秘、嘔吐、頭暈、神智不清、精神緊張等。檔案並註「眼矇」（肌肉過於放鬆）。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "trihexyphenidyl",
+      "ipa": "/traɪˌhɛksiˈfɛnɪdɪl/",
+      "hook": "中樞抗膽鹼藥，阻斷毒蕈鹼受體，用以減輕抗精神病藥引起的震顫及肌張力異常。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Trihexyphenidyl 標籤。靶點寫 M，因標籤未核實為 M1。"
+    },
+    {
+      "id": "pregabalin",
+      "generic": "Pregabalin",
+      "class": "other",
+      "brands": [
+        {
+          "name": "Lyrica",
+          "say": "Lyrica",
+          "respell": "LEER-ih-kuh"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "普瑞巴林",
+      "zh_tw": "利瑞卡",
+      "respelling": "pre-GAB-uh-lin",
+      "dose": {
+        "usual": "成人多數適應症由 150 mg／日起，按情況加至 300 mg",
+        "max": "視適應症：糖尿病神經痛最高建議 300 mg／日；帶狀疱疹後神經痛／脊髓損傷神經痛／部分發作癲癇添加可至 600 mg／日；纖維肌痛最高 450 mg／日",
+        "notes": "腎功能較差須減量。",
+        "source": "FDA Lyrica 標籤"
+      },
+      "receptors": [
+        {
+          "target": "α2δ",
+          "action": "結合"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Lyrica 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Lyrica 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Lyrica 標籤"
+        },
+        {
+          "tag": "水腫",
+          "text": "水腫",
+          "source": "FDA Lyrica 標籤"
+        },
+        {
+          "tag": "體重增加",
+          "text": "體重增加",
+          "source": "FDA Lyrica 標籤"
+        },
+        {
+          "tag": "視力模糊",
+          "text": "視力模糊",
+          "source": "FDA Lyrica 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "眼瞓／嗜睡"
+          ],
+          "quote": "LYRICA : 眼訓",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "頭暈",
+            "眼瞓／嗜睡"
+          ],
+          "quote": "檔案（Richmond 藥物表）：頭暈與嗜睡。檔案指用於紓緩神經痛和改善焦慮症。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "pregabalin",
+      "ipa": "/priːˈɡæbəlɪn/",
+      "hook": "結合電壓閘控鈣通道的 α2δ 次單位，減少興奮性神經傳遞物質釋放。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Pregabalin（Lyrica）標籤。不另作強度分級。"
+    },
+    {
+      "id": "prazosin",
+      "generic": "Prazosin",
+      "class": "other",
+      "brands": [
+        {
+          "name": "Minipress",
+          "say": "Minipress",
+          "respell": "MIN-ih-press"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "哌唑嗪",
+      "zh_tw": "Minipress 敏必舒",
+      "respelling": "PRAZ-oh-sin",
+      "dose": {
+        "usual": "高血壓標籤：常用 6–15 mg／日，分次",
+        "max": "高血壓：可緩慢加至 20 mg／日；超過 20 mg 通常不再增加效果，少數人或用到 40 mg／日",
+        "notes": "創傷後噩夢屬適應症外用法，劑量由醫生另行決定，切勿套用高血壓上限自行加藥。",
+        "source": "FDA prazosin 標籤（高血壓）"
+      },
+      "receptors": [
+        {
+          "target": "α1",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA prazosin 標籤"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "FDA prazosin 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA prazosin 標籤"
+        },
+        {
+          "tag": "心跳快",
+          "text": "心跳快",
+          "source": "FDA prazosin 標籤"
+        },
+        {
+          "tag": "姿勢性低血壓",
+          "text": "姿勢性低血壓",
+          "source": "FDA prazosin 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "頭暈"
+          ],
+          "quote": "prazosin(hcl)：頭暈",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "prazosin",
+      "ipa": "/ˈpræzoʊsɪn/",
+      "hook": "選擇性 α1 阻斷，可致頭暈及姿勢性低血壓；精神科用於創傷後噩夢屬標籤外用法。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Prazosin 標籤。無 Ki，不另作強度分級。不作強度分級。"
+    },
+    {
+      "id": "propranolol",
+      "generic": "Propranolol",
+      "class": "other",
+      "brands": [
+        {
+          "name": "Inderal",
+          "say": "Inderal",
+          "respell": "IN-der-al"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "普萘洛爾",
+      "zh_tw": "Inderal 因得樂",
+      "respelling": "proe-PRAN-oh-lole",
+      "dose": {
+        "usual": "長效 Inderal LA：高血壓維持常見 120–160 mg 每日一次；心律／心絞痛等按適應症不同",
+        "max": "心絞痛：超過 320 mg／日的安全性尚未確立（Inderal LA 標籤）",
+        "notes": "表現焦慮／震顫往往屬適應症外用法，而且常用較低劑量。請以處方為準，切勿以心臟科劑量自行換算。",
+        "source": "FDA Inderal LA 標籤"
+      },
+      "receptors": [
+        {
+          "target": "β",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "FDA Inderal 標籤"
+        },
+        {
+          "tag": "心率↓",
+          "text": "心率↓",
+          "source": "FDA Inderal 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Inderal 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA Inderal 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [],
+          "quote": "心律錠 (Propranolol)：照三餐吃，心臟抽痛的頻率真的大大減少，推推",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "propranolol",
+      "ipa": "/proʊˈprænəlɒl/",
+      "hook": "非選擇性 β 阻斷；表現焦慮或震顫有時以較低劑量使用，屬標籤外用法時須依處方。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Propranolol 標籤。無 Ki，不另作強度分級。"
+    },
+    {
+      "id": "atomoxetine",
+      "generic": "Atomoxetine",
+      "class": "other",
+      "brands": [
+        {
+          "name": "Strattera",
+          "say": "Strattera",
+          "respell": "stra-TAIR-uh"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "托莫西汀",
+      "zh_tw": "思銳",
+      "respelling": "AT-oh-mox-eh-teen",
+      "dose": {
+        "usual": "成人及體重超過 70 kg：由 40 mg／日起，目標 80 mg／日",
+        "max": "100 mg／日（兒童／青少年同時不超過 1.4 mg/kg 與 100 mg，取較低者）",
+        "notes": "肝功能損害或併用強 CYP2D6 抑制劑須減量。",
+        "source": "FDA atomoxetine 標籤"
+      },
+      "receptors": [
+        {
+          "target": "NET",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA atomoxetine 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA atomoxetine 標籤"
+        },
+        {
+          "tag": "胃口下降",
+          "text": "胃口下降",
+          "source": "FDA atomoxetine 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA atomoxetine 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA atomoxetine 標籤"
+        },
+        {
+          "tag": "血壓↑",
+          "text": "血壓或心率上升",
+          "source": "FDA atomoxetine 標籤"
+        }
+      ],
+      "shares": [],
+      "say": "atomoxetine",
+      "ipa": "/ˌætəˈmɒksɪtiːn/",
+      "hook": "標籤指選擇性抑制突觸前去甲腎上腺素轉運體（NET）。本頁不再把跨藥表的 SERT 抑制寫成已核實。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Atomoxetine 標籤：選擇性 NET 抑制。不另作強度分級。"
+    },
+    {
+      "id": "promethazine",
+      "generic": "Promethazine",
+      "class": "other",
+      "brands": [
+        {
+          "name": "Phenergan",
+          "say": "Phenergan",
+          "respell": "FEN-er-gan"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "異丙嗪",
+      "zh_tw": "非那根",
+      "respelling": "proe-METH-uh-zeen",
+      "dose": {
+        "usual": "過敏／助眠等：常見 25 mg 睡前，或 6.25–12.5 mg 每日三次；鎮靜常見 25–50 mg",
+        "max": "該份口服／常用標籤未寫單一「每日最高毫克」；請依處方使用，切勿自行疊加",
+        "notes": "兒童劑量須按體重計算，不可套用成人劑量。",
+        "source": "FDA promethazine 標籤"
+      },
+      "receptors": [
+        {
+          "target": "H1",
+          "action": "阻斷"
+        },
+        {
+          "target": "M",
+          "action": "阻斷"
+        },
+        {
+          "target": "D2",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA promethazine 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA promethazine 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA promethazine 標籤"
+        },
+        {
+          "tag": "視力模糊",
+          "text": "視力模糊",
+          "source": "FDA promethazine 標籤"
+        }
+      ],
+      "shares": [],
+      "say": "promethazine",
+      "ipa": "/proʊˈmɛθəziːn/",
+      "hook": "標籤指其為 H1 阻斷劑，並有臨床上的鎮靜及止嘔作用，故可有明顯嗜睡；屬酚噻嗪類，並有抗膽鹼作用。現摘錄未用「強力」一詞，亦不另作強度分級。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Promethazine 標籤：H1 阻斷，並有鎮靜。原 α1「中」未在此段出現，已移除。"
+    },
+    {
+      "id": "brexpiprazole",
+      "generic": "Brexpiprazole",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Rexulti",
+          "say": "Rexulti",
+          "respell": "rex-UL-tee"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "布雷哌唑",
+      "zh_tw": "銳思定",
+      "respelling": "brex-PIP-ra-zole",
+      "dose": {
+        "usual": "抑鬱症輔助：目標 2 mg／日（由 0.5–1 mg 開始）；思覺失調：目標 2–4 mg／日（由 1 mg 開始）",
+        "max": "抑鬱症輔助 3 mg／日；思覺失調 4 mg／日。中重度肝功能損害或 CrCl<60：抑鬱最高 2 mg，思覺失調最高 3 mg",
+        "notes": "",
+        "source": "FDA Rexulti 標籤"
+      },
+      "receptors": [
+        {
+          "target": "5-HT1A",
+          "action": "部分激動",
+          "ki": 0.12
+        },
+        {
+          "target": "D2",
+          "action": "部分激動",
+          "ki": 0.3
+        },
+        {
+          "target": "D3",
+          "action": "部分激動",
+          "ki": 1.1
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "ki": 0.47
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "ki": 0.17
+        },
+        {
+          "target": "α2C",
+          "action": "阻斷",
+          "ki": 0.59
+        },
+        {
+          "target": "H1",
+          "action": "結合",
+          "ki": 19
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "靜坐不能（坐立不安）",
+          "text": "靜坐不能（坐立不安）",
+          "source": "FDA Rexulti 標籤"
+        },
+        {
+          "tag": "體重增加",
+          "text": "體重增加",
+          "source": "FDA Rexulti 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Rexulti 標籤"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "FDA Rexulti 標籤"
+        },
+        {
+          "tag": "手震",
+          "text": "手震",
+          "source": "FDA Rexulti 標籤"
+        }
+      ],
+      "shares": [],
+      "say": "brexpiprazole",
+      "ipa": null,
+      "hook": "標籤：5-HT1A、D2、D3 為部分激動，5-HT2A、α1、α2C 為拮抗。H1 只列親和力，不作已核實阻斷。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Brexpiprazole（Rexulti）標籤。另有 5-HT7、5-HT2B 拮抗等，本頁不全部展開。M1 僅在 10 µM 有部分抑制。"
+    },
+    {
+      "id": "blonanserin",
+      "generic": "Blonanserin",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Lonasen",
+          "say": "Lonasen",
+          "respell": "LOH-nah-sen"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "布南色林",
+      "zh_tw": "Lonasen（洛那森）",
+      "respelling": "blow-NAN-ser-in",
+      "dose": {
+        "usual": "常用 8–16 mg／日（餐後）",
+        "max": "24 mg／日",
+        "notes": "日本等地區用藥（Lonasen）；美國未批准。",
+        "source": "日本 Lonasen（PMDA）常見劑量範圍"
+      },
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷"
+        },
+        {
+          "target": "D3",
+          "action": "阻斷"
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "靜坐不能（坐立不安）",
+          "text": "靜坐不能（坐立不安）",
+          "source": "日本 Lonasen（PMDA）說明書"
+        },
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "日本 Lonasen（PMDA）說明書"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "日本 Lonasen（PMDA）說明書"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "日本 Lonasen（PMDA）說明書"
+        }
+      ],
+      "shares": [],
+      "say": "blonanserin",
+      "ipa": null,
+      "hook": "產品資料及綜述支持 D2、D3、5-HT2A 拮抗；文獻指對 H1、M1 親和力可忽略。不用混合試驗作強度分級。",
+      "rec_source": "日本 PMDA Lonasen 資料及同分子綜述：D2、D3、5-HT2A 拮抗。文獻指對 5-HT2C、α1、H1、M1 親和力低，故刪除原「中等阻斷」項。不用混合試驗作強度分級。"
+    },
+    {
+      "id": "perospirone",
+      "generic": "Perospirone",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Lullan",
+          "say": "Lullan",
+          "respell": "LOO-lan"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "哌羅匹隆",
+      "zh_tw": "Lullan",
+      "respelling": "per-oh-SPY-rone",
+      "dose": {
+        "usual": "常用 12–48 mg／日，分次",
+        "max": "48 mg／日",
+        "notes": "日本用藥（Lullan）；美國未批准。",
+        "source": "日本 Lullan 常見劑量範圍"
+      },
+      "receptors": [
+        {
+          "target": "5-HT2A",
+          "action": "阻斷"
+        },
+        {
+          "target": "D2",
+          "action": "阻斷"
+        },
+        {
+          "target": "5-HT1A",
+          "action": "部分激動"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "日本 Lullan 說明書"
+        },
+        {
+          "tag": "靜坐不能（坐立不安）",
+          "text": "靜坐不能（坐立不安）",
+          "source": "日本 Lullan 說明書"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "日本 Lullan 說明書"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "日本 Lullan 說明書"
+        }
+      ],
+      "shares": [],
+      "say": "perospirone",
+      "ipa": null,
+      "hook": "綜述支持 5-HT2A、D2 阻斷及 5-HT1A 部分激動；本頁未能取得可公開抓取的完整官方 Ki，不作強度分級。H1、M1、α1 亦不列出。",
+      "rec_source": "本頁未能取得可公開抓取的英文 PMDA 完整標籤正文。受體身份取自藥理綜述（D2／5-HT2A 拮抗、5-HT1A 部分激動），不作強度分級。"
+    },
+    {
+      "id": "chlorpromazine",
+      "generic": "Chlorpromazine",
+      "class": "typical",
+      "brands": [
+        {
+          "name": "Largactil",
+          "say": "Largactil",
+          "respell": "lar-GAK-til"
+        },
+        {
+          "name": "Thorazine",
+          "say": "Thorazine",
+          "respell": "THOR-a-zeen"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "氯丙嗪",
+      "zh_tw": "冬眠靈／氯普馬嗪",
+      "respelling": "klor-PROE-ma-zeen",
+      "dose": {
+        "usual": "精神症狀維持劑量個別化，每日數百毫克並非罕見；標籤舉例 200 mg，出院病人亦有 800 mg／日",
+        "max": "延長使用時，標籤指超過 1000 mg／日通常好處有限；亦有載明可逐步加至 2000 mg／日或以上，但須極為謹慎",
+        "notes": "現時第一線較少使用如此高劑量。",
+        "source": "FDA chlorpromazine 標籤"
+      },
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷"
+        },
+        {
+          "target": "H1",
+          "action": "阻斷"
+        },
+        {
+          "target": "α1",
+          "action": "阻斷"
+        },
+        {
+          "target": "M1",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA chlorpromazine 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA chlorpromazine 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA chlorpromazine 標籤"
+        },
+        {
+          "tag": "視力模糊",
+          "text": "視力模糊",
+          "source": "FDA chlorpromazine 標籤"
+        },
+        {
+          "tag": "姿勢性低血壓",
+          "text": "姿勢性低血壓",
+          "source": "FDA chlorpromazine 標籤"
+        },
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "FDA chlorpromazine 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "疲倦",
+            "口乾",
+            "便秘",
+            "視力模糊",
+            "姿勢性低血壓",
+            "月經失調",
+            "泌乳素高／溢乳",
+            "手震"
+          ],
+          "quote": "檔案（Richmond 藥物表）：倦怠、口乾、便秘、視力模糊、姿勢性低血壓（特別是長者）、月經不調、流乳及帕金遜綜合徵狀。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "chlorpromazine",
+      "ipa": "/klɔːrˈprɒməziːn/",
+      "hook": "典型藥中受體譜較廣，常見 D2、H1、α1、M 作用，故除錐體外症狀外，亦較常嗜睡及姿勢性低血壓。現摘錄不另作個別強度分級。",
+      "rec_source": "現查美國 chlorpromazine 標籤 Clinical Pharmacology 未列出受體 Ki 或明確拮抗譜。保留臨床常見的 D2／H1／α1／M 作用類型，全部強度未核實；刪除僅來自 APA 表的 D3、5-HT2A／2C「強」。"
+    },
+    {
+      "id": "sulpiride",
+      "generic": "Sulpiride",
+      "class": "typical",
+      "brands": [
+        {
+          "name": "Dogmatil",
+          "say": "Dogmatil",
+          "respell": "DOG-ma-til"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "舒必利",
+      "zh_tw": "Dogmatil",
+      "respelling": "SUL-pi-ride",
+      "dose": {
+        "usual": "精神病常用範圍在不少地區載明 200–800 mg／日（分次）；較低劑量有時用於其他適應症",
+        "max": "未核實單一上限（各地標籤可達 1200 mg／日或更高，並不一致）",
+        "notes": "美國未廣泛使用。請以當地說明書為準。",
+        "source": "未能用單一 FDA／BNF 頁核對統一上限"
+      },
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷"
+        },
+        {
+          "target": "D3",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "泌乳素高／溢乳",
+          "text": "泌乳素高／溢乳",
+          "source": "常見 SPC／BNF"
+        },
+        {
+          "tag": "體重增加",
+          "text": "體重增加",
+          "source": "常見 SPC／BNF"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "常見 SPC／BNF"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "常見 SPC／BNF"
+        },
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "常見 SPC／BNF"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "口腔苦澀"
+          ],
+          "quote": "舒必朗 (Sunpylon)：有效減緩幻聽的頻率讚讚，喔但是這顆很苦很苦",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "眼瞓／嗜睡",
+            "姿勢性低血壓"
+          ],
+          "quote": "檔案（Richmond 藥物表）：嗜睡、姿勢性低血壓等；帕金遜綜合徵狀較少。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "sulpiride",
+      "ipa": null,
+      "hook": "選擇性較高，主要作用於 D2／D3，對 H1、M1、5-HT2A 親和力可忽略；泌乳素升高仍常見。",
+      "rec_source": "英國 SmPC（Dolmatil／sulpiride）：大腦多巴胺受體拮抗，並指對毒蕈鹼、GABA 結合無影響、不影響去甲腎上腺素或 5-HT 轉換。D2／D3 選擇性見於藥理綜述，而非 SmPC 原文。原「中」來自混合 Ki，已撤，不另作分級。"
+    },
+    {
+      "id": "sertindole",
+      "generic": "Sertindole",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Serdolect",
+          "say": "Serdolect",
+          "respell": "SER-doh-lekt"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "舍吲哚",
+      "zh_tw": "Serdolect",
+      "respelling": "SER-tin-dole",
+      "dose": {
+        "usual": "常用 12–20 mg 每日一次（要滴定，並監察心電圖）",
+        "max": "24 mg 每日",
+        "notes": "有 QT 延長風險，部分地區限制使用或須專用監測。美國未作常規使用。",
+        "source": "EMA Serdolect 常見劑量"
+      },
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷"
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷"
+        },
+        {
+          "target": "5-HT2C",
+          "action": "結合"
+        },
+        {
+          "target": "α1",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "EMA Serdolect SPC"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "EMA Serdolect SPC"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "EMA Serdolect SPC"
+        },
+        {
+          "tag": "姿勢性低血壓",
+          "text": "姿勢性低血壓",
+          "source": "EMA Serdolect SPC"
+        },
+        {
+          "tag": "心電圖異常",
+          "text": "可延長 QT，須監察心電圖",
+          "source": "EMA Serdolect SPC"
+        }
+      ],
+      "shares": [],
+      "say": "sertindole",
+      "ipa": null,
+      "hook": "產品資料指對 D2、5-HT2A、5-HT2C 有親和力，並抑制 α1；幾乎無組胺或膽鹼親和力。臨床尚須注意 QT 延長。",
+      "rec_source": "EMA sertindole 轉介／產品資料：對 D2、5-HT2A、5-HT2C 有親和力，並抑制 α1；幾乎無組胺或膽鹼親和力。原 5-HT6「阻斷強」及各項「強」來自混合 Ki 表，已撤下。"
+    },
+    {
+      "id": "lamotrigine",
+      "generic": "Lamotrigine",
+      "class": "mood",
+      "brands": [
+        {
+          "name": "Lamictal",
+          "say": "Lamictal",
+          "respell": "la-MIK-tal"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "拉莫三嗪",
+      "zh_tw": "利必通",
+      "respelling": "la-MOE-tri-jeen",
+      "dose": {
+        "usual": "雙相維持：視乎併用藥物，目標常見 200 mg／日；與 valproate 併用目標常見 100 mg／日；與酶誘導劑（無 valproate）併用目標常見 400 mg／日。必須按週緩慢增加，不可一開始即使用維持劑量",
+        "max": "須依適應症及併用藥物的滴定表；癲癇添加治療目標範圍可至 200–600 mg／日（視合併抗癲癇藥而定）",
+        "notes": "加太快會增加嚴重皮疹（包括 Stevens–Johnson）風險。避孕藥可改變血濃度。",
+        "source": "FDA Lamictal 標籤"
+      },
+      "receptors": [
+        {
+          "target": "Na通道",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Lamictal 標籤"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "FDA Lamictal 標籤"
+        },
+        {
+          "tag": "視力模糊",
+          "text": "視力模糊",
+          "source": "FDA Lamictal 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Lamictal 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Lamictal 標籤"
+        },
+        {
+          "tag": "皮疹",
+          "text": "皮疹（須警惕嚴重皮疹）",
+          "source": "FDA Lamictal 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "皮疹",
+            "視力模糊",
+            "頭暈",
+            "眼瞓／嗜睡",
+            "易怒"
+          ],
+          "quote": "檔案（Richmond 藥物表）：皮膚疹、複視、視力模糊、昏眩、嗜睡、易怒等。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "lamotrigine",
+      "ipa": "/ləˈmɒtrɪdʒiːn/",
+      "hook": "主要抑制電壓閘控鈉通道，穩定神經元膜電位；並非單胺受體阻斷劑。",
+      "rec_source": "常用 Lamictal 藥理描述為抑制電壓敏感鈉通道。本次 openFDA 摘錄不完整，故不另作強度分級。機制仍有未明之處。"
+    },
+    {
+      "id": "methylphenidate",
+      "generic": "Methylphenidate",
+      "class": "stimulant",
+      "brands": [
+        {
+          "name": "Ritalin",
+          "say": "Ritalin",
+          "respell": "RIT-ah-lin"
+        },
+        {
+          "name": "Concerta",
+          "say": "Concerta",
+          "respell": "kon-SER-ta"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "哌甲酯",
+      "zh_tw": "利他能／專注達",
+      "respelling": "meth-il-FEN-i-date",
+      "dose": {
+        "usual": "Ritalin（IR）：成人平均 20–30 mg／日。Concerta（長效）：新用藥成人常由 18 或 36 mg 每日一次開始，範圍 18–72 mg",
+        "max": "Ritalin 總日劑量不建議超過 60 mg。Concerta：13–65 歲最高 72 mg／日（6–12 歲最高 54 mg）",
+        "notes": "IR 與長效劑型不可按同一毫克上限任意互換。",
+        "source": "FDA Ritalin 及 Concerta 標籤"
+      },
+      "receptors": [
+        {
+          "target": "DAT",
+          "action": "抑制（亦促進釋放）"
+        },
+        {
+          "target": "NET",
+          "action": "抑制（亦促進釋放）"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "胃口下降",
+          "text": "胃口下降",
+          "source": "FDA Ritalin／Concerta 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA Ritalin／Concerta 標籤"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "FDA Ritalin／Concerta 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Ritalin／Concerta 標籤"
+        },
+        {
+          "tag": "心跳快",
+          "text": "心跳快",
+          "source": "FDA Ritalin／Concerta 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Ritalin／Concerta 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [],
+          "quote": "檔案引述文獻指，持續服用利他能，身高可能約減少 1 厘米；若中斷服藥，此影響或可逆轉。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "methylphenidate",
+      "ipa": "/ˌmɛθɪlˈfɛnɪdeɪt/",
+      "hook": "抑制 DAT 及 NET，增加突觸多巴胺及去甲腎上腺素。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Methylphenidate 標籤 12.2。治療的精確機制仍寫未知。無 Ki，不另作強度分級。"
+    },
+    {
+      "id": "levothyroxine",
+      "generic": "Levothyroxine",
+      "class": "other",
+      "brands": [
+        {
+          "name": "Synthroid",
+          "say": "Synthroid",
+          "respell": "SIN-throid"
+        },
+        {
+          "name": "Eltroxin",
+          "say": "Eltroxin",
+          "respell": "el-TROX-in"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "左旋甲狀腺素",
+      "zh_tw": "爾得新／素得",
+      "respelling": "lee-voe-thye-ROX-een",
+      "dose": {
+        "usual": "按 TSH 及臨床反應個別調整。完全替代劑量成人口服常見約 1.6 mcg/kg／日；清晨空腹服用",
+        "max": "無單一固定「每日上限」，以甲狀腺功能同心律等監測為準",
+        "notes": "精神科有時作為難治抑鬱的輔助，仍須遵從內分泌治療原則，切勿自行增減。",
+        "source": "FDA Synthroid 標籤"
+      },
+      "receptors": [
+        {
+          "target": "TR",
+          "action": "激動"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "心跳快",
+          "text": "劑量過多時可有心悸",
+          "source": "FDA Synthroid 標籤"
+        },
+        {
+          "tag": "手震",
+          "text": "手震",
+          "source": "FDA Synthroid 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA Synthroid 標籤"
+        },
+        {
+          "tag": "體重↓",
+          "text": "體重↓",
+          "source": "FDA Synthroid 標籤"
+        }
+      ],
+      "shares": [],
+      "say": "levothyroxine",
+      "ipa": "/ˌliːvəθaɪˈrɒksiːn/",
+      "hook": "作用於甲狀腺激素受體（TRα／TRβ），並非單胺受體或轉運體藥物。劑量須按甲狀腺功能調整。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Levothyroxine 標籤。不是精神科受體譜。"
+    },
+    {
+      "id": "buspirone",
+      "generic": "Buspirone",
+      "class": "anxiolytic",
+      "brands": [
+        {
+          "name": "Buspar",
+          "say": "Buspar",
+          "respell": "BYOO-spar"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "丁螺環酮",
+      "zh_tw": "安體舒",
+      "respelling": "byoo-SPYE-rone",
+      "dose": {
+        "usual": "由 15 mg／日開始（7.5 mg 每日兩次），可每 2–3 日加 5 mg；試驗中常用 20–30 mg／日分次",
+        "max": "不應超過 60 mg／日",
+        "notes": "",
+        "source": "FDA buspirone 標籤"
+      },
+      "receptors": [
+        {
+          "target": "5-HT1A",
+          "action": "部分激動"
+        },
+        {
+          "target": "D2",
+          "action": "結合"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA buspirone 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA buspirone 標籤"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "FDA buspirone 標籤"
+        },
+        {
+          "tag": "亢奮",
+          "text": "緊張或不穩感",
+          "source": "FDA buspirone 標籤"
+        }
+      ],
+      "shares": [],
+      "say": "buspirone",
+      "ipa": "/bjuːˈspaɪroʊn/",
+      "hook": "主要為 5-HT1A 部分激動劑，用於廣泛性焦慮；無苯二氮䓬類的 GABA-A 作用。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Buspirone 標籤。5-HT1A 功能方向以綜述補足並標明。"
+    },
+    {
+      "id": "dextromethorphan",
+      "generic": "Dextromethorphan",
+      "class": "other",
+      "brands": [
+        {
+          "name": "Regrow",
+          "say": "Regrow",
+          "respell": "REE-groh"
+        },
+        {
+          "name": "Auvelity",
+          "say": "Auvelity",
+          "respell": "aw-VEL-ih-tee"
+        }
+      ],
+      "aliases": [
+        "DXM"
+      ],
+      "zh_hk": "右美沙芬",
+      "zh_tw": "愛舒可羅（Regrow）",
+      "respelling": "dex-troe-meth-OR-fan",
+      "dose": {
+        "usual": "台灣 Regrow SR（鎮咳）：常見每日 1 粒（60 mg），需要時可早晚各 1 粒。美國 Auvelity（DXM 45 mg + bupropion 105 mg，抑鬱症）：第 4 日加至每日兩次",
+        "max": "Regrow：產品資料常見每日 1–2 粒。Auvelity：最多每日兩次（同一日不可超過兩劑）；中度腎功能損害或 CYP2D6 慢代謝者最多每日一次",
+        "notes": "表上「特殊用法」多指有醫生以鎮咳用 DXM 配 bupropion，以近似 Auvelity。兩種適應症、劑型及上限完全不同。切勿自行配搭或加量（有血清素症候群、抽搐等風險）。",
+        "source": "台大／北市聯醫 Regrow 用藥說明；FDA Auvelity 標籤"
+      },
+      "receptors": [
+        {
+          "target": "NMDA",
+          "action": "阻斷"
+        },
+        {
+          "target": "σ1",
+          "action": "激動"
+        },
+        {
+          "target": "SERT",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Auvelity 標籤；鎮咳產品說明"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Auvelity 標籤；鎮咳產品說明"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Auvelity 標籤；鎮咳產品說明"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾（抑鬱複方製劑較常提到）",
+          "source": "FDA Auvelity 標籤；鎮咳產品說明"
+        }
+      ],
+      "shares": [],
+      "say": "dextromethorphan",
+      "ipa": "/ˌdɛkstroʊməˈθɔːrfæn/",
+      "hook": "為 NMDA 受體拮抗劑及 σ1 激動劑，並對 SERT 有作用。與 bupropion 合用（如 Auvelity）時藥動學及適應症均不同，不可自行配搭。",
+      "rec_source": "未採用本次 openFDA 誤中的複方傷風標籤。受體項保留文獻／專科標籤常見的 NMDA 拮抗、σ1 激動、SERT 抑制，受體項屬綜述支持，不另作強度分級。若使用 Auvelity，尚有 bupropion 成分，不可當成單方 DXM 的完整機制。"
+    },
+    {
+      "id": "deanxit",
+      "generic": "Flupentixol + melitracen",
+      "class": "combo",
+      "brands": [
+        {
+          "name": "Deanxit",
+          "say": "Deanxit",
+          "respell": "dee-AN-xit"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "氟哌噻噸＋美利曲辛",
+      "zh_tw": "得安緒",
+      "respelling": "floo-PEN-tix-ol + mel-IT-ra-sen",
+      "dose": {
+        "usual": "常用清晨 1 粒，或按處方每日 1–2 粒（每粒 flupentixol 0.5 mg + melitracen 10 mg）",
+        "max": "常見原廠資料為每日最多 4 粒",
+        "notes": "台灣原廠「得安緒」藥證有註銷紀錄，市場上或用其他同成分產品（如永康緒）。",
+        "source": "Deanxit／flupentixol+melitracen 常見 SPC"
+      },
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷"
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷"
+        },
+        {
+          "target": "SERT",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "Deanxit／複方常見 SPC"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "Deanxit／複方常見 SPC"
+        },
+        {
+          "tag": "靜坐不能（坐立不安）",
+          "text": "靜坐不能（坐立不安）",
+          "source": "Deanxit／複方常見 SPC"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "Deanxit／複方常見 SPC"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "Deanxit／複方常見 SPC"
+        }
+      ],
+      "shares": [],
+      "say": "flupentixol and melitracen",
+      "ipa": null,
+      "hook": "複方：氟哌噻噸為硫雜蒽類，主要阻斷 D2（並有 5-HT2 作用）；美利曲辛屬三環類，具單胺再攝取抑制。下表為依成分藥理所作概要，未見該複方的單一權威 Ki 總表。",
+      "rec_source": "Deanxit 為複方。受體項按成分藥理歸納，完整複方 Ki 未核實，不作強度分級。"
+    },
+    {
+      "id": "trifluoperazine",
+      "generic": "Trifluoperazine",
+      "class": "typical",
+      "brands": [
+        {
+          "name": "Stelazine",
+          "say": "Stelazine",
+          "respell": "STEL-uh-zeen"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "三氟拉嗪",
+      "zh_tw": "司替拉嗪／Stelazine",
+      "respelling": "trye-floo-oh-PER-a-zeen",
+      "dose": {
+        "usual": "精神病常用由每日數毫克開始，維持常見數毫克至十數毫克級，須個別調整",
+        "max": "常用標籤最高 40 mg／日",
+        "notes": "",
+        "source": "FDA Stelazine 標籤／常用 SPC"
+      },
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "FDA Stelazine 標籤"
+        },
+        {
+          "tag": "靜坐不能（坐立不安）",
+          "text": "靜坐不能（坐立不安）",
+          "source": "FDA Stelazine 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Stelazine 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Stelazine 標籤"
+        },
+        {
+          "tag": "泌乳素高／溢乳",
+          "text": "泌乳素高／溢乳",
+          "source": "FDA Stelazine 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "手震",
+            "靜坐不能（坐立不安）",
+            "口乾",
+            "便秘",
+            "視力模糊",
+            "頭暈"
+          ],
+          "quote": "檔案（Richmond 藥物表）：較少思睡、口乾、便秘、視力模糊及低血壓；較多錐體外系反應、姿勢性低血壓（特別是長者）、月經不調、流乳及帕金遜綜合徵狀。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "trifluoperazine",
+      "ipa": "/traɪˌfluːəʊˈpɛrəziːn/",
+      "hook": "典型酚噻嗪類，以 D2 阻斷為主，錐體外症狀及泌乳素升高較明顯；抗組胺及抗膽鹼作用往往較少。",
+      "rec_source": "美國標籤紀錄存在但本審計抓到的 Clinical Pharmacology 無受體細節。作為哌嗪側鏈酚噻嗪，D2 拮抗屬類別藥理，5-HT2A／α1 項未獲本標籤核實，已移除。"
+    },
+    {
+      "id": "periciazine",
+      "generic": "Periciazine",
+      "class": "typical",
+      "brands": [
+        {
+          "name": "Neulactil",
+          "say": "Neulactil",
+          "respell": "new-LACK-til"
+        }
+      ],
+      "aliases": [
+        "Pericyazine"
+      ],
+      "zh_hk": "哌氰嗪",
+      "zh_tw": "Neulactil",
+      "respelling": "pe-ri-SY-a-zeen",
+      "dose": {
+        "usual": "成人常由 15–30 mg／日開始，維持常見 15–75 mg／日，分次服用",
+        "max": "嚴重病例部分說明書可高至 300 mg／日，須極為謹慎並按當地標籤",
+        "notes": "檔案寫作 Pericyazine（英國常用拼法）。",
+        "source": "Neulactil／periciazine 常見 SPC（如英國）"
+      },
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷"
+        },
+        {
+          "target": "H1",
+          "action": "阻斷"
+        },
+        {
+          "target": "α1",
+          "action": "阻斷"
+        },
+        {
+          "target": "M1",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "Neulactil 常見 SPC／BNF"
+        },
+        {
+          "tag": "姿勢性低血壓",
+          "text": "姿勢性低血壓",
+          "source": "Neulactil 常見 SPC／BNF"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "Neulactil 常見 SPC／BNF"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "Neulactil 常見 SPC／BNF"
+        },
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "Neulactil 常見 SPC／BNF"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "疲倦",
+            "口乾",
+            "便秘",
+            "視力模糊",
+            "頭暈",
+            "月經失調",
+            "泌乳素高／溢乳",
+            "手震"
+          ],
+          "quote": "檔案（Richmond 藥物表）：倦怠、口乾、便秘、視力模糊、姿勢性低血壓（特別是長者）、月經不調、流乳及帕金遜綜合徵狀。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "periciazine",
+      "ipa": null,
+      "hook": "哌啶側鏈酚噻嗪類，D2 阻斷之外，鎮靜及 α1、M1、H1 作用較哌嗪類明顯。",
+      "rec_source": "未取得可核對的完整官方藥理句。哌啶側鏈酚噻嗪類綜述常列 D2、H1、α1、M 作用；不作個別強度或跨藥親和力比較。"
+    },
+    {
+      "id": "zuclopenthixol",
+      "generic": "Zuclopenthixol",
+      "class": "typical",
+      "brands": [
+        {
+          "name": "Clopixol",
+          "say": "Clopixol",
+          "respell": "CLOP-ix-ol"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "珠氯噻醇",
+      "zh_tw": "Clopixol 氯平克素",
+      "respelling": "zoo-kloe-PEN-thix-ol",
+      "dose": {
+        "usual": "口服精神病維持常見 20–40 mg／日。癸酸酯針通常每 2–4 週一次，劑量須按原口服及產品說明滴定。醋酸酯（Acuphase）為短期針劑，用法不同",
+        "max": "口服常見最高 150 mg／日。長效針劑上限依產品說明，不可與口服毫克直接換算",
+        "notes": "口服、醋酸酯針及癸酸酯針劑型完全不同，須依處方。",
+        "source": "Clopixol 常見 SPC"
+      },
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷"
+        },
+        {
+          "target": "D1",
+          "action": "阻斷"
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷"
+        },
+        {
+          "target": "α1",
+          "action": "阻斷"
+        },
+        {
+          "target": "H1",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "Clopixol 常見 SPC"
+        },
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "Clopixol 常見 SPC"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "Clopixol 常見 SPC"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "Clopixol 常見 SPC"
+        },
+        {
+          "tag": "姿勢性低血壓",
+          "text": "姿勢性低血壓",
+          "source": "Clopixol 常見 SPC"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "口乾",
+            "靜坐不能（坐立不安）",
+            "頭暈",
+            "手震"
+          ],
+          "quote": "檔案（Richmond 藥物表）：口乾、心律不調、坐立不安、姿勢性低血壓、帕金遜徵狀如手震、肌肉僵硬等。針劑有癸酸酯長效劑型。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "zuclopenthixol",
+      "ipa": null,
+      "hook": "硫雜蒽類典型藥，主要阻斷 D2，並有 5-HT2 及 α1 作用。",
+      "rec_source": "英國 Clopixol（zuclopenthixol）SmPC：作用經多巴胺受體阻斷；對 D1、D2 高親和力，並有血清素及 α 阻斷，以及輕微抗組胺。無可用的單一標籤 Ki 表，不另作強度分級。"
+    },
+    {
+      "id": "flupentixol",
+      "generic": "Flupentixol",
+      "class": "typical",
+      "brands": [
+        {
+          "name": "Fluanxol",
+          "say": "Fluanxol",
+          "respell": "FLOO-an-zol"
+        }
+      ],
+      "aliases": [
+        "Flupenthixol"
+      ],
+      "zh_hk": "氟哌噻噸",
+      "zh_tw": "Fluanxol 復樂循",
+      "respelling": "floo-PEN-tix-ol",
+      "dose": {
+        "usual": "思覺失調口服常見數毫克至十數毫克級，分次服用。較低劑量有時用於其他適應症。癸酸酯針通常每隔數週一次",
+        "max": "口服精神病常用上限約 18 mg／日（以當地說明書為準）。針劑不可與口服毫克直接換算",
+        "notes": "",
+        "source": "Fluanxol 常見 SPC"
+      },
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷"
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷"
+        },
+        {
+          "target": "α1",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "Fluanxol 常見 SPC"
+        },
+        {
+          "tag": "靜坐不能（坐立不安）",
+          "text": "靜坐不能（坐立不安）",
+          "source": "Fluanxol 常見 SPC"
+        },
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "Fluanxol 常見 SPC"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "Fluanxol 常見 SPC"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "失眠",
+            "靜坐不能（坐立不安）",
+            "手震"
+          ],
+          "quote": "檔案（Richmond 藥物表）：失眠、坐立不安、手震及肌肉僵硬等，錐體外系反應較多。另有癸酸酯針劑。與美利曲辛組成的複方見「氟哌噻噸＋美利曲辛」條。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "flupentixol",
+      "ipa": null,
+      "hook": "硫雜蒽類，阻斷 D2 及 5-HT2；低劑量有時用於情緒，高劑量則為抗精神病。",
+      "rec_source": "與 zuclopenthixol 同為硫雜蒽類。Fluanxol／flupentixol 產品資料及類別藥理支持多巴胺（及部分血清素、α）阻斷；本審計未逐字引用完整 SmPC Ki，不另作強度分級。"
+    },
+    {
+      "id": "fluphenazine",
+      "generic": "Fluphenazine",
+      "class": "typical",
+      "brands": [
+        {
+          "name": "Modecate",
+          "say": "Modecate",
+          "respell": "MOD-eh-kate"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "氟奮乃靜",
+      "zh_tw": "Modecate 摩德凱特",
+      "respelling": "floo-FEN-a-zeen",
+      "dose": {
+        "usual": "口服維持常見 1–5 mg／日級。癸酸酯針（Modecate）常用 12.5–50 mg，每隔 2–5 週一次，須個別調整",
+        "max": "口服常見最高 40 mg／日。癸酸酯針單次劑量及間隔須依說明書，不可與口服毫克直接換算",
+        "notes": "",
+        "source": "FDA fluphenazine 標籤；Modecate 常見 SPC"
+      },
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷"
+        },
+        {
+          "target": "α1",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "FDA fluphenazine 標籤"
+        },
+        {
+          "tag": "靜坐不能（坐立不安）",
+          "text": "靜坐不能（坐立不安）",
+          "source": "FDA fluphenazine 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA fluphenazine 標籤"
+        },
+        {
+          "tag": "泌乳素高／溢乳",
+          "text": "泌乳素高／溢乳",
+          "source": "FDA fluphenazine 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "手震",
+            "靜坐不能（坐立不安）",
+            "頭暈",
+            "月經失調",
+            "泌乳素高／溢乳"
+          ],
+          "quote": "檔案（Richmond 藥物表）載癸酸酯針劑（Modecate）：較少思睡、口乾、便秘、視力模糊及低血壓；較多錐體外系反應、姿勢性低血壓（特別是長者）、月經不調、流乳及帕金遜綜合徵狀。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "fluphenazine",
+      "ipa": "/fluːˈfɛnəziːn/",
+      "hook": "哌嗪側鏈酚噻嗪類，以 D2 阻斷為主，錐體外症狀風險較高，鎮靜相對較少。",
+      "rec_source": "典型哌嗪側鏈酚噻嗪。本審計未從 FDA 摘錄得到完整受體句；保留 D2、α1 作為類別上常見作用，移除未核實的 5-HT2A「中」，不另作強度分級。"
+    },
+    {
+      "id": "amisulpride",
+      "generic": "Amisulpride",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Solian",
+          "say": "Solian",
+          "respell": "SO-lee-an"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "氨磺必利",
+      "zh_tw": "索利安",
+      "respelling": "am-ee-SUL-pride",
+      "dose": {
+        "usual": "以陽性症狀為主時常用 400–800 mg／日，分次服用；以負性症狀為主時常用較低劑量（約 50–300 mg／日）",
+        "max": "常見最高 1200 mg／日",
+        "notes": "美國未作常規批准。腎功能損害須減量。",
+        "source": "Solian／amisulpride 常見 SPC（EMA 等）"
+      },
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷"
+        },
+        {
+          "target": "D3",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "Solian／amisulpride 常見 SPC"
+        },
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "Solian／amisulpride 常見 SPC"
+        },
+        {
+          "tag": "泌乳素高／溢乳",
+          "text": "泌乳素高／溢乳",
+          "source": "Solian／amisulpride 常見 SPC"
+        },
+        {
+          "tag": "體重增加",
+          "text": "體重增加",
+          "source": "Solian／amisulpride 常見 SPC"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "Solian／amisulpride 常見 SPC"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "便秘",
+            "頭暈",
+            "眼瞓／嗜睡",
+            "月經失調",
+            "泌乳素高／溢乳"
+          ],
+          "quote": "檔案（Richmond 藥物表）：便秘、頭暈、嗜睡、月經不調、流乳等。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "amisulpride",
+      "ipa": null,
+      "hook": "選擇性阻斷 D2／D3，對 H1、M1、5-HT2A 親和力低；泌乳素升高常見。",
+      "rec_source": "美國 FDA Barhemsys（靜脈 amisulpride，術後噁心）標籤：選擇性 D2、D3 拮抗。精神用途劑型的受體身份與此分子一致，但適應症與劑量不同；無精神口服劑美國標籤 Ki，故不另作強度分級。"
+    },
+    {
+      "id": "ziprasidone",
+      "generic": "Ziprasidone",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Geodon",
+          "say": "Geodon",
+          "respell": "jee-OH-don"
+        },
+        {
+          "name": "Zeldox",
+          "say": "Zeldox",
+          "respell": "ZEL-dox"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "齊拉西酮",
+      "zh_tw": "Geodon／Zeldox",
+      "respelling": "zi-PRAS-i-done",
+      "dose": {
+        "usual": "思覺失調口服常用 40–80 mg 每日兩次，須與食物同時服用（約 500 kcal）",
+        "max": "口服 160 mg／日（80 mg 每日兩次）。中度或以上肝功能損害不建議使用",
+        "notes": "須注意 QT 延長。檔案表列此藥但未詳列劑量及副作用。",
+        "source": "FDA Geodon 標籤"
+      },
+      "receptors": [
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "ki": 0.4
+        },
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "ki": 4.8
+        },
+        {
+          "target": "5-HT1A",
+          "action": "激動",
+          "ki": 3.4
+        },
+        {
+          "target": "5-HT1D",
+          "action": "阻斷",
+          "ki": 2
+        },
+        {
+          "target": "5-HT2C",
+          "action": "結合",
+          "ki": 1.3
+        },
+        {
+          "target": "α1",
+          "action": "結合",
+          "ki": 10
+        },
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "ki": 47
+        },
+        {
+          "target": "SERT",
+          "action": "抑制"
+        },
+        {
+          "target": "NET",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Geodon 標籤"
+        },
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "FDA Geodon 標籤"
+        },
+        {
+          "tag": "靜坐不能（坐立不安）",
+          "text": "靜坐不能（坐立不安）",
+          "source": "FDA Geodon 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Geodon 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Geodon 標籤"
+        }
+      ],
+      "shares": [],
+      "say": "ziprasidone",
+      "ipa": "/zɪˈpræsɪdoʊn/",
+      "hook": "標籤寫對 D2、5-HT2A 等為相對高親和力，對 H1 為中等親和力（Ki=47 nM）；現行標籤寫 5-HT1A 激動，並抑制血清素及去甲腎上腺素再攝取。2009 年說明書曾以 H1 拮抗解釋嗜睡；對毒蕈鹼受體無明顯親和力。須注意 QT。以上「相對高／中等親和力」是標籤用語，不是本頁自訂的強／中／弱等級。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Ziprasidone（Geodon 類）現行藥理；H1 拮抗與嗜睡歸因見 2009 年 Geodon 標籤。對毒蕈鹼受體無明顯親和力（IC50>1 µM）。"
+    },
+    {
+      "id": "doxepin",
+      "generic": "Doxepin",
+      "class": "tca",
+      "brands": [
+        {
+          "name": "Sinequan",
+          "say": "Sinequan",
+          "respell": "SIN-eh-kwan"
+        },
+        {
+          "name": "Silenor",
+          "say": "Silenor",
+          "respell": "SIL-eh-nor"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "多塞平",
+      "zh_tw": "多慮平／Sinequan",
+      "respelling": "DOX-eh-pin",
+      "dose": {
+        "usual": "抑鬱症常用 75–150 mg／日（可由較低劑量開始）。助眠用低劑量製劑（如 Silenor）常用 3–6 mg 睡前，與抗抑鬱劑量完全不同",
+        "max": "抑鬱症口服最高 300 mg／日。Silenor 助眠最高 6 mg 睡前",
+        "notes": "兩種適應症、劑型及上限不同，不可自行套用。",
+        "source": "FDA doxepin／Sinequan 及 Silenor 標籤"
+      },
+      "receptors": [
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "ki": "<1"
+        },
+        {
+          "target": "NET",
+          "action": "抑制"
+        },
+        {
+          "target": "SERT",
+          "action": "抑制"
+        },
+        {
+          "target": "M1",
+          "action": "阻斷"
+        },
+        {
+          "target": "α1",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA doxepin／Sinequan 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA doxepin／Sinequan 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA doxepin／Sinequan 標籤"
+        },
+        {
+          "tag": "視力模糊",
+          "text": "視力模糊",
+          "source": "FDA doxepin／Sinequan 標籤"
+        },
+        {
+          "tag": "姿勢性低血壓",
+          "text": "姿勢性低血壓",
+          "source": "FDA doxepin／Sinequan 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "口乾",
+            "便秘",
+            "視力模糊",
+            "心跳快",
+            "頭暈"
+          ],
+          "quote": "檔案（Richmond 藥物表）：口乾、便秘、視力模糊、心跳增快、姿勢性低血壓、過敏反應。低劑量亦有用於助眠。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "doxepin",
+      "ipa": "/ˈdɒksəpɪn/",
+      "hook": "睡眠維持用途的標籤指作用或經 H1 拮抗，並寫對 H1 為高親和力（Ki 少於 1 nM），可有明顯嗜睡。抗抑鬱劑量下另有 NET／SERT 抑制及 M、α 作用，但該睡眠標籤 12.2 未列。「高親和力」是標籤用語，不是本頁自訂等級。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） 主要依據 doxepin 睡眠維持（Silenor 類）標籤的 H1 拮抗與 Ki<1 nM。NE／5-HT／M／α 在該 12.2 未列，降為類別藥理、不另作強度分級。"
+    },
+    {
+      "id": "dosulepin",
+      "generic": "Dosulepin",
+      "class": "tca",
+      "brands": [
+        {
+          "name": "Prothiaden",
+          "say": "Prothiaden",
+          "respell": "pro-THYE-uh-den"
+        }
+      ],
+      "aliases": [
+        "Dothiepin"
+      ],
+      "zh_hk": "度硫平",
+      "zh_tw": "Prothiaden 普樂息",
+      "respelling": "doe-SOO-leh-pin",
+      "dose": {
+        "usual": "常用 75–150 mg／日，可於晚間一次或分次服用",
+        "max": "常見最高 225 mg／日",
+        "notes": "部分地區已限制或撤出市場，因過量毒性較高。檔案用舊名 Dothiepin。",
+        "source": "Prothiaden／dosulepin 常見 SPC"
+      },
+      "receptors": [
+        {
+          "target": "NET",
+          "action": "抑制"
+        },
+        {
+          "target": "SERT",
+          "action": "抑制"
+        },
+        {
+          "target": "DAT",
+          "action": "抑制"
+        },
+        {
+          "target": "H1",
+          "action": "阻斷"
+        },
+        {
+          "target": "M1",
+          "action": "阻斷"
+        },
+        {
+          "target": "α1",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "Prothiaden 常見 SPC／BNF"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "Prothiaden 常見 SPC／BNF"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "Prothiaden 常見 SPC／BNF"
+        },
+        {
+          "tag": "視力模糊",
+          "text": "視力模糊",
+          "source": "Prothiaden 常見 SPC／BNF"
+        },
+        {
+          "tag": "出汗",
+          "text": "出汗",
+          "source": "Prothiaden 常見 SPC／BNF"
+        },
+        {
+          "tag": "姿勢性低血壓",
+          "text": "姿勢性低血壓",
+          "source": "Prothiaden 常見 SPC／BNF"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "出汗",
+            "視力模糊",
+            "便秘",
+            "心跳快",
+            "頭暈"
+          ],
+          "quote": "檔案（Richmond 藥物表）寫作 Dothiepin（Prothiaden）：出汗、視力模糊、便秘、心律不正、姿勢性低血壓。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "dosulepin",
+      "ipa": null,
+      "hook": "三環類，抑制 NET／SERT，並有 H1、M1、α1 作用，鎮靜及抗膽鹼效應明顯；過量心臟毒性須高度警惕。",
+      "rec_source": "英國 dosulepin／dothiepin SmPC：非選擇性單胺再攝取抑制，對 NE 再攝取作用大於 5-HT，並抑制多巴胺攝取。H1／M／α1 為 TCA 類別藥理，原「H1 強」無同一 SmPC Ki，已撤。"
+    },
+    {
+      "id": "clomipramine",
+      "generic": "Clomipramine",
+      "class": "tca",
+      "brands": [
+        {
+          "name": "Anafranil",
+          "say": "Anafranil",
+          "respell": "an-AF-ra-nil"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "氯米帕明",
+      "zh_tw": "安拿芬尼",
+      "respelling": "kloe-MIP-ra-meen",
+      "dose": {
+        "usual": "抑鬱症或強迫症常由 25–50 mg／日開始，目標常見 100–150 mg／日，分次或主要於晚間服用",
+        "max": "通常最高 250 mg／日（長者常用較低上限）",
+        "notes": "",
+        "source": "FDA Anafranil 標籤"
+      },
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制"
+        },
+        {
+          "target": "NET",
+          "action": "抑制"
+        },
+        {
+          "target": "H1",
+          "action": "阻斷"
+        },
+        {
+          "target": "M1",
+          "action": "阻斷"
+        },
+        {
+          "target": "α1",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Anafranil 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Anafranil 標籤"
+        },
+        {
+          "tag": "手震",
+          "text": "手震",
+          "source": "FDA Anafranil 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA Anafranil 標籤"
+        },
+        {
+          "tag": "出汗",
+          "text": "出汗",
+          "source": "FDA Anafranil 標籤"
+        },
+        {
+          "tag": "性功能障礙",
+          "text": "性功能障礙",
+          "source": "FDA Anafranil 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "眼瞓／嗜睡",
+            "口乾",
+            "頭暈",
+            "排尿困難"
+          ],
+          "quote": "檔案（Richmond 藥物表）：嗜睡、口乾、血壓下降、排尿困難、過敏反應。除抑鬱外，檔案亦提及用於強迫思想及行為、驚恐症、慢性疼痛、夜尿症。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "clomipramine",
+      "ipa": "/kloʊˈmɪprəmiːn/",
+      "hook": "三環類，標籤指抑制 5-HT 再攝取，亦有 NET、H1、M、α1 類別藥理；常用於強迫症。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Clomipramine 標籤：抑制 5-HT 再攝取。其餘受體項為 TCA 類別藥理。原綜述 Ki 強度及 5-HT2A 項已撤或移除。"
+    },
+    {
+      "id": "nortriptyline",
+      "generic": "Nortriptyline",
+      "class": "tca",
+      "brands": [
+        {
+          "name": "Pamelor",
+          "say": "Pamelor",
+          "respell": "PAM-eh-lor"
+        },
+        {
+          "name": "Nortrilen",
+          "say": "Nortrilen",
+          "respell": "NOR-tri-len"
+        }
+      ],
+      "aliases": [
+        "Nortrilen"
+      ],
+      "zh_hk": "去甲替林",
+      "zh_tw": "Pamelor 帕梅洛",
+      "respelling": "nor-TRIP-ti-leen",
+      "dose": {
+        "usual": "抑鬱症常用 75–150 mg／日（可由 25 mg 開始），亦可監測血藥濃度（常見目標約 50–150 ng/mL）",
+        "max": "通常不建議超過 150 mg／日",
+        "notes": "",
+        "source": "FDA Pamelor 標籤"
+      },
+      "receptors": [
+        {
+          "target": "NET",
+          "action": "抑制"
+        },
+        {
+          "target": "SERT",
+          "action": "抑制"
+        },
+        {
+          "target": "H1",
+          "action": "阻斷"
+        },
+        {
+          "target": "M",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Pamelor 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Pamelor 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA Pamelor 標籤"
+        },
+        {
+          "tag": "視力模糊",
+          "text": "視力模糊",
+          "source": "FDA Pamelor 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Pamelor 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "口乾",
+            "便秘",
+            "頭暈"
+          ],
+          "quote": "檔案表列 Nortrilen（即 nortriptyline，Pamelor），未另寫副作用細項；三環類常見口乾、便秘、姿勢性低血壓及心律影響。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "nortriptyline",
+      "ipa": "/nɔːˈtrɪptɪliːn/",
+      "hook": "阿米替林的活性代謝物，標籤用語較舊；本頁轉寫為以 NET 為主，並有 SERT、H1、M 作用，仍須注意抗膽鹼效應。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Nortriptyline 標籤用語較舊（抑制組胺、5-HT、乙醯膽鹼活性；干擾兒茶酚胺轉運）。本頁轉寫為 NET／SERT／H1／M，不沿用 Gillman 強度分級。"
+    },
+    {
+      "id": "carbamazepine",
+      "generic": "Carbamazepine",
+      "class": "mood",
+      "brands": [
+        {
+          "name": "Tegretol",
+          "say": "Tegretol",
+          "respell": "TEG-reh-tol"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "卡馬西平",
+      "zh_tw": "得理多",
+      "respelling": "kar-ba-MAZ-eh-peen",
+      "dose": {
+        "usual": "癲癇或躁狂須滴定。成人常由較低劑量開始，分次服用，並按血藥濃度及臨床反應調整（治療濃度常見約 4–12 mcg/mL）",
+        "max": "常用總日劑量不多於 1600 mg／日（個別情況或按說明書更高，須極謹慎）",
+        "notes": "有嚴重皮疹（包括 Stevens–Johnson）及血液學風險，須監測。為肝酶誘導劑，可影響多種藥物濃度。",
+        "source": "FDA Tegretol 標籤"
+      },
+      "receptors": [
+        {
+          "target": "Na通道",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Tegretol 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Tegretol 標籤"
+        },
+        {
+          "tag": "步態不穩",
+          "text": "步態不穩",
+          "source": "FDA Tegretol 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Tegretol 標籤"
+        },
+        {
+          "tag": "皮疹",
+          "text": "皮疹（須警惕嚴重皮膚反應）",
+          "source": "FDA Tegretol 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "噁心／腸胃不適",
+            "頭暈",
+            "眼瞓／嗜睡",
+            "口乾",
+            "便秘",
+            "皮疹"
+          ],
+          "quote": "檔案（Richmond 藥物表）：用於躁狂症及癲癇。副作用包括腹痛、噁心、嘔吐、腹瀉或食慾不振；另條亦列頭暈、昏睡、口乾、便秘、腸胃不適、皮膚過敏反應等。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "carbamazepine",
+      "ipa": "/ˌkɑːbəˈmæzɪpiːn/",
+      "hook": "主要抑制電壓閘控鈉通道，並非單胺受體阻斷劑；亦用於躁狂及預防。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Carbamazepine 標籤（本摘錄）：作用機制仍未知。保留鈉通道抑制作為廣泛引用但未在此段核實的機制，不另作強度分級。"
+    },
+    {
+      "id": "diazepam",
+      "generic": "Diazepam",
+      "class": "benzo",
+      "brands": [
+        {
+          "name": "Valium",
+          "say": "Valium",
+          "respell": "VAL-ee-um"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "地西泮",
+      "zh_tw": "Valium 煩寧",
+      "respelling": "dye-AZ-eh-pam",
+      "dose": {
+        "usual": "焦慮口服常用 2–10 mg，每日 2–4 次，須按反應調整",
+        "max": "焦慮口服常見最高 40 mg／日",
+        "notes": "長者須用較低劑量。停藥須緩慢遞減。",
+        "source": "FDA Valium 標籤"
+      },
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Valium 標籤"
+        },
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "FDA Valium 標籤"
+        },
+        {
+          "tag": "步態不穩",
+          "text": "步態不穩",
+          "source": "FDA Valium 標籤"
+        },
+        {
+          "tag": "失憶",
+          "text": "失憶",
+          "source": "FDA Valium 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "疲倦",
+            "頭暈",
+            "失憶",
+            "依賴"
+          ],
+          "quote": "檔案（Richmond 藥物表）：倦怠、暈眩、遺忘近期事物；若長期高劑量使用會引致生理或心理依賴。檔案並註明包括肌肉放鬆作用。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "diazepam",
+      "ipa": "/daɪˈæzɪpæm/",
+      "hook": "苯二氮䓬類：GABA-A 正向調節，作用時間較長，並有抗焦慮、鎮靜、抗抽搐及肌肉鬆弛作用。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Diazepam 標籤：多數作用被認為來自促進 GABA 這項抑制性遞質的作用。 苯二氮䓬類經 GABA-A 苯二氮䓬位點正向調節。不把類別機制寫成個別強度等級。"
+    },
+    {
+      "id": "zopiclone",
+      "generic": "Zopiclone",
+      "class": "hypnotic",
+      "brands": [
+        {
+          "name": "Imovane",
+          "say": "Imovane",
+          "respell": "IM-oh-vane"
+        }
+      ],
+      "aliases": [
+        "白瓜子",
+        "十字架"
+      ],
+      "zh_hk": "佐匹克隆",
+      "zh_tw": "Imovane 依夢返",
+      "respelling": "ZOE-pi-klone",
+      "dose": {
+        "usual": "成人常用 7.5 mg 睡前一次；長者或肝功能損害常用 3.75 mg",
+        "max": "不應超過 7.5 mg 每晚",
+        "notes": "宜短期使用。美國未批准（接近成分為 eszopiclone）。",
+        "source": "Imovane／zopiclone 常見 SPC"
+      },
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "口腔苦澀",
+          "text": "口腔苦澀",
+          "source": "Imovane／zopiclone 常見 SPC"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "Imovane／zopiclone 常見 SPC"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "Imovane／zopiclone 常見 SPC"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "Imovane／zopiclone 常見 SPC"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "Imovane／zopiclone 常見 SPC"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "口腔苦澀",
+            "頭暈",
+            "依賴"
+          ],
+          "quote": "檔案（Richmond 藥物表）註「白瓜子／十字架」：可引起睡意、促進及維持睡眠；副作用包括口腔苦澀、頭暈、頭痛，並會產生依賴性。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "zopiclone",
+      "ipa": "/ˈzɒpɪkləʊn/",
+      "hook": "Z 類藥，選擇性結合 GABA-A 上苯二氮䓬類位點，主要產生催眠作用。",
+      "rec_source": "英國 Zimovane／zopiclone SmPC：cyclopyrrolone，作用於 GABA 受體複合物、調節氯通道。不作強度分級。"
+    },
+    {
+      "id": "zolpidem",
+      "generic": "Zolpidem",
+      "class": "hypnotic",
+      "brands": [
+        {
+          "name": "Stilnox",
+          "say": "Stilnox",
+          "respell": "STIL-nox"
+        },
+        {
+          "name": "Ambien",
+          "say": "Ambien",
+          "respell": "AM-bee-en"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "唑吡坦",
+      "zh_tw": "Stilnox 斯得諾",
+      "respelling": "ZOLE-pi-dem",
+      "dose": {
+        "usual": "成人即釋常用 5–10 mg 睡前一次（部分建議女性由 5 mg 開始）；長效劑型用法不同",
+        "max": "即釋每晚 10 mg（檔案亦註 Max 10mg）",
+        "notes": "服後須能保證足夠睡眠時間。不可與酒精同用。",
+        "source": "FDA Ambien 標籤"
+      },
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Ambien 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Ambien 標籤"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "FDA Ambien 標籤"
+        },
+        {
+          "tag": "肚屙",
+          "text": "肚屙",
+          "source": "FDA Ambien 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "夢遊",
+            "失憶"
+          ],
+          "quote": "短暫失憶和夢遊 (吃藥後刻意忍著不睡有迷幻感)",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "頭暈",
+            "眼瞓／嗜睡",
+            "失憶",
+            "夢遊",
+            "胃口大增"
+          ],
+          "quote": "檔案（Richmond 藥物表）註「易夢遊」，最高 10 mg；暈眩、嗜睡、記憶障礙等。另有臨床分享指可誘發睡眠相關飲食障礙，多數見於 10 mg 或更高劑量，停藥後通常消失。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "zolpidem",
+      "ipa": "/ˈzɒlpɪdɛm/",
+      "hook": "Z 類藥，較選擇性作用於 GABA-A 的 α1 次單位，主要用於入睡。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Zolpidem（Ambien）標籤明確寫 positive modulator。無 Ki，不另作強度分級。"
+    },
+    {
+      "id": "bromazepam",
+      "generic": "Bromazepam",
+      "class": "benzo",
+      "brands": [
+        {
+          "name": "Akamon",
+          "say": "Akamon",
+          "respell": "AK-a-mon"
+        },
+        {
+          "name": "Lexotan",
+          "say": "Lexotan",
+          "respell": "LEX-oh-tan"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "溴西泮",
+      "zh_tw": "利舒泰／牟靜",
+      "respelling": "broe-MAZ-eh-pam",
+      "dose": {
+        "usual": "焦慮常用 1.5–3 mg，每日最多三次，或按處方調整（檔案註 1.5–3 mg）",
+        "max": "門診常見總日劑量不超過 18 mg，須以當地說明書及處方為準",
+        "notes": "美國未批准。停藥須緩慢遞減。",
+        "source": "Lexotan／bromazepam 常見 SPC"
+      },
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "Lexotan／bromazepam 常見 SPC"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "Lexotan／bromazepam 常見 SPC"
+        },
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "Lexotan／bromazepam 常見 SPC"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "失憶"
+          ],
+          "quote": "牟靜 (Bromazin)：吃完會失憶，感覺生活變成虛線，忘記很多日常發生過的事",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        },
+        {
+          "tags": [
+            "眼瞓／嗜睡",
+            "依賴"
+          ],
+          "quote": "檔案表列 Bromazepam（Akamon）1.5–3 mg，未另寫詳細副作用；屬苯二氮䓬類，可有嗜睡、頭暈及依賴風險。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "bromazepam",
+      "ipa": null,
+      "hook": "苯二氮䓬類：GABA-A 正向調節，產生抗焦慮及鎮靜作用。",
+      "rec_source": "多國 bromazepam SmPC／類別藥理：苯二氮䓬，GABA-A 正向調節。本次未逐字抓取單一 SmPC Ki，不另作強度分級。 苯二氮䓬類經 GABA-A 苯二氮䓬位點正向調節。不把類別機制寫成個別強度等級。"
+    },
+    {
+      "id": "lemborexant",
+      "generic": "Lemborexant",
+      "class": "hypnotic",
+      "brands": [
+        {
+          "name": "Dayvigo",
+          "say": "Dayvigo",
+          "respell": "day-VYE-go"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "萊博雷生",
+      "zh_tw": "Dayvigo 達維高",
+      "respelling": "lem-boe-REX-ant",
+      "dose": {
+        "usual": "常用 5 mg 睡前一次，必要時可加至 10 mg",
+        "max": "10 mg 每晚一次",
+        "notes": "須能保證足夠睡眠時間。與中樞抑制劑併用須謹慎。",
+        "source": "FDA Dayvigo 標籤"
+      },
+      "receptors": [
+        {
+          "target": "OX1R",
+          "action": "阻斷"
+        },
+        {
+          "target": "OX2R",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Dayvigo 標籤"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "FDA Dayvigo 標籤"
+        },
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "FDA Dayvigo 標籤"
+        },
+        {
+          "tag": "異常夢境",
+          "text": "異常夢境",
+          "source": "FDA Dayvigo 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "眼瞓／嗜睡"
+          ],
+          "quote": "檔案註 Lemborexant（Dayvigo）5–10 mg，為新型食慾素拮抗劑，用於治療失眠。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "lemborexant",
+      "ipa": null,
+      "hook": "雙重食慾素受體拮抗劑（DORA），阻斷 OX1R／OX2R，減少覺醒驅動，而非主要作用於 GABA-A。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Lemborexant（Dayvigo）標籤。無 Ki，不另作強度分級。"
+    },
+    {
+      "id": "phenytoin",
+      "generic": "Phenytoin",
+      "class": "other",
+      "brands": [
+        {
+          "name": "Dilantin",
+          "say": "Dilantin",
+          "respell": "dye-LAN-tin"
+        }
+      ],
+      "aliases": [
+        "Phanytoin"
+      ],
+      "zh_hk": "苯妥英",
+      "zh_tw": "大崙丁",
+      "respelling": "FEN-i-toyn",
+      "dose": {
+        "usual": "成人常由 300–400 mg／日開始或按負荷劑量方案，其後必須按血藥濃度調整（治療濃度常見約 10–20 mcg/mL）",
+        "max": "無單一固定毫克上限，以血藥濃度、毒性及臨床反應為準",
+        "notes": "為肝酶誘導劑，交互作用多。檔案收於精神科藥物表之抗癲癇項。",
+        "source": "FDA Dilantin 標籤"
+      },
+      "receptors": [
+        {
+          "target": "Na通道",
+          "action": "抑制"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼球震顫",
+          "text": "眼球震顫",
+          "source": "FDA Dilantin 標籤"
+        },
+        {
+          "tag": "步態不穩",
+          "text": "步態不穩",
+          "source": "FDA Dilantin 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Dilantin 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Dilantin 標籤"
+        },
+        {
+          "tag": "齒齦增生",
+          "text": "長期使用可有齒齦增生",
+          "source": "FDA Dilantin 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "噁心／腸胃不適",
+            "疲倦"
+          ],
+          "quote": "檔案（Richmond 藥物表）寫作 Phanytoin（串法有誤，實為 Phenytoin／Dilantin）：可控制癲癇，亦可改善酒精戒斷症狀；眼球震顫、齒齦增生肥大、噁心、疲倦等。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "phenytoin",
+      "ipa": "/ˈfɛnɪtɔɪn/",
+      "hook": "主要抑制電壓閘控鈉通道，穩定神經元放電，並非單胺受體藥物。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Phenytoin 標籤。無 Ki，不另作強度分級。"
+    },
+    {
+      "id": "benztropine",
+      "generic": "Benztropine",
+      "class": "antichol",
+      "brands": [
+        {
+          "name": "Cogentin",
+          "say": "Cogentin",
+          "respell": "koe-JEN-tin"
+        }
+      ],
+      "aliases": [
+        "Benzatropine"
+      ],
+      "zh_hk": "苯扎托品",
+      "zh_tw": "Cogentin 柯金丁",
+      "respelling": "BENZ-troe-peen",
+      "dose": {
+        "usual": "口服常用 1–4 mg／日，一次或分次；亦可按情況使用針劑",
+        "max": "常見最高 6 mg／日",
+        "notes": "",
+        "source": "FDA Cogentin 標籤"
+      },
+      "receptors": [
+        {
+          "target": "M",
+          "action": "阻斷"
+        },
+        {
+          "target": "H1",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Cogentin 標籤"
+        },
+        {
+          "tag": "視力模糊",
+          "text": "視力模糊",
+          "source": "FDA Cogentin 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA Cogentin 標籤"
+        },
+        {
+          "tag": "排尿困難",
+          "text": "排尿困難",
+          "source": "FDA Cogentin 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Cogentin 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "口乾",
+            "視力模糊",
+            "便秘",
+            "頭暈"
+          ],
+          "quote": "檔案於苯海索條註明注射劑 Benzatropine（Cogentin）有相同效用，用以減輕抗精神病藥引起的手震、肌肉僵硬、坐立不安、唾液過多等；抗膽鹼副作用包括口乾、瞳孔放大及怕光、便秘、頭暈、神智不清等。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "benztropine",
+      "ipa": "/ˈbɛnztrəpiːn/",
+      "hook": "中樞抗膽鹼藥，阻斷毒蕈鹼受體，用以減輕抗精神病藥引起的震顫及肌張力異常。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Benztropine（Cogentin）標籤。不另作強度分級。"
+    },
+    {
+      "id": "esketamine",
+      "generic": "Esketamine",
+      "class": "nmda",
+      "brands": [
+        {
+          "name": "Spravato",
+          "say": "Spravato",
+          "respell": "spra-VAH-toe"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "艾司氯胺酮",
+      "zh_tw": "Spravato 斯普萊托",
+      "respelling": "es-KET-a-meen",
+      "dose": {
+        "usual": "治療抗性抑鬱：誘導期常為每週兩次鼻噴，單次劑量 56 mg 或 84 mg，須在認可場所給藥並監察（包括血壓）",
+        "max": "單次常用最高 84 mg；給藥頻率及維持方案須按標籤及處方，不可自行使用",
+        "notes": "為氯胺酮的 S-對映異構物。不得帶回家自行噴用。台灣已核准，香港供應須按當地註冊情況。",
+        "source": "FDA Spravato 標籤"
+      },
+      "receptors": [
+        {
+          "target": "NMDA",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "解離",
+          "text": "解離",
+          "source": "FDA Spravato 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Spravato 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Spravato 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Spravato 標籤"
+        },
+        {
+          "tag": "血壓↑",
+          "text": "血壓↑",
+          "source": "FDA Spravato 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "解離",
+            "噁心／腸胃不適"
+          ],
+          "quote": "由上個禮拜開始試咗每個禮拜兩次三劑嘅Esketamine (Spravato)噴鼻式抗抑鬱藥…一個月就要6萬蚊天價…噴藥要留喺診所觀察兩個鐘…隻藥嘅副作用就係嚴重解離…個人會好wing，睇嘅物件會郁，觸感似沙包…個人好想嘔，同埋因為覺得自己矮咗嘅關係就喺梳化碌咗落地三次",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "esketamine",
+      "ipa": null,
+      "hook": "NMDA 受體拮抗劑，可快速改善部分難治抑鬱；常見解離、血壓上升及噁心，須在場監察。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Esketamine（Spravato）標籤。"
+    },
+    {
+      "id": "ketamine",
+      "generic": "Ketamine",
+      "class": "nmda",
+      "brands": [],
+      "aliases": [
+        "K他命"
+      ],
+      "zh_hk": "氯胺酮",
+      "zh_tw": "K他命（俗稱；醫療用為氯胺酮）",
+      "respelling": "KET-a-meen",
+      "dose": {
+        "usual": "作為麻醉藥及作為難治抑鬱的非標籤／試驗用法，劑量方案完全不同，必須由專業人員在適當場所給予",
+        "max": "不可自行使用。醫療劑量完全按適應症及監察條件決定，本頁不列出可供自行換算的毫克上限",
+        "notes": "俗稱 K他命。與已批准的鼻噴 esketamine（Spravato）為相關但不同的製劑及適應症。",
+        "source": "FDA ketamine 標籤；難治抑鬱用法見研究文獻／專門診所方案"
+      },
+      "receptors": [
+        {
+          "target": "NMDA",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "解離",
+          "text": "解離",
+          "source": "FDA ketamine 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA ketamine 標籤"
+        },
+        {
+          "tag": "血壓↑",
+          "text": "血壓或心率上升",
+          "source": "FDA ketamine 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA ketamine 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "解離"
+          ],
+          "quote": "檔案以長文介紹其由麻醉藥至抗抑鬱研究的背景，並與 esketamine 對照。精神科低劑量注射屬嚴格監察下的用法，與麻醉劑量及濫用完全不同。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "ketamine",
+      "ipa": "/ˈkɛtəmiːn/",
+      "hook": "NMDA 受體拮抗劑，麻醉劑量產生解離麻醉；低劑量在研究及部分診所用於難治抑鬱，須嚴格監察。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Ketamine（Ketalar）標籤。不另作強度分級。"
+    },
+    {
+      "id": "lisdexamfetamine",
+      "generic": "Lisdexamfetamine",
+      "class": "stimulant",
+      "brands": [
+        {
+          "name": "Vyvanse",
+          "say": "Vyvanse",
+          "respell": "VYE-vans"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "利右苯丙胺",
+      "zh_tw": "擴思達／Vyvanse",
+      "respelling": "lis-dex-am-FET-a-meen",
+      "dose": {
+        "usual": "ADHD 或暴食症常由 30 mg 每日一次開始，可每週調整，常用範圍 30–70 mg 清晨一次",
+        "max": "70 mg 每日一次",
+        "notes": "為右旋安非他命的前藥。檔案於 ADHD 藥物比較中提及。",
+        "source": "FDA Vyvanse 標籤"
+      },
+      "receptors": [
+        {
+          "target": "DAT",
+          "action": "抑制（亦促進釋放）"
+        },
+        {
+          "target": "NET",
+          "action": "抑制（亦促進釋放）"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "胃口下降",
+          "text": "胃口下降",
+          "source": "FDA Vyvanse 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA Vyvanse 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Vyvanse 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Vyvanse 標籤"
+        },
+        {
+          "tag": "體重↓",
+          "text": "體重↓",
+          "source": "FDA Vyvanse 標籤"
+        },
+        {
+          "tag": "心跳快",
+          "text": "心跳或血壓上升",
+          "source": "FDA Vyvanse 標籤"
+        }
+      ],
+      "shares": [],
+      "say": "lisdexamfetamine",
+      "ipa": null,
+      "hook": "前藥，在體內轉化為右旋安非他命，促進多巴胺及去甲腎上腺素釋放並抑制再攝取。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Lisdexamfetamine（Vyvanse）標籤 12.2。不另作強度分級。"
+    },
+    {
+      "id": "mixed_amphetamines",
+      "generic": "Mixed amphetamine salts",
+      "class": "stimulant",
+      "brands": [
+        {
+          "name": "Adderall",
+          "say": "Adderall",
+          "respell": "ADD-er-all"
+        },
+        {
+          "name": "Adderall XR",
+          "say": "Adderall XR",
+          "respell": "ADD-er-all XR"
+        }
+      ],
+      "aliases": [
+        "Adderall"
+      ],
+      "zh_hk": "混合安非他命鹽",
+      "zh_tw": "Adderall",
+      "respelling": "am-FET-a-meen",
+      "dose": {
+        "usual": "ADHD：即釋常由每日數毫克開始，分次服用；長效 XR 常由 20 mg 每日一次開始，按反應調整",
+        "max": "即釋成人常見最高 40 mg／日；XR 部分標籤最高 60 mg／日",
+        "notes": "檔案於 ADHD 興奮劑列表中提及。香港並非常規註冊用藥。",
+        "source": "FDA Adderall／Adderall XR 標籤"
+      },
+      "receptors": [
+        {
+          "target": "DAT",
+          "action": "抑制（亦促進釋放）"
+        },
+        {
+          "target": "NET",
+          "action": "抑制（亦促進釋放）"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "胃口下降",
+          "text": "胃口下降",
+          "source": "FDA Adderall 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA Adderall 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Adderall 標籤"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "FDA Adderall 標籤"
+        },
+        {
+          "tag": "心跳快",
+          "text": "心跳快",
+          "source": "FDA Adderall 標籤"
+        },
+        {
+          "tag": "體重↓",
+          "text": "體重↓",
+          "source": "FDA Adderall 標籤"
+        }
+      ],
+      "shares": [],
+      "say": "mixed amphetamine salts",
+      "ipa": null,
+      "hook": "混合安非他命鹽，促進多巴胺及去甲腎上腺素釋放，並抑制 DAT／NET。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Mixed amphetamine salts 標籤 12.2：阻斷 NE／DA 再攝取並增加釋放。不另作強度分級。"
+    },
+    {
+      "id": "dextroamphetamine",
+      "generic": "Dextroamphetamine",
+      "class": "stimulant",
+      "brands": [
+        {
+          "name": "Dexedrine",
+          "say": "Dexedrine",
+          "respell": "DEX-eh-dreen"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "右旋安非他命",
+      "zh_tw": "Dexedrine 得可林",
+      "respelling": "dex-troe-am-FET-a-meen",
+      "dose": {
+        "usual": "ADHD 常由 5 mg 每日一次或兩次開始，按週調整",
+        "max": "常用最高 40 mg／日",
+        "notes": "",
+        "source": "FDA Dexedrine 標籤"
+      },
+      "receptors": [
+        {
+          "target": "DAT",
+          "action": "抑制（亦促進釋放）"
+        },
+        {
+          "target": "NET",
+          "action": "抑制（亦促進釋放）"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "胃口下降",
+          "text": "胃口下降",
+          "source": "FDA Dexedrine 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA Dexedrine 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Dexedrine 標籤"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "FDA Dexedrine 標籤"
+        },
+        {
+          "tag": "心跳快",
+          "text": "心跳快",
+          "source": "FDA Dexedrine 標籤"
+        }
+      ],
+      "shares": [],
+      "say": "dextroamphetamine",
+      "ipa": null,
+      "hook": "右旋安非他命，促進單胺釋放並抑制 DAT／NET。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Dextroamphetamine 標籤 12.2。不另作強度分級。"
+    },
+    {
+      "id": "guanfacine",
+      "generic": "Guanfacine",
+      "class": "other",
+      "brands": [
+        {
+          "name": "Intuniv",
+          "say": "Intuniv",
+          "respell": "IN-too-niv"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "胍法辛",
+      "zh_tw": "Intuniv 應特寧",
+      "respelling": "GWAN-fa-seen",
+      "dose": {
+        "usual": "ADHD 長效（Intuniv）常由 1 mg 每日一次開始，目標常見 1–4 mg／日（可按體重調整）",
+        "max": "長效常見最高 4 mg／日，體重較高者部分標籤可至 7 mg／日",
+        "notes": "降血壓作用明顯，停藥須遞減以免反跳性高血壓。與即釋高血壓用法不同。",
+        "source": "FDA Intuniv 標籤"
+      },
+      "receptors": [
+        {
+          "target": "α2A",
+          "action": "激動"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Intuniv 標籤"
+        },
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "FDA Intuniv 標籤"
+        },
+        {
+          "tag": "血壓↓",
+          "text": "血壓↓",
+          "source": "FDA Intuniv 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Intuniv 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Intuniv 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA Intuniv 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [],
+          "quote": "檔案於 ADHD 組合療法討論中提及，指胍法辛可與興奮劑類專注力藥併用（其餘多數組合屬標籤外）。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "guanfacine",
+      "ipa": null,
+      "hook": "選擇性中樞 α2A 激動劑，用於 ADHD；可降血壓及引起嗜睡。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Guanfacine 標籤（Intuniv／降壓標籤同源機制）。不另作強度分級。"
+    },
+    {
+      "id": "cariprazine",
+      "generic": "Cariprazine",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Vraylar",
+          "say": "Vraylar",
+          "respell": "VRAY-lar"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "卡利拉嗪",
+      "zh_tw": "Vraylar",
+      "respelling": "kar-IP-ra-zeen",
+      "dose": {
+        "usual": "思覺失調常由 1.5 mg 每日一次開始，目標常見 1.5–6 mg／日；雙相躁狂常用 3–6 mg／日",
+        "max": "6 mg 每日一次",
+        "notes": "",
+        "source": "FDA Vraylar 標籤"
+      },
+      "receptors": [
+        {
+          "target": "D3",
+          "action": "部分激動",
+          "ki": 0.085
+        },
+        {
+          "target": "D2",
+          "action": "部分激動",
+          "ki": 0.49
+        },
+        {
+          "target": "5-HT1A",
+          "action": "部分激動",
+          "ki": 2.6
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "ki": 18.8
+        },
+        {
+          "target": "H1",
+          "action": "結合",
+          "ki": 23.2
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "靜坐不能（坐立不安）",
+          "text": "靜坐不能（坐立不安）",
+          "source": "FDA Vraylar 標籤"
+        },
+        {
+          "tag": "錐體外症狀（手震）",
+          "text": "錐體外症狀（手震）",
+          "source": "FDA Vraylar 標籤"
+        },
+        {
+          "tag": "失眠",
+          "text": "失眠",
+          "source": "FDA Vraylar 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Vraylar 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA Vraylar 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "體重增加"
+          ],
+          "quote": "檔案引 JAMA 2023 綜述：雙相藥物短期體重增加超過 7% 的比例中，cariprazine 約 3.1%。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "cariprazine",
+      "ipa": null,
+      "hook": "D2／D3 部分激動（標籤結合表上對 D3 的 Ki 低於 D2），並有 5-HT1A 部分激動及 5-HT2A 阻斷。不把表內數字寫成強／弱等級。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Cariprazine（Vraylar）標籤。5-HT2C、α1A 親和力較低（約 134、155 nM）；M 受體無明顯親和力。"
+    },
+    {
+      "id": "lumateperone",
+      "generic": "Lumateperone",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Caplyta",
+          "say": "Caplyta",
+          "respell": "kap-LYE-ta"
+        }
+      ],
+      "aliases": [
+        "lumateperon"
+      ],
+      "zh_hk": "蘆馬哌隆",
+      "zh_tw": "Caplyta",
+      "respelling": "loo-ma-TEP-er-one",
+      "dose": {
+        "usual": "思覺失調及雙相抑鬱常用 42 mg 每日一次，與食物同服",
+        "max": "推薦劑量即 42 mg 每日一次",
+        "notes": "中度或以上肝功能損害須按標籤調整或避免。檔案串法為 lumateperon。",
+        "source": "FDA Caplyta 標籤"
+      },
+      "receptors": [
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "ki": 0.54
+        },
+        {
+          "target": "D2",
+          "action": "部分激動",
+          "ki": 32
+        },
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "ki": 33
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Caplyta 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Caplyta 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Caplyta 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Caplyta 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "體重增加"
+          ],
+          "quote": "檔案引 JAMA 2023 綜述（寫作 lumateperon）：體重增加超過 7% 約 0.8%。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "lumateperone",
+      "ipa": null,
+      "hook": "現行標籤寫對 5-HT2A 為高親和力拮抗（Ki=0.54 nM）、對中樞 D2 為部分激動（Ki=32 nM，標籤稱中等親和力），並抑制血清素再攝取。現行標籤沒有再區分突觸前與突觸後 D2。對毒蕈鹼及組胺受體親和力低。以上高／中等親和力是標籤用語。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Lumateperone（Caplyta）標籤。另有 D1 Ki=41 nM 及 α1 結合（Ki≤100 nM），對 M、H 受體親和力低。"
+    },
+    {
+      "id": "brotizolam",
+      "generic": "Brotizolam",
+      "class": "benzo",
+      "brands": [
+        {
+          "name": "Lendormin",
+          "say": "Lendormin",
+          "respell": "LEN-dor-min"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "溴替唑侖",
+      "zh_tw": "Lendormin 朗德眠",
+      "respelling": "broe-TIZ-oh-lam",
+      "dose": {
+        "usual": "失眠常用 0.25 mg 睡前一次",
+        "max": "常見每晚 0.25 mg（長者或用 0.125 mg）",
+        "notes": "美國未批准。宜短期使用，停藥須謹慎。",
+        "source": "Lendormin／brotizolam 常見 SPC"
+      },
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "Lendormin／brotizolam 常見 SPC"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "Lendormin／brotizolam 常見 SPC"
+        },
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "Lendormin／brotizolam 常見 SPC"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "眼瞓／嗜睡",
+            "依賴"
+          ],
+          "quote": "檔案於臨床安眠藥物分類中列為苯二氮䓬類（Lendormin）。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "brotizolam",
+      "ipa": null,
+      "hook": "短效苯二氮䓬類，GABA-A 正向調節，主要用於入睡。",
+      "rec_source": "brotizolam 為苯二氮䓬類催眠藥，機制按類別 GABA-A 正向調節。本次未逐字抓取單一官方 Ki，不另作強度分級。 苯二氮䓬類經 GABA-A 苯二氮䓬位點正向調節。不把類別機制寫成個別強度等級。"
+    },
+    {
+      "id": "estazolam",
+      "generic": "Estazolam",
+      "class": "benzo",
+      "brands": [
+        {
+          "name": "Eurodin",
+          "say": "Eurodin",
+          "respell": "YUR-oh-din"
+        },
+        {
+          "name": "ProSom",
+          "say": "ProSom",
+          "respell": "pro-SOM"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "艾司唑侖",
+      "zh_tw": "Eurodin 優爾定",
+      "respelling": "es-TAZ-oh-lam",
+      "dose": {
+        "usual": "失眠常用 1 mg 睡前，必要時 2 mg",
+        "max": "常見 2 mg 睡前",
+        "notes": "",
+        "source": "FDA ProSom 標籤"
+      },
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA ProSom 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA ProSom 標籤"
+        },
+        {
+          "tag": "步態不穩",
+          "text": "協調欠佳",
+          "source": "FDA ProSom 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "眼瞓／嗜睡",
+            "依賴"
+          ],
+          "quote": "檔案於臨床安眠藥物分類中列為苯二氮䓬類（Eurodin）。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "estazolam",
+      "ipa": null,
+      "hook": "屬中間時程的苯二氮䓬類，GABA-A 正向調節，用於失眠。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Estazolam（ProSom）標籤屬苯二氮䓬催眠藥，機制按類別正向調節。 苯二氮䓬類經 GABA-A 苯二氮䓬位點正向調節。不把類別機制寫成個別強度等級。"
+    },
+    {
+      "id": "ramelteon",
+      "generic": "Ramelteon",
+      "class": "hypnotic",
+      "brands": [
+        {
+          "name": "Rozerem",
+          "say": "Rozerem",
+          "respell": "ro-ZER-em"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "雷美替胺",
+      "zh_tw": "Rozerem",
+      "respelling": "ra-MEL-tee-on",
+      "dose": {
+        "usual": "失眠常用 8 mg 睡前約 30 分鐘，不可與高脂餐同時服用",
+        "max": "8 mg 每晚一次",
+        "notes": "",
+        "source": "FDA Rozerem 標籤"
+      },
+      "receptors": [
+        {
+          "target": "MT1",
+          "action": "激動"
+        },
+        {
+          "target": "MT2",
+          "action": "激動"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Rozerem 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Rozerem 標籤"
+        },
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "FDA Rozerem 標籤"
+        },
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Rozerem 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [],
+          "quote": "檔案將 ramelteon 列於褪黑激素受體結合劑，並註成功率小於兩成。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "ramelteon",
+      "ipa": null,
+      "hook": "MT1／MT2 受體激動劑，促進睡眠，無苯二氮䓬類的 GABA-A 作用，亦無典型依賴特性。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Ramelteon（Rozerem）標籤。對 GABA 複合物及多種單胺受體無明顯親和力。"
+    },
+    {
+      "id": "gabapentin",
+      "generic": "Gabapentin",
+      "class": "other",
+      "brands": [
+        {
+          "name": "Neurontin",
+          "say": "Neurontin",
+          "respell": "nur-ON-tin"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "加巴噴丁",
+      "zh_tw": "Neurontin 效痛停",
+      "respelling": "gab-ah-PEN-tin",
+      "dose": {
+        "usual": "癲癇或神經痛常由 300 mg 每日一至三次開始滴定；助眠屬標籤外用法，劑量須由醫生決定",
+        "max": "常見總日劑量可至 3600 mg，須按腎功能調整",
+        "notes": "與 pregabalin 同作用於鈣通道 α2δ，但劑量及藥動學不同，不可直接換算。",
+        "source": "FDA Neurontin 標籤"
+      },
+      "receptors": [
+        {
+          "target": "α2δ",
+          "action": "結合"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Neurontin 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Neurontin 標籤"
+        },
+        {
+          "tag": "步態不穩",
+          "text": "步態不穩",
+          "source": "FDA Neurontin 標籤"
+        },
+        {
+          "tag": "疲倦",
+          "text": "疲倦",
+          "source": "FDA Neurontin 標籤"
+        },
+        {
+          "tag": "水腫",
+          "text": "水腫",
+          "source": "FDA Neurontin 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "眼瞓／嗜睡",
+            "頭暈"
+          ],
+          "quote": "檔案於臨床安眠藥物分類中，將 gabapentin 與 pregabalin 並列為抗癲癇藥，有時用於助眠。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "gabapentin",
+      "ipa": "/ˌɡæbəˈpɛntɪn/",
+      "hook": "結合電壓閘控鈣通道的 α2δ 次單位，減少興奮性傳遞物質釋放。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Gabapentin 標籤。不另作強度分級。不是 GABA 激動劑。"
+    },
+    {
+      "id": "diphenhydramine",
+      "generic": "Diphenhydramine",
+      "class": "other",
+      "brands": [
+        {
+          "name": "Vena",
+          "say": "Vena",
+          "respell": "VEE-na"
+        },
+        {
+          "name": "Benadryl",
+          "say": "Benadryl",
+          "respell": "BEN-uh-dril"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "苯海拉明",
+      "zh_tw": "Vena／BENADRYL 苯海拉明",
+      "respelling": "dye-fen-HYE-dra-meen",
+      "dose": {
+        "usual": "過敏或偶爾助眠常見 25–50 mg",
+        "max": "成人口服常見單次 50 mg；24 小時內不宜自行重複疊加，須依產品說明",
+        "notes": "長者較易出現抗膽鹼及認知不良反應，不宜作為長期安眠藥。",
+        "source": "FDA diphenhydramine 非處方標籤常用劑量"
+      },
+      "receptors": [
+        {
+          "target": "H1",
+          "action": "阻斷"
+        },
+        {
+          "target": "M",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA diphenhydramine 非處方標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA diphenhydramine 非處方標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA diphenhydramine 非處方標籤"
+        },
+        {
+          "tag": "視力模糊",
+          "text": "視力模糊",
+          "source": "FDA diphenhydramine 非處方標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "眼瞓／嗜睡"
+          ],
+          "quote": "檔案於臨床安眠分類列為抗組織胺（Vena），並註「出乎意料好用」。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "diphenhydramine",
+      "ipa": "/ˌdaɪfɛnˈhaɪdrəmiːn/",
+      "hook": "第一代抗組胺，標籤指具抗組胺、抗膽鹼（口乾）及鎮靜作用，故嗜睡及口乾常見。現摘錄未用「強力」一詞。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Diphenhydramine 標籤。無 Ki，不另作強度分級。"
+    },
+    {
+      "id": "xanomeline_trospium",
+      "generic": "Xanomeline + trospium",
+      "class": "atypical",
+      "brands": [
+        {
+          "name": "Cobenfy",
+          "say": "Cobenfy",
+          "respell": "ko-BEN-fee"
+        }
+      ],
+      "aliases": [
+        "KarXT",
+        "Cobenfy"
+      ],
+      "zh_hk": "占諾美林＋曲司氯銨",
+      "zh_tw": "Cobenfy",
+      "respelling": "zan-OH-meh-leen + TROS-pee-um",
+      "dose": {
+        "usual": "成人思覺失調須按標籤滴定，由較低劑量開始，每日兩次，與食物的關係須依說明書",
+        "max": "標籤維持劑量上限為 xanomeline 125 mg＋trospium 30 mg，每日兩次",
+        "notes": "香港是否註冊須以當時監管資訊為準。不可與現有多巴胺類藥物自行合併。",
+        "source": "FDA Cobenfy（xanomeline and trospium）標籤"
+      },
+      "receptors": [
+        {
+          "target": "M1",
+          "action": "激動",
+          "ki": 10
+        },
+        {
+          "target": "M4",
+          "action": "激動",
+          "ki": 7
+        },
+        {
+          "target": "M（周邊，trospium）",
+          "action": "阻斷"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "噁心／腸胃不適",
+          "text": "噁心／腸胃不適",
+          "source": "FDA Cobenfy 標籤"
+        },
+        {
+          "tag": "腹痛",
+          "text": "腹痛",
+          "source": "FDA Cobenfy 標籤"
+        },
+        {
+          "tag": "消化不良",
+          "text": "消化不良",
+          "source": "FDA Cobenfy 標籤"
+        },
+        {
+          "tag": "便秘",
+          "text": "便秘",
+          "source": "FDA Cobenfy 標籤"
+        },
+        {
+          "tag": "血壓↑",
+          "text": "血壓↑",
+          "source": "FDA Cobenfy 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "噁心／腸胃不適",
+            "肝功能異常"
+          ],
+          "quote": "檔案介紹此為 1950 年代以來首個非以 D2 為主機制、獲 FDA 核准的思覺失調新藥（2024 年 9 月），中國已批，香港當時未有消息。仍可有噁心、消化不良、嘔吐；並有肝損傷風險，已知肝功能損傷者應避免。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "xanomeline and trospium",
+      "ipa": null,
+      "hook": "xanomeline 為中樞 M1／M4 激動劑，trospium 為周邊抗膽鹼藥以減輕腸胃副作用；並非以 D2 阻斷為主。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Cobenfy（xanomeline／trospium）標籤。"
+    },
+    {
+      "id": "eszopiclone",
+      "generic": "Eszopiclone",
+      "class": "hypnotic",
+      "brands": [
+        {
+          "name": "Lunesta",
+          "say": "Lunesta",
+          "respell": "loo-NES-ta"
+        },
+        {
+          "name": "Eszo",
+          "say": "Eszo",
+          "respell": "EZ-oh"
+        }
+      ],
+      "aliases": [],
+      "zh_hk": "右佐匹克隆",
+      "zh_tw": "艾斯樂／Lunesta",
+      "respelling": "es-ZOE-pi-klone",
+      "dose": {
+        "usual": "成人常由 1 mg 睡前開始，必要時 2–3 mg",
+        "max": "3 mg 每晚一次（長者或肝功能嚴重損害常用最高 2 mg）",
+        "notes": "",
+        "source": "FDA Lunesta 標籤"
+      },
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節"
+        }
+      ],
+      "official_side_effects": [
+        {
+          "tag": "口腔苦澀",
+          "text": "口腔苦澀",
+          "source": "FDA Lunesta 標籤"
+        },
+        {
+          "tag": "頭痛",
+          "text": "頭痛",
+          "source": "FDA Lunesta 標籤"
+        },
+        {
+          "tag": "眼瞓／嗜睡",
+          "text": "眼瞓／嗜睡",
+          "source": "FDA Lunesta 標籤"
+        },
+        {
+          "tag": "頭暈",
+          "text": "頭暈",
+          "source": "FDA Lunesta 標籤"
+        },
+        {
+          "tag": "口乾",
+          "text": "口乾",
+          "source": "FDA Lunesta 標籤"
+        }
+      ],
+      "shares": [
+        {
+          "tags": [
+            "眼瞓／嗜睡"
+          ],
+          "quote": "檔案一位多重用藥者提及晚間服用「艾斯樂 Eszo（安眠）」一顆。此為 zopiclone 的 S-對映異構物。",
+          "source": "檔案分享",
+          "date_added": "2026-11-12"
+        }
+      ],
+      "say": "eszopiclone",
+      "ipa": null,
+      "hook": "Z 類藥，為 zopiclone 的 S-對映異構物，選擇性結合 GABA-A 苯二氮䓬類位點。",
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Eszopiclone（Lunesta）標籤。不另作強度分級。"
+    }
+  ],
+  "receptor_audit": "2026-11-16"
+}

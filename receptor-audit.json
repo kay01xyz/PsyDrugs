@@ -1,0 +1,3297 @@
+{
+  "title": "精神科藥物受體／機制審計",
+  "updated": "2026-11-16",
+  "timezone": "Asia/Shanghai",
+  "n_drugs": 83,
+  "policy": {
+    "no_arbitrary_ki_tiers": "不再用 強少於 10 nM／中 10–100 nM／弱 100–1000 nM 或任何自訂閾值，把不同試驗或同一標籤的 Ki 換成強／中／弱徽章。數值 Ki 如來自同一官方標籤，可在條目詳情以數字列出，並註明不可跨藥或跨試驗比較。",
+    "official_qualitative": "若官方標籤／SmPC 本身使用 high／moderate／potent／relatively weak 等用語，可在說明中按原文保留並註明出處，但不得因此自動生成強／中／弱標籤。",
+    "binding_vs_action": "僅寫結合／親和力者標為「結合」，不得自動寫成阻斷或激動。",
+    "class_mechanism": "類別機制（例如苯二氮䓬均為 GABA-A 正向調節）不得冒充個別已核實親和力，亦不另作強度分級。",
+    "unknown_not_zero": "標籤寫機制不明或未列某靶點，不代表作用為零。",
+    "not_exhaustive": "本審計核對既有宣稱，並補上臨床相關且有官方支持的缺失靶點；並非完整脫靶清單。",
+    "lithium": "不編造鋰鹽受體譜。",
+    "lumateperone_d2": "現行 Caplyta 標籤 12.1 寫 partial agonist activity at central dopamine D2 receptors，沒有再區分突觸前與突觸後；本頁按標籤作部分激動，不補上標籤未寫的區分。"
+  },
+  "status_counts": {
+    "verified": 3,
+    "action_verified_strength_unverified": 46,
+    "binding_only": 10,
+    "review_supported": 19,
+    "uncertain": 4,
+    "hook_only": 1
+  },
+  "drugs": [
+    {
+      "id": "olanzapine",
+      "status": "binding_only",
+      "receptors": [
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 7,
+          "note": "標籤列 H1 Ki=7 nM；FDA 標籤亦以組胺 H1 拮抗解釋嗜睡。強度按同一標籤 Ki。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 4,
+          "note": "標籤：高親和力結合 5-HT2A Ki=4 nM；12.1 指治療作用或經多巴胺與 5-HT2 拮抗。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "5-HT2C",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "ki_nM": 11,
+          "note": "標籤列 5-HT2C Ki=11 nM 為結合，未在同一句寫明功能性拮抗，故作結合而非自動寫成阻斷。",
+          "legacy_band_strength": 2
+        },
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "note": "12.1 指療效或經多巴胺與 5-HT2 拮抗。標籤 D1–4 Ki 為 11–31 nM 的範圍，不是單一 D2 Ki，標籤以範圍列出 D1–4 Ki，不另作強度分級。",
+          "legacy_band_strength": 2
+        },
+        {
+          "target": "α1",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "ki_nM": 19,
+          "note": "標籤列 α1 Ki=19 nM 為高親和力結合；未在此段明確寫拮抗。",
+          "legacy_band_strength": 2
+        },
+        {
+          "target": "M1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 73,
+          "note": "標籤：對 M1–5 為拮抗，M1 Ki=73 nM，標籤寫 moderate affinity（M1 Ki=73 nM）。",
+          "legacy_band_strength": 2
+        },
+        {
+          "target": "5-HT3",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 57,
+          "note": "標籤明確：對 5-HT3 為拮抗，Ki=57 nM。臨床相關，補入。",
+          "added": true,
+          "legacy_band_strength": 2
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Olanzapine（Zyprexa 類）標籤。",
+      "sources": [
+        {
+          "title": "FDA olanzapine prescribing information (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:olanzapine"
+        },
+        {
+          "title": "DailyMed olanzapine",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=olanzapine"
+        }
+      ],
+      "limitations": "D1–4 以範圍列出，不能把個別亞型都標成同一強度。5-HT2C、α1 在現摘錄中主要是結合數據。未聲稱窮盡所有脫靶。",
+      "changes": "M1 由「強」改為同一標籤 Ki=73 nM 的「中」；5-HT2C 改為結合；補 5-HT3 阻斷。",
+      "hook": "標籤寫對 5-HT2A、H1 等高親和力結合，並以 H1 拮抗解釋嗜睡；對 5-HT3 及毒蕈鹼 M1–5 為中等親和力拮抗（同一標籤用語）。5-HT2C、α1 在現摘錄中主要是結合數據。"
+    },
+    {
+      "id": "lurasidone",
+      "status": "binding_only",
+      "receptors": [
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 0.5,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "5-HT7",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 0.5,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 1,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "5-HT1A",
+          "action": "部分激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 6.4,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "α2C",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "ki_nM": 11,
+          "note": "標籤：中等親和力結合人類 α2C（Ki=11 nM），未寫明功能方向。以 α2C 取代籠統 α1。",
+          "legacy_band_strength": 2
+        },
+        {
+          "target": "α2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 41,
+          "note": "標籤：α2A 拮抗，Ki=41 nM。",
+          "legacy_band_strength": 2
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Lurasidone（Latuda）標籤。對 H1、M1 標籤指 IC50>1000 nM，幾乎無親和力。",
+      "sources": [
+        {
+          "title": "FDA lurasidone PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:lurasidone"
+        }
+      ],
+      "limitations": "原資料的「α1 阻斷」並未在此份 12.2 以 α1 拮抗列出，已改為標籤所寫的 α2C 結合與 α2A 阻斷。",
+      "changes": "移除不獲此標籤支持的 α1；α2 細分為 α2C 結合、α2A 阻斷。",
+      "hook": "標籤列 D2、5-HT2A、5-HT7 阻斷及 5-HT1A 部分激動；對 H1、M1 幾乎無親和力（IC50 大於 1000 nM），嗜睡及體重增加相對較少。須與食物同時服用。"
+    },
+    {
+      "id": "aripiprazole",
+      "status": "binding_only",
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "部分激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 0.34,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "5-HT1A",
+          "action": "部分激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 1.7,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 3.4,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "D3",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "ki_nM": 0.8,
+          "note": "標籤列 D3 高親和力 Ki=0.8 nM，但 12.1 只寫 D2 與 5-HT1A 部分激動、5-HT2A 拮抗，未寫 D3 功能，故不作「阻斷」。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "H1",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "ki_nM": 61,
+          "note": "中等親和力 Ki=61 nM，標籤未寫 H1 拮抗。不可因結合便歸入「H1 阻斷嗜睡組」。",
+          "legacy_band_strength": 2
+        },
+        {
+          "target": "α1",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "ki_nM": 57,
+          "note": "中等親和力 Ki=57 nM，未寫明功能。",
+          "legacy_band_strength": 2
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Aripiprazole 標籤。另有 5-HT2C Ki=15、5-HT7 Ki=39、D4 Ki=44、SERT Ki=98 nM 的結合，本頁不全部展開。",
+      "sources": [
+        {
+          "title": "FDA aripiprazole PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:aripiprazole"
+        }
+      ],
+      "limitations": "D3、H1、α1 僅有結合數據。部分激動的臨床後果視突觸多巴胺水平而定，不是固定「增加」或「減少」。",
+      "changes": "D3、H1、α1 由「阻斷」改為結合；強度改按同一標籤 Ki。",
+      "hook": "D2 及 5-HT1A 為部分激動，5-HT2A 為阻斷。標籤列 D3、H1、α1 結合，但未寫後兩者的功能方向，故不作已核實阻斷。部分激動的臨床後果視突觸多巴胺水平而定。"
+    },
+    {
+      "id": "quetiapine",
+      "status": "binding_only",
+      "receptors": [
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 4.4,
+          "note": "母體 Ki=4.4 nM、代謝物 norquetiapine 1.1 nM。官方不良反應列嗜睡；H1 拮抗常用以解釋鎮靜，但本頁不以「H1 強」作組名。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "α1",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "ki_nM": 14.6,
+          "note": "母體 α1b Ki=14.6 nM。12.1 未單獨寫 α1 拮抗；姿位性低血壓見於標籤，但此處保守作結合。",
+          "legacy_band_strength": 2
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 38,
+          "note": "母體 Ki=38 nM；代謝物 2.9 nM。12.1 指 D2 與 5-HT2 拮抗。條目以母體數字列出，並註明代謝物 Ki 更低。",
+          "legacy_band_strength": 2
+        },
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 626,
+          "note": "母體 D2 Ki=626 nM，代謝物 489 nM。療效相關拮抗仍見於 12.1。",
+          "legacy_band_strength": 1
+        },
+        {
+          "target": "M1",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "note": "母體 M1 Ki=1086 nM（可謂無明顯親和力），代謝物 38.3 nM。不可把代謝物數據寫成母體「弱阻斷」已核實。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Quetiapine 標籤（同時列出母體／norquetiapine Ki）。條目以母體 Ki 數值列出，並註明代謝物。",
+      "sources": [
+        {
+          "title": "FDA quetiapine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:quetiapine"
+        }
+      ],
+      "limitations": "代謝物親和力常高於母體，尤其 5-HT2A 與 M1。本頁不把兩套 Ki 混成單一「強／弱」排名。",
+      "changes": "5-HT2A 母體由「弱」改「中」；M1 不再寫成已核實弱阻斷。",
+      "hook": "同一標籤結合表中，母體對 H1 的 Ki 明顯低於 D2；臨床上常有明顯嗜睡，亦可增加食慾及體重，震顫及泌乳素升高往往較少。不把這些數字寫成強／弱等級。"
+    },
+    {
+      "id": "risperidone",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：單胺拮抗劑，對 5-HT2、D2、α1、α2、H1 具高親和力，但 Ki 以 0.12–7.3 nM 範圍一併列出，不能為單一受體標「強」。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "α2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤列 H1 為高親和力拮抗對象之一。官方不良反應可有嗜睡，但此段未把嗜睡單獨歸因於 H1。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Risperidone 標籤。對 5-HT2、D2、α1、α2、H1 為拮抗；Ki 僅以組範圍列出，不另作強度分級。M 與 β 受體標籤指無親和力。",
+      "sources": [
+        {
+          "title": "FDA risperidone PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:risperidone"
+        }
+      ],
+      "limitations": "原列 5-HT7 阻斷強來自跨藥整理表，不見於此份 12.2，已移除。不宣稱已列盡脫靶。",
+      "changes": "全部強度改未核實；移除 5-HT7。",
+      "hook": "標籤指對 5-HT2、D2、α1、α2、H1 為拮抗，泌乳素升高常見，亦可頭暈；對 M 與 β 受體無親和力。Ki 僅以組範圍列出，不另作強度分級。"
+    },
+    {
+      "id": "paliperidone",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 2.2,
+          "note": "標籤 Ki 1.6–2.8 nM，取範圍中點僅作同一標籤說明。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 1.0,
+          "note": "標籤 Ki 0.8–1.2 nM。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：亦為 α1、α2、H1 拮抗，或可解釋部分其他作用；未給這些受體的 Ki。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "α2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤確認 H1 拮抗，但未將嗜睡單獨歸因，亦無 Ki，故不標「強」。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Paliperidone 標籤。標籤指對 M 及 β1／β2 無親和力。",
+      "sources": [
+        {
+          "title": "FDA paliperidone PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:paliperidone"
+        }
+      ],
+      "limitations": "原 D3、5-HT7「阻斷強」不見於此標籤，已移除。α2 補入因標籤明確拮抗。",
+      "changes": "移除 D3、5-HT7；H1／α 強度改未核實；補 α2。",
+      "hook": "為 risperidone 的活性代謝物。標籤指對 D2、5-HT2A 為拮抗，亦為 α1、α2、H1 拮抗，泌乳素升高同樣常見；對 M 及 β 無親和力。劑型及劑量須獨立計算。"
+    },
+    {
+      "id": "clozapine",
+      "status": "binding_only",
+      "receptors": [
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 1.1,
+          "note": "標籤列 Ki；12.1 指亦為組胺等受體拮抗。官方可有嗜睡，但鎮靜程度因人而異。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "M1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 6.2,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 5.4,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 1.6,
+          "note": "標籤 α1A Ki=1.6 nM。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "5-HT2C",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "ki_nM": 9.4,
+          "note": "標籤列 5-HT2C Ki=9.4 nM 於結合表；12.1 概括「其他血清素受體」拮抗，未單列 5-HT2C 功能，故保守作結合。強度按 Ki。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 160,
+          "note": "12.1 指 D2 拮抗；同一標籤 D2 Ki=160 nM，並非沒有作用。不把此數字寫成本頁的弱等級。",
+          "legacy_band_strength": 1
+        },
+        {
+          "target": "D4",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "ki_nM": 24,
+          "note": "標籤列 D4 Ki=24 nM，未單獨寫 D4 功能。",
+          "legacy_band_strength": 2
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Clozapine 標籤。標籤另列 5-HT6、5-HT7、α2A 等結合，本頁不全部展開。",
+      "sources": [
+        {
+          "title": "FDA clozapine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:clozapine"
+        }
+      ],
+      "limitations": "結合表很長，未窮盡。5-HT2C 功能方向未單列。",
+      "changes": "5-HT2C 改結合（Ki 由跨表「中」改為本標籤 9.4 nM）；D4 改結合。",
+      "hook": "受體譜廣：標籤列 H1、M1、5-HT2A、α1 拮抗。同一結合表上 D2 的 Ki 高於上述靶點，錐體外症狀及泌乳素升高往往較少，但嗜睡、體重增加及抗膽鹼作用較明顯。不把表內數字寫成強／弱等級。"
+    },
+    {
+      "id": "haloperidol",
+      "status": "binding_only",
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "FDA 癸酸氟哌啶醇標籤：療效或經中樞 D2 拮抗。無 Ki。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "α1",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "note": "標籤：亦結合 α1，親和力較低；未寫明拮抗。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Haloperidol decanoate 標籤：D2 拮抗；α1 結合較低；對 M 及 H1 結合極低。原 D3／D4／5-HT2A「阻斷強」來自 APA／PDSP 跨藥表，不見於此標籤，已移除。",
+      "sources": [
+        {
+          "title": "FDA haloperidol PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:haloperidol"
+        }
+      ],
+      "limitations": "此標籤未提供亞型 Ki。不能把「對 H1 結合極低」讀成完全沒有鎮靜風險。",
+      "changes": "大幅收窄至標籤所寫的 D2 與 α1；撤下未核實的強阻斷項。",
+      "hook": "以 D2 拮抗為主，較易出現震顫、坐立不安及泌乳素升高；對 H1、M 結合極低，並非借嗜睡發揮鎮靜。"
+    },
+    {
+      "id": "fluoxetine",
+      "status": "uncertain",
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "FDA 類標籤：抑制中樞神經元血清素再攝取。原「強」來自 Tatsumi 1997 跨藥 Ki，已撤下。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "NET",
+          "action": "抑制",
+          "strength": null,
+          "status": "uncertain",
+          "note": "現行標籤強調血清素再攝取抑制，並非以 NET 為主要官方機制。原「弱 NET」僅來自跨藥表，改為不確定，不刪以免隱藏可能脫靶，但不再展示成已核實弱抑制。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Fluoxetine 標籤：藉抑制中樞 5-HT 再攝取增強血清素活性。不採用 Tatsumi 跨藥 Ki 作強度分級。NET 項證據不足。",
+      "sources": [
+        {
+          "title": "FDA fluoxetine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:fluoxetine"
+        }
+      ],
+      "limitations": "選擇性不是絕對專一。本頁不把體外跨藥 Ki 當成個別已核實強度。",
+      "changes": "SERT 強度改未核實；NET 改為不確定。",
+      "hook": "標籤指藉抑制中樞血清素再攝取增強血清素活性，並引述動物研究指抑制血清素再攝取遠較去甲腎上腺素明顯。本頁不把跨藥表的 NET 強度寫成已核實。"
+    },
+    {
+      "id": "sertraline",
+      "status": "uncertain",
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "DAT",
+          "action": "結合",
+          "strength": null,
+          "status": "uncertain",
+          "note": "部分文獻報血清素選擇性之餘對 DAT 有較明顯結合；現行標籤以 5-HT 再攝取抑制為主，本頁不以跨藥表把 DAT 寫成已核實「中等抑制」。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Sertraline 標籤：抑制中樞血清素再攝取。原 DAT／NET 強度來自 Tatsumi 1997，已撤下；DAT 改不確定。",
+      "sources": [
+        {
+          "title": "FDA sertraline PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:sertraline"
+        }
+      ],
+      "limitations": "未把文獻 DAT 結合寫成官方機制。",
+      "changes": "只保留已核實方向的 SERT 抑制（強度未核實）；DAT 降級；移除 NET。",
+      "hook": "標籤引述體外研究，指其為強力且選擇性的血清素再攝取抑制劑。本頁不把跨藥表的 DAT／NET 強度寫成已核實。"
+    },
+    {
+      "id": "escitalopram",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Escitalopram（Lexapro）標籤：假定與抑制中樞 5-HT 再攝取、增強血清素活性有關。不按跨藥 Ki 作強度分級。",
+      "sources": [
+        {
+          "title": "FDA escitalopram PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:escitalopram"
+        }
+      ],
+      "limitations": "選擇性描述不表示完全沒有其他靶點。",
+      "changes": "強度改未核實。",
+      "hook": "標籤指假定與抑制中樞 5-HT 再攝取、增強血清素活性有關；並指對 H1、M、α 及多巴胺受體親和力很低或沒有。不按跨藥 Ki 作強度分級。"
+    },
+    {
+      "id": "citalopram",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Citalopram 標籤：假定與抑制中樞 5-HT 再攝取有關。不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA citalopram PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:citalopram"
+        }
+      ],
+      "limitations": "與 escitalopram 相同限制。",
+      "changes": "強度改未核實。",
+      "hook": "標籤指假定與抑制中樞 5-HT 再攝取有關。對 NET、DAT 不作已核實描述。"
+    },
+    {
+      "id": "paroxetine",
+      "status": "uncertain",
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "NET",
+          "action": "抑制",
+          "strength": null,
+          "status": "uncertain",
+          "note": "文獻常報較其他 SSRI 更明顯的 NET 作用；官方標籤仍以 5-HT 再攝取抑制為主。不作已核實中等抑制。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Paroxetine 標籤：與抑制中樞 5-HT 再攝取有關。NET 項僅文獻層級，確度未核實，亦不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA paroxetine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:paroxetine"
+        }
+      ],
+      "limitations": "抗膽鹼等脫靶見於不良反應，但本標籤藥理段未以 Ki 列出，不編造 M1 帶。",
+      "changes": "SERT 強度改未核實；NET 降為不確定。",
+      "hook": "標籤引述體外動物研究，指其為強力且高選擇性的血清素再攝取抑制劑。NET 項僅文獻層級，不作已核實。"
+    },
+    {
+      "id": "fluvoxamine",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：臨床前研究顯示對血清素再攝取轉運體有強效抑制。此「potent」是質性用語，不換算成本頁「強」等級。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Fluvoxamine 標籤：特定血清素再攝取抑制。即使標籤用 potent，也不自動寫成強度等級「強」。",
+      "sources": [
+        {
+          "title": "FDA fluvoxamine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:fluvoxamine"
+        }
+      ],
+      "limitations": "質性「強效」≠ 本頁可比較的親和力等級。",
+      "changes": "強度改未核實。",
+      "hook": "標籤指特定血清素再攝取抑制，並引述臨床前研究稱其為強力的 SERT 抑制劑；即使標籤用 potent，也不自動寫成本頁的強度等級。"
+    },
+    {
+      "id": "venlafaxine",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "NET",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：venlafaxine 與 ODV 為神經元 5-HT 及去甲腎上腺素再攝取抑制劑，對多巴胺再攝取抑制弱。無本頁可用的單一標籤 Ki。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Venlafaxine 標籤：抑制 5-HT 與去甲腎上腺素再攝取；對 M、H、α1 無明顯親和力。原跨藥 Ki 強度已撤。",
+      "sources": [
+        {
+          "title": "FDA venlafaxine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:venlafaxine"
+        }
+      ],
+      "limitations": "標籤稱對 DAT 為弱抑制，但無 Ki，本頁不另列已核實 DAT 項以免暗示比較。",
+      "changes": "兩項均改未核實強度。",
+      "hook": "標籤指抑制 5-HT 與去甲腎上腺素再攝取；對 M、H、α1 無明顯親和力。臨床前研究亦稱對多巴胺再攝取為較弱抑制劑。較高劑量時臨床上才較明顯表現去甲腎上腺素作用。"
+    },
+    {
+      "id": "duloxetine",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "NET",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Duloxetine 標籤：作用相信與增強中樞血清素及去甲腎上腺素活性有關。原 DAT「弱」及「強／強」來自綜述 Ki 表，已撤；不把未在此標籤成立的 DAT 寫成已核實。",
+      "sources": [
+        {
+          "title": "FDA duloxetine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:duloxetine"
+        }
+      ],
+      "limitations": "標籤未給轉運體 Ki。",
+      "changes": "移除 DAT；SERT／NET 強度改未核實。",
+      "hook": "標籤指作用相信與增強中樞血清素及去甲腎上腺素活性有關，並引述臨床前研究稱其強力抑制 SERT 與 NET。不把未在此標籤成立的 DAT 項寫成已核實。"
+    },
+    {
+      "id": "desvenlafaxine",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "NET",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Desvenlafaxine 標籤：藉抑制再攝取增強 5-HT 與去甲腎上腺素；非臨床稱選擇性 SNRI。無標籤 Ki，不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA desvenlafaxine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:desvenlafaxine"
+        }
+      ],
+      "limitations": "「potent and selective」為質性用語。",
+      "changes": "強度改未核實。",
+      "hook": "為 venlafaxine 的活性代謝物。標籤稱選擇性 SNRI，藉抑制再攝取增強 5-HT 與去甲腎上腺素；非臨床研究亦用 potent 一詞。無官方 Ki，不另作強度分級。"
+    },
+    {
+      "id": "vortioxetine",
+      "status": "verified",
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 1.6,
+          "note": "標籤 Ki=1.6 nM，並選擇性抑制 5-HT 再攝取 IC50=5.4 nM。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "5-HT3",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 3.7,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "5-HT1A",
+          "action": "激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 15,
+          "note": "標籤寫 agonist，不是部分激動。",
+          "legacy_band_strength": 2
+        },
+        {
+          "target": "5-HT7",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 19,
+          "legacy_band_strength": 2,
+          "note": null
+        },
+        {
+          "target": "5-HT1B",
+          "action": "部分激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 33,
+          "legacy_band_strength": 2,
+          "note": null
+        },
+        {
+          "target": "5-HT1D",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 54,
+          "added": true,
+          "legacy_band_strength": 2,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Vortioxetine（Trintellix）標籤。對 NET Ki=113 nM、DAT Ki>1000 nM，標籤寫「不是結合到」NET／DAT 的語氣下，刪除原「弱 NET 抑制」，以免誇大。",
+      "sources": [
+        {
+          "title": "FDA vortioxetine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:vortioxetine"
+        }
+      ],
+      "limitations": "各受體活性對抗抑鬱效果的貢獻標籤寫尚未確立。",
+      "changes": "按同一標籤重標強度；5-HT1A 改激動；補 5-HT1D；移除 NET。",
+      "hook": "抑制 SERT，並對多個 5-HT 受體有作用（5-HT3 阻斷、5-HT1A 激動等），故歸為多模式抗抑鬱藥。標籤寫 vortioxetine potently and selectively inhibits reuptake of serotonin。"
+    },
+    {
+      "id": "mirtazapine",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：H1 拮抗，並指明顯嗜睡或可用 H1 抑制解釋。無標籤 Ki，故不保留綜述而來的「強」。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "α2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "中樞突觸前 α2 自身受體及異源性受體拮抗，從而增強去甲腎上腺素與血清素活性。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤寫 5-HT2 拮抗，未再分 2A／2C；本頁保留 5-HT2A 並加 5-HT2 概括限制。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "5-HT3",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "added": true,
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "周邊 α1 拮抗，標籤指或可解釋姿位性低血壓。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "M",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Mirtazapine 標籤：α2、5-HT2、5-HT3、H1、α1、毒蕈鹼拮抗。無 Ki，不另作強度分級。對 5-HT1A／1B 無明顯親和力。",
+      "sources": [
+        {
+          "title": "FDA mirtazapine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:mirtazapine"
+        }
+      ],
+      "limitations": "Gillman／Tatsumi 的 H1 Ki 不納入本頁等級。5-HT2 未分亞型。",
+      "changes": "撤所有「強／中／弱」；補 5-HT3；M1 改寫為 M。",
+      "hook": "說明書指對 H1 為拮抗，或可解釋明顯嗜睡，並可增加食慾及體重；主要藥理為中樞突觸前 α2 及 5-HT2／5-HT3 拮抗，對 SERT／NET 幾乎沒有抑制作用。現摘錄並未用「強力」或 Ki 來為 H1 分級。"
+    },
+    {
+      "id": "bupropion",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "NET",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：相對較弱地抑制去甲腎上腺素與多巴胺神經元攝取。質性「較弱」不自動換成等級「弱」以外的比較，本頁改未核實並註明標籤用語。",
+          "added": true,
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "DAT",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Bupropion 標籤：相對較弱抑制 NE、DA 攝取；不抑制 MAO，亦不抑制血清素再攝取。原跨藥表強度已改以標籤為準。",
+      "sources": [
+        {
+          "title": "FDA bupropion PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:bupropion"
+        }
+      ],
+      "limitations": "機制仍寫未知，再攝取抑制為推定。",
+      "changes": "補 NET；兩項強度改未核實。",
+      "hook": "標籤原文稱相對較弱抑制去甲腎上腺素及多巴胺攝取，不抑制 MAO，亦不抑制血清素再攝取。臨床 NDRI 作用部分來自代謝物 hydroxybupropion。"
+    },
+    {
+      "id": "agomelatine",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "MT1",
+          "action": "激動",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "EMA／SmPC：MT1、MT2 激動。PAR 稱對褪黑激素受體高親和力，對 5-HT2C 較低；不把「高親和力」直接寫成本頁「強」。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "MT2",
+          "action": "激動",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "5-HT2C",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "EMA Valdoxan／英國 emc SmPC：MT1、MT2 激動及 5-HT2C 拮抗；不抑制單胺攝取；對 α、β、組胺、膽鹼、多巴胺、苯二氮䓬受體無親和力。原 MT「強」、5-HT2C「弱」無同一官方 Ki 表支撐，已撤。",
+      "sources": [
+        {
+          "title": "emc Valdoxan SPC",
+          "url": "https://www.medicines.org.uk/emc/medicine/21830/SPC/Valdoxan"
+        },
+        {
+          "title": "EMA Valdoxan EPAR product information",
+          "url": "https://www.ema.europa.eu/en/documents/product-information/valdoxan-epar-product-information_en.pdf"
+        }
+      ],
+      "limitations": "官方質性親和力差異不換成跨藥強度排名。",
+      "changes": "三項強度改未核實；作用類型與 SmPC 一致。",
+      "hook": "為 MT1／MT2 激動劑，並拮抗 5-HT2C。EMA／SmPC 未提供可作分級的官方 Ki 表。"
+    },
+    {
+      "id": "trazodone",
+      "status": "verified",
+      "receptors": [
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 35.6,
+          "legacy_band_strength": 2,
+          "note": null
+        },
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 367,
+          "legacy_band_strength": 1,
+          "note": null
+        },
+        {
+          "target": "5-HT1A",
+          "action": "部分激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 118,
+          "legacy_band_strength": 1,
+          "note": null
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 153,
+          "note": "α1A Ki=153 nM；標籤指 α1 拮抗或與姿位性低血壓有關。",
+          "legacy_band_strength": 1
+        },
+        {
+          "target": "5-HT2C",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 224,
+          "added": true,
+          "legacy_band_strength": 1,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Trazodone 標籤（臨床前 Ki）。原 H1「弱阻斷」不見於此結合表，已移除。",
+      "sources": [
+        {
+          "title": "FDA trazodone PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:trazodone"
+        }
+      ],
+      "limitations": "另有 5-HT2B、α2C 拮抗未全部展開。",
+      "changes": "按同一標籤重標；移除 H1；補 5-HT2C。",
+      "hook": "標籤結合表以 5-HT2A 及 α1 阻斷為主，並抑制 SERT；可有嗜睡及頭暈。不把表內 Ki 寫成強／弱等級。"
+    },
+    {
+      "id": "moclobemide",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "MAO-A",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "可逆、選擇性 MAO-A 抑制（RIMA），減少單胺分解，一般增加突觸可用的去甲腎上腺素、多巴胺與血清素。這不是受體阻斷。強度「強」並無標籤 Ki，已撤。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "英國 emc／愛爾蘭 HPRA moclobemide（Manerix 類）SmPC：可逆、選擇性單胺氧化酶 A 抑制。不另作強度分級。",
+      "sources": [
+        {
+          "title": "emc moclobemide 150 mg SmPC",
+          "url": "https://www.medicines.org.uk/emc/product/7295/smpc"
+        },
+        {
+          "title": "emc Manerix 300 mg SmPC",
+          "url": "https://www.medicines.org.uk/emc/product/6661/smpc"
+        }
+      ],
+      "limitations": "飲食交互較舊式不可逆 MAOI 少，但仍須依官方指引。抑制酶不是受體作用。",
+      "changes": "保留 MAO-A 抑制，強度改未核實。"
+    },
+    {
+      "id": "amitriptyline",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "NET",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "FDA：抑制去甲腎上腺素與血清素的膜泵再攝取。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "note": "標籤稱有鎮靜作用，但本段未寫 H1。抗組胺是 TCA 常見藥理，強度未核實。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "M1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "note": "抗膽鹼不良反應常見，標籤藥理段未給 M1 Ki。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Amitriptyline 標籤：抑制 NE 與 5-HT 再攝取；機制在人仍未完全明瞭；並有鎮靜作用。H1／M／α1 來自類別藥理，非本標籤 Ki。原強度來自 Gillman／Tatsumi，原綜述強度分級已撤下。移除未在標籤出現的 5-HT2A「中」。",
+      "sources": [
+        {
+          "title": "FDA amitriptyline PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:amitriptyline"
+        }
+      ],
+      "limitations": "鎮靜與抗膽鹼是臨床事實，但不等於已核實的受體等級。",
+      "changes": "再攝取兩項保留為已核實方向；受體項降為綜述支持；全部強度未核實。",
+      "hook": "標籤指抑制 NE 與 5-HT 再攝取，並有鎮靜作用。H1／M／α1 來自類別藥理，非本標籤 Ki。"
+    },
+    {
+      "id": "imipramine",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "NET",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤推定阻斷神經末梢去甲腎上腺素攝取。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "review_supported",
+          "note": "此份 FDA 段落只強調 NE；SERT 抑制是 TCA／imipramine 公認藥理，標為綜述支持。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "M1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Imipramine 標籤：機制未完全確定；推定與阻斷去甲腎上腺素攝取有關。其餘項目為類別藥理，不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA imipramine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:imipramine"
+        }
+      ],
+      "limitations": "官方句子比教科書譜窄。",
+      "changes": "NET 為標籤支持；其餘降級；撤強度。",
+      "hook": "標籤推定與阻斷去甲腎上腺素攝取有關，並抑制 5-HT 再攝取。其餘 H1／M／α1 為類別藥理。"
+    },
+    {
+      "id": "valproate",
+      "status": "uncertain",
+      "receptors": [
+        {
+          "target": "GABA",
+          "action": "增加腦內濃度（機制未確立）",
+          "strength": null,
+          "status": "uncertain",
+          "note": "標籤：抗癲癇活性被認為可能與腦內 GABA 濃度增加有關。這是遞質數量的推測，不是 GABA-A 正向調節，也尚未確立為唯一機制。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Divalproex／valproate 標籤：治療機制尚未確立；有指與腦內 GABA 濃度增加有關。原「Na通道抑制、GABA 增強、中」超過此標籤所能支持，已收窄。",
+      "sources": [
+        {
+          "title": "FDA divalproex / valproate PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:divalproex"
+        }
+      ],
+      "limitations": "文獻常列鈉通道等，但現摘錄未寫，故不保留為已核實。未知不等於沒有其他機制。",
+      "changes": "移除 Na通道項；GABA 改為標籤式的濃度增加推測。"
+    },
+    {
+      "id": "lithium",
+      "status": "hook_only",
+      "receptors": [],
+      "rec_source": "FDA lithium 標籤：作為情緒穩定劑的作用機制不明。本頁不編造受體帶或未充分確立的離子／酵素機制圖。",
+      "sources": [
+        {
+          "title": "FDA lithium PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:lithium"
+        }
+      ],
+      "limitations": "機制不明。空受體帶不是「沒有作用」。說明維持在藥物簡介（hook）。",
+      "changes": "維持無受體項、僅 hook。"
+    },
+    {
+      "id": "topiramate",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "Na通道",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤列臨床前四項性質之一：阻斷電壓依賴鈉通道。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "GABA-A",
+          "action": "正向調節",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "在部分 GABA-A 亞型增強 GABA 的作用，不是增加 GABA 數量，也不是對所有亞型一概相同。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "AMPA",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "拮抗 AMPA／海人藻酸亞型麩胺酸受體。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "碳酸酐酶",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤亦列抑制碳酸酐酶（尤其同工酶 II、IV），與代謝性酸中毒等相關，屬臨床相關缺失項。",
+          "added": true,
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Topiramate 標籤：精確機制未知；臨床前顯示鈉通道阻斷、在部分 GABA-A 亞型增強 GABA、拮抗 AMPA／kainate、抑制碳酸酐酶。全部無本頁 Ki，不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA topiramate PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:topiramate"
+        }
+      ],
+      "limitations": "四項均為可能貢獻的臨床前性質，不是已證實的唯一人體機制。",
+      "changes": "補碳酸酐酶抑制；撤「中」強度。"
+    },
+    {
+      "id": "clonazepam",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "加強 GABA 在 GABA-A 受體產生的抑制作用，使相關神經元較不易興奮；並非增加 GABA 數量。此為類別機制，不是個別藥物已核實的 Ki「強」。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Clonazepam（Klonopin）標籤：相信與增強 GABA 活性有關。 苯二氮䓬類經 GABA-A 苯二氮䓬位點正向調節。不把類別機制寫成個別強度等級。",
+      "sources": [
+        {
+          "title": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Clonazepam（Klonopin）標籤：相信與增強 GABA 活性有關。",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:clonazepam"
+        }
+      ],
+      "limitations": "個別藥物的亞型選擇性與半衰期不同，但不構成本頁的親和力等級。",
+      "changes": "強度改未核實。"
+    },
+    {
+      "id": "lorazepam",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "加強 GABA 在 GABA-A 受體產生的抑制作用，使相關神經元較不易興奮；並非增加 GABA 數量。此為類別機制，不是個別藥物已核實的 Ki「強」。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Lorazepam 標籤對中樞抑制作用有臨床描述；GABA-A 正向調節為苯二氮䓬類確立機制。本份 CP 摘錄未詳寫受體句，故機制按類別＋藥品身分核對。 苯二氮䓬類經 GABA-A 苯二氮䓬位點正向調節。不把類別機制寫成個別強度等級。",
+      "sources": [
+        {
+          "title": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Lorazepam 標籤對中樞抑制作用有臨床描述；GABA-A 正向調節為苯二氮䓬類確立機制。本份 CP 摘錄未詳寫受體句，故機制按類別＋藥品身分核對。",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:lorazepam"
+        }
+      ],
+      "limitations": "個別藥物的亞型選擇性與半衰期不同，但不構成本頁的親和力等級。此份摘錄較偏藥代動力學。",
+      "changes": "強度改未核實。"
+    },
+    {
+      "id": "alprazolam",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "加強 GABA 在 GABA-A 受體產生的抑制作用，使相關神經元較不易興奮；並非增加 GABA 數量。此為類別機制，不是個別藥物已核實的 Ki「強」。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Alprazolam 標籤：結合 GABA-A 的苯二氮䓬位點，增強 GABA 介導的突觸抑制。 苯二氮䓬類經 GABA-A 苯二氮䓬位點正向調節。不把類別機制寫成個別強度等級。",
+      "sources": [
+        {
+          "title": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Alprazolam 標籤：結合 GABA-A 的苯二氮䓬位點，增強 GABA 介導的突觸抑制。",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:alprazolam"
+        }
+      ],
+      "limitations": "個別藥物的亞型選擇性與半衰期不同，但不構成本頁的親和力等級。",
+      "changes": "強度改未核實。"
+    },
+    {
+      "id": "trihexyphenidyl",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "M",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：直接抑制副交感神經系統，藥理近似阿托品。這是抗膽鹼（毒蕈鹼拮抗）方向，並非標籤寫明的單一 M1 Ki「強」。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Trihexyphenidyl 標籤。靶點寫 M，因標籤未核實為 M1。",
+      "sources": [
+        {
+          "title": "FDA trihexyphenidyl PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:trihexyphenidyl"
+        }
+      ],
+      "limitations": "未分 M1–M5。",
+      "changes": "M1 改 M；撤強。"
+    },
+    {
+      "id": "pregabalin",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "α2δ",
+          "action": "結合",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：對電壓門控鈣通道辅助亞基 α2δ 高親和力結合。這不是 GABA 受體，也不增加 GABA 數量。質性「高親和力」不寫成「強」。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Pregabalin（Lyrica）標籤。不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA pregabalin PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:pregabalin"
+        }
+      ],
+      "limitations": "結合與治療效應的關係標籤寫尚未完全闡明。",
+      "changes": "撤「強」。"
+    },
+    {
+      "id": "prazosin",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：血管擴張亦與突觸後 α 腎上腺素受體阻斷有關。用於PTSD噩夢是後來的用途，機制討論不在本段展開。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Prazosin 標籤。無 Ki，不另作強度分級。不作強度分級。",
+      "sources": [
+        {
+          "title": "FDA prazosin PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:prazosin"
+        }
+      ],
+      "limitations": "降壓標籤不是精神科專用藥理專論。",
+      "changes": "撤「強」。"
+    },
+    {
+      "id": "propranolol",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "β",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤以 β 腎上腺素阻斷解釋多項心血管作用。用於操作焦慮等是臨床延伸，不是另有一套已核實中樞受體帶。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Propranolol 標籤。無 Ki，不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA propranolol PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:propranolol"
+        }
+      ],
+      "limitations": "抗高血壓確切機制標籤寫尚未確立。",
+      "changes": "撤「強」。"
+    },
+    {
+      "id": "atomoxetine",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "NET",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：選擇性抑制突觸前去甲腎上腺素轉運體。原同時把 SERT 標成「強抑制」與「選擇性 NET」矛盾，且來自 Tatsumi，已刪除。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Atomoxetine 標籤：選擇性 NET 抑制。不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA atomoxetine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:atomoxetine"
+        }
+      ],
+      "limitations": "選擇性不是絕對零脫靶，但本頁不把跨藥表 SERT 強寫成已核實。",
+      "changes": "移除 SERT；NET 強度改未核實。",
+      "hook": "標籤指選擇性抑制突觸前去甲腎上腺素轉運體（NET）。本頁不再把跨藥表的 SERT 抑制寫成已核實。"
+    },
+    {
+      "id": "promethazine",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：H1 受體阻斷藥，並有臨床上有用的鎮靜與止吐作用。無 Ki，不標「強」。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "M",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "note": "抗膽鹼為第一代抗組胺常見藥理；此段未給 Ki。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：相對缺乏多巴胺拮抗（約為氯丙嗪的 1/10），不是零。原資料未列。不把「較弱」寫成沒有。",
+          "added": true,
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Promethazine 標籤：H1 阻斷，並有鎮靜。原 α1「中」未在此段出現，已移除。",
+      "sources": [
+        {
+          "title": "FDA promethazine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:promethazine"
+        }
+      ],
+      "limitations": "鎮靜已在標籤與抗組胺作用並列，但仍因人而異。",
+      "changes": "撤強度；移除 α1；補相對較弱的 D2。",
+      "hook": "標籤指其為 H1 阻斷劑，並有臨床上的鎮靜及止嘔作用，故可有明顯嗜睡；屬酚噻嗪類，並有抗膽鹼作用。現摘錄未用「強力」一詞，亦不另作強度分級。"
+    },
+    {
+      "id": "brexpiprazole",
+      "status": "binding_only",
+      "receptors": [
+        {
+          "target": "5-HT1A",
+          "action": "部分激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 0.12,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "D2",
+          "action": "部分激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 0.3,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "D3",
+          "action": "部分激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 1.1,
+          "note": "標籤明確 D3 為部分激動，不是阻斷。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 0.47,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 0.17,
+          "note": "標籤：α1A/1B/1D 均為拮抗；展示以 α1B Ki=0.17 nM 代表，並註明亞型。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "α2C",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 0.59,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "H1",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "ki_nM": 19,
+          "note": "標籤僅寫 H1 親和力 19 nM，未寫拮抗。不自動歸入 H1 阻斷嗜睡組。",
+          "legacy_band_strength": 2
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Brexpiprazole（Rexulti）標籤。另有 5-HT7、5-HT2B 拮抗等，本頁不全部展開。M1 僅在 10 µM 有部分抑制。",
+      "sources": [
+        {
+          "title": "FDA brexpiprazole PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:brexpiprazole"
+        }
+      ],
+      "limitations": "部分激動後果視受體佔有率與內源性激動劑水平而定。",
+      "changes": "D3 由「阻斷」改為部分激動；H1 改結合；α2 寫明為 α2C。",
+      "hook": "標籤：5-HT1A、D2、D3 為部分激動，5-HT2A、α1、α2C 為拮抗。H1 只列親和力，不作已核實阻斷。"
+    },
+    {
+      "id": "blonanserin",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "D3",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "日本 PMDA Lonasen 資料及同分子綜述：D2、D3、5-HT2A 拮抗。文獻指對 5-HT2C、α1、H1、M1 親和力低，故刪除原「中等阻斷」項。不用混合試驗作強度分級。",
+      "sources": [
+        {
+          "title": "PMDA Lonasen review / label PDF",
+          "url": "https://www.pmda.go.jp/files/000248223.pdf"
+        },
+        {
+          "title": "Tenjin et al. profile (PMC3677929)",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3677929/"
+        }
+      ],
+      "limitations": "英語 PMDA 摘錄以拮抗身份為準；未採用論文 Ki 表作跨藥強度。",
+      "changes": "移除 α1、5-HT2C；三項核心靶點改未核實強度。",
+      "hook": "產品資料及綜述支持 D2、D3、5-HT2A 拮抗；文獻指對 H1、M1 親和力可忽略。不用混合試驗作強度分級。"
+    },
+    {
+      "id": "perospirone",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "5-HT1A",
+          "action": "部分激動",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "本頁未能取得可公開抓取的英文 PMDA 完整標籤正文。受體身份取自藥理綜述（D2／5-HT2A 拮抗、5-HT1A 部分激動），不作強度分級。",
+      "sources": [
+        {
+          "title": "PubChem perospirone (Lullan / PMDA 2000)",
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/115368"
+        },
+        {
+          "title": "Onrust & McClellan, CNS Drugs 2001 (review)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/11463129/"
+        }
+      ],
+      "limitations": "非官方標籤逐字核對；日本處方資料應為更權威來源，本審計未能完整引用原文。",
+      "changes": "保留三項作用類型，強度改未核實，狀態為綜述支持。",
+      "hook": "綜述支持 5-HT2A、D2 阻斷及 5-HT1A 部分激動；本頁未能取得可公開抓取的完整官方 Ki，不作強度分級。H1、M1、α1 亦不列出。"
+    },
+    {
+      "id": "chlorpromazine",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "note": "現查 FDA 段落只寫治療機制不詳。D2 拮抗是酚噻嗪類公認藥理，標為綜述支持，強度未核實。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "note": "經典酚噻嗪藥理包括抗組胺；本份 FDA 摘錄未列 Ki 或功能句。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "M1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "現查美國 chlorpromazine 標籤 Clinical Pharmacology 未列出受體 Ki 或明確拮抗譜。保留臨床常見的 D2／H1／α1／M 作用類型，全部強度未核實；刪除僅來自 APA 表的 D3、5-HT2A／2C「強」。",
+      "sources": [
+        {
+          "title": "FDA chlorpromazine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:chlorpromazine"
+        }
+      ],
+      "limitations": "官方標籤機制不詳。本頁不把綜述 Ki 當成個別已核實親和力。",
+      "changes": "移除 D3、5-HT2A、5-HT2C 的「強阻斷」標示；其餘改未核實。",
+      "hook": "典型藥中受體譜較廣，常見 D2、H1、α1、M 作用，故除錐體外症狀外，亦較常嗜睡及姿勢性低血壓。現摘錄不另作個別強度分級。"
+    },
+    {
+      "id": "sulpiride",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "note": "MHRA／emc SmPC 寫大腦多巴胺受體拮抗，未點名 D2／D3。亞型來自藥理綜述。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "D3",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "英國 SmPC（Dolmatil／sulpiride）：大腦多巴胺受體拮抗，並指對毒蕈鹼、GABA 結合無影響、不影響去甲腎上腺素或 5-HT 轉換。D2／D3 選擇性見於藥理綜述，而非 SmPC 原文。原「中」來自混合 Ki，已撤，不另作分級。",
+      "sources": [
+        {
+          "title": "MHRA/emc sulpiride 400 mg SmPC",
+          "url": "https://www.medicines.org.uk/emc/product/2431/smpc"
+        },
+        {
+          "title": "HPRA Dolmatil SmPC PDF",
+          "url": "https://assets.hpra.ie/products/Human/18112/Licence_PA23229-010-001_16092026102434.pdf"
+        }
+      ],
+      "limitations": "SmPC 未寫 D2／D3 名稱。選擇性不代表沒有錐體外症狀。",
+      "changes": "保留 D2／D3 阻斷，強度改未核實，來源改官方 SmPC＋綜述限制。"
+    },
+    {
+      "id": "sertindole",
+      "status": "binding_only",
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "5-HT2C",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "note": "EMA 轉介資料列 5-HT2C 親和力，未在本頁所用摘錄中寫明功能，故作結合。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "EMA 資料指抑制 α1。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "EMA sertindole 轉介／產品資料：對 D2、5-HT2A、5-HT2C 有親和力，並抑制 α1；幾乎無組胺或膽鹼親和力。原 5-HT6「阻斷強」及各項「強」來自混合 Ki 表，已撤下。",
+      "sources": [
+        {
+          "title": "EMA sertindole referral",
+          "url": "https://www.ema.europa.eu/en/medicines/human/referrals/sertindole"
+        }
+      ],
+      "limitations": "歐洲轉介文件不是逐項 Ki 標籤。5-HT2C 功能未寫死。",
+      "changes": "移除 5-HT6；強度全部未核實；5-HT2C 改結合。",
+      "hook": "產品資料指對 D2、5-HT2A、5-HT2C 有親和力，並抑制 α1；幾乎無組胺或膽鹼親和力。臨床尚須注意 QT 延長。"
+    },
+    {
+      "id": "lamotrigine",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "Na通道",
+          "action": "抑制",
+          "strength": null,
+          "status": "review_supported",
+          "note": "許多官方／教科書說明涉及電壓敏感鈉通道及減少興奮性胺基酸釋放。本審計抓到的標籤摘錄未把這句寫全，故標綜述支持、強度未核實，不保留無來源的「強」。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "常用 Lamictal 藥理描述為抑制電壓敏感鈉通道。本次 openFDA 摘錄不完整，故不另作強度分級。機制仍有未明之處。",
+      "sources": [
+        {
+          "title": "FDA lamotrigine / Lamictal PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:lamotrigine"
+        }
+      ],
+      "limitations": "摘錄不足，寧願降級也不編造強度。",
+      "changes": "強度改未核實，狀態降為綜述支持。"
+    },
+    {
+      "id": "methylphenidate",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "DAT",
+          "action": "抑制（亦促進釋放）",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "NET",
+          "action": "抑制（亦促進釋放）",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：阻斷去甲腎上腺素與多巴胺再攝取，並增加它們向細胞外間隙釋放。不是單純受體激動。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Methylphenidate 標籤 12.2。治療的精確機制仍寫未知。無 Ki，不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA methylphenidate PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:methylphenidate"
+        }
+      ],
+      "limitations": "再攝取抑制與促進釋放同時出現，不可只講其中一句。",
+      "changes": "作用描述補上釋放；撤強度。"
+    },
+    {
+      "id": "levothyroxine",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "TR",
+          "action": "激動",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：T3／T4 進入細胞核，結合附於 DNA 的甲狀腺受體蛋白，啟動基因轉錄。這不是單胺受體。強度「強」無意義，已撤。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Levothyroxine 標籤。不是精神科受體譜。",
+      "sources": [
+        {
+          "title": "FDA levothyroxine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:levothyroxine"
+        }
+      ],
+      "limitations": "生理是以 T3 為主；T4 多經周邊脫碘。",
+      "changes": "撤「強」。"
+    },
+    {
+      "id": "buspirone",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "5-HT1A",
+          "action": "部分激動",
+          "strength": null,
+          "status": "review_supported",
+          "note": "FDA：對 5-HT1A 高親和力；非苯二氮䓬、不影響 GABA 結合。標籤本段未寫「部分激動」。部分激動是標準藥理綜述用語，故作用類型保留但標綜述支持，強度未核實。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "D2",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "note": "標籤：對腦 D2 中等親和力。無功能方向，不作阻斷或激動。",
+          "added": true,
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Buspirone 標籤。5-HT1A 功能方向以綜述補足並標明。",
+      "sources": [
+        {
+          "title": "FDA buspirone PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:buspirone"
+        }
+      ],
+      "limitations": "5-HT1A 自身受體與突觸後受體的後果可以不同。",
+      "changes": "撤「強」；補 D2 結合。"
+    },
+    {
+      "id": "dextromethorphan",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "NMDA",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "note": "普通咳藥水標籤通常不寫精神科受體譜。非競爭性 NMDA 拮抗等多見於 Auvelity（dextromethorphan＋bupropion）等資料與綜述。本頁不把誤抓到的傷風感冒複方標籤當成來源。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "σ1",
+          "action": "激動",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "未採用本次 openFDA 誤中的複方傷風標籤。受體項保留文獻／專科標籤常見的 NMDA 拮抗、σ1 激動、SERT 抑制，受體項屬綜述支持，不另作強度分級。若使用 Auvelity，尚有 bupropion 成分，不可當成單方 DXM 的完整機制。",
+      "sources": [
+        {
+          "title": "FDA Auvelity (dextromethorphan and bupropion) label search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=auvelty"
+        }
+      ],
+      "limitations": "單方 DXM 與抗抑鬱複方不可混為同一已核實譜。",
+      "changes": "撤「中」強度，狀態改綜述支持。"
+    },
+    {
+      "id": "deanxit",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "note": "複方（氟哌噻噸＋美利曲辛）。D2／5-HT 來自氟哌噻噸成分；SERT 來自美利曲辛（TCA 樣）成分。不是單一分子的已核實 Ki 譜。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "Deanxit 為複方。受體項按成分藥理歸納，完整複方 Ki 未核實，不作強度分級。",
+      "sources": [
+        {
+          "title": "Product information search for flupentixol + melitracen",
+          "url": "https://www.medicines.org.uk/emc"
+        }
+      ],
+      "limitations": "不可把成分相加當成已測量的複方親和力。",
+      "changes": "撤強度，維持成分層級說明。"
+    },
+    {
+      "id": "trifluoperazine",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國標籤紀錄存在但本審計抓到的 Clinical Pharmacology 無受體細節。作為哌嗪側鏈酚噻嗪，D2 拮抗屬類別藥理，5-HT2A／α1 項未獲本標籤核實，已移除。",
+      "sources": [
+        {
+          "title": "FDA trifluoperazine label search (DailyMed)",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=trifluoperazine"
+        }
+      ],
+      "limitations": "證據薄。不編造完整受體帶。",
+      "changes": "僅保留 D2 阻斷（未核實強度）；移除 5-HT2A、α1。",
+      "hook": "典型酚噻嗪類，以 D2 阻斷為主，錐體外症狀及泌乳素升高較明顯；抗組胺及抗膽鹼作用往往較少。"
+    },
+    {
+      "id": "periciazine",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "M1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "未取得可核對的完整官方藥理句。哌啶側鏈酚噻嗪類綜述常列 D2、H1、α1、M 作用；不作個別強度或跨藥親和力比較。",
+      "sources": [
+        {
+          "title": "一般酚噻嗪藥理（待官方 SmPC 補完）",
+          "url": "https://www.medicines.org.uk/emc"
+        }
+      ],
+      "limitations": "缺乏本藥 SmPC 逐字核對，狀態為綜述支持。",
+      "changes": "保留四項作用類型，撤下「中」強度。"
+    },
+    {
+      "id": "zuclopenthixol",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "D1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "Clopixol SmPC：對 D1 與 D2 均高親和力。",
+          "added": true,
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "SmPC 寫有血清素受體阻斷特性，未一定點名 5-HT2A；沿用常見寫法並標未核實。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "SmPC：輕微抗組胺活性。不可寫成「強」，亦不自動等同明顯嗜睡。",
+          "added": true,
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "英國 Clopixol（zuclopenthixol）SmPC：作用經多巴胺受體阻斷；對 D1、D2 高親和力，並有血清素及 α 阻斷，以及輕微抗組胺。無可用的單一標籤 Ki 表，不另作強度分級。",
+      "sources": [
+        {
+          "title": "MHRA/emc Clopixol 2 mg SmPC",
+          "url": "https://www.medicines.org.uk/emc/product/994/smpc"
+        },
+        {
+          "title": "HPRA Clopixol SmPC PDF",
+          "url": "https://assets.hpra.ie/products/Human/14786/Licence_PA0776-002-003_23012026092310.pdf"
+        }
+      ],
+      "limitations": "「高親和力」是質性描述，不換算成「強」。輕微抗組胺≠鎮靜組。",
+      "changes": "補 D1、H1（輕微，未核實）；撤「強」。"
+    },
+    {
+      "id": "flupentixol",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "與 zuclopenthixol 同為硫雜蒽類。Fluanxol／flupentixol 產品資料及類別藥理支持多巴胺（及部分血清素、α）阻斷；本審計未逐字引用完整 SmPC Ki，不另作強度分級。",
+      "sources": [
+        {
+          "title": "emc search for flupentixol / Fluanxol SmPC",
+          "url": "https://www.medicines.org.uk/emc"
+        }
+      ],
+      "limitations": "證據層級低於已逐字核對的 Clopixol 摘錄。",
+      "changes": "撤「強／中」數字強度。"
+    },
+    {
+      "id": "fluphenazine",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "典型哌嗪側鏈酚噻嗪。本審計未從 FDA 摘錄得到完整受體句；保留 D2、α1 作為類別上常見作用，移除未核實的 5-HT2A「中」，不另作強度分級。",
+      "sources": [
+        {
+          "title": "DailyMed fluphenazine search",
+          "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=fluphenazine"
+        }
+      ],
+      "limitations": "官方藥理句不足。",
+      "changes": "移除 5-HT2A；強度改未核實。",
+      "hook": "哌嗪側鏈酚噻嗪類，以 D2 阻斷為主，錐體外症狀風險較高，鎮靜相對較少。"
+    },
+    {
+      "id": "amisulpride",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "D3",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA Barhemsys（靜脈 amisulpride，術後噁心）標籤：選擇性 D2、D3 拮抗。精神用途劑型的受體身份與此分子一致，但適應症與劑量不同；無精神口服劑美國標籤 Ki，故不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA amisulpride (Barhemsys) PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:amisulpride"
+        }
+      ],
+      "limitations": "美國標籤用於止嘔劑量，不是精神分裂劑量下的受體佔有率證明。原「強」來自綜述 Ki 表，已撤下。",
+      "changes": "保留 D2／D3 阻斷，強度改未核實。"
+    },
+    {
+      "id": "ziprasidone",
+      "status": "binding_only",
+      "receptors": [
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 0.4,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "D2",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 4.8,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "5-HT1A",
+          "action": "激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 3.4,
+          "note": "現行標籤寫 5-HT1A「agonist」，不是「partial agonist」。文獻常稱部分激動，本頁以標籤用語為準，不把文獻說法寫成已核實。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "5-HT1D",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 2,
+          "note": "標籤：5-HT1D 拮抗，Ki=2 nM。臨床導讀較少強調，但屬標籤功能，補入。",
+          "added": true,
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "5-HT2C",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "ki_nM": 1.3,
+          "note": "標籤 Ki=1.3 nM 僅在結合表；功能句未列 5-HT2C 拮抗。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "α1",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "ki_nM": 10,
+          "note": "標籤 Ki=10 nM。較早（2009 等）Geodon 標籤曾以 α1 拮抗解釋姿位性低血壓；現摘錄的 12.2 功能句未列 α1，故作結合並保留較早標籤作為限制說明。",
+          "legacy_band_strength": 2
+        },
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 47,
+          "note": "現行結合表：中等親和力 Ki=47 nM。2009 年 Geodon 標籤寫明 H1 拮抗或可解釋嗜睡。標籤寫 moderate affinity，不另轉成本頁的中／強等級。因此納入有標籤歸因的 H1 相關嗜睡組，並刪除「本頁資料未列 H1」的舊說明。",
+          "added": true,
+          "legacy_band_strength": 2
+        },
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：抑制血清素突觸再攝取。無 Ki，強度未核實。",
+          "added": true,
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "NET",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：抑制去甲腎上腺素突觸再攝取。無 Ki。",
+          "added": true,
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Ziprasidone（Geodon 類）現行藥理；H1 拮抗與嗜睡歸因見 2009 年 Geodon 標籤。對毒蕈鹼受體無明顯親和力（IC50>1 µM）。",
+      "sources": [
+        {
+          "title": "FDA ziprasidone PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:ziprasidone"
+        },
+        {
+          "title": "FDA Geodon label 2009 (H1 antagonism / somnolence)",
+          "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2009/020825s035,020919s023lbl.pdf"
+        }
+      ],
+      "limitations": "5-HT2C、α1 在現 12.2 功能句未列。5-HT1A 標籤寫激動而非部分激動。不是完整脫靶清單。",
+      "changes": "補 H1 阻斷（中）、5-HT1D 阻斷、SERT／NET 抑制；5-HT2C 改結合；5-HT1A 改按標籤為激動。",
+      "hook": "標籤寫對 D2、5-HT2A 等為相對高親和力，對 H1 為中等親和力（Ki=47 nM）；現行標籤寫 5-HT1A 激動，並抑制血清素及去甲腎上腺素再攝取。2009 年說明書曾以 H1 拮抗解釋嗜睡；對毒蕈鹼受體無明顯親和力。須注意 QT。以上「相對高／中等親和力」是標籤用語，不是本頁自訂的強／中／弱等級。"
+    },
+    {
+      "id": "doxepin",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": "<1",
+          "note": "Silenor／睡眠維持標籤：作用或經 H1 拮抗；高親和力 Ki<1 nM。標籤寫 high binding affinity（Ki <1 nM）。此為睡眠劑量標籤的核心。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "NET",
+          "action": "抑制",
+          "strength": null,
+          "status": "review_supported",
+          "note": "抗抑鬱劑量下的再攝取抑制屬 TCA 藥理；睡眠低劑量標籤 12.2 未列。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "M1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） 主要依據 doxepin 睡眠維持（Silenor 類）標籤的 H1 拮抗與 Ki<1 nM。NE／5-HT／M／α 在該 12.2 未列，降為類別藥理、不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA doxepin PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:doxepin"
+        }
+      ],
+      "limitations": "低劑睡眠與高劑抗抑鬱的受體佔有率不同，不可一律當成「H1 強＝全部劑量同樣鎮靜譜」。",
+      "changes": "H1 按標籤保留強；其餘強度撤下。",
+      "hook": "睡眠維持用途的標籤指作用或經 H1 拮抗，並寫對 H1 為高親和力（Ki 少於 1 nM），可有明顯嗜睡。抗抑鬱劑量下另有 NET／SERT 抑制及 M、α 作用，但該睡眠標籤 12.2 未列。「高親和力」是標籤用語，不是本頁自訂等級。"
+    },
+    {
+      "id": "dosulepin",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "NET",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "英國 SmPC：抑制去甲腎上腺素與血清素再攝取，對 NE 再攝取影響明顯較大；亦抑制多巴胺攝取。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "DAT",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "added": true,
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "M1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "英國 dosulepin／dothiepin SmPC：非選擇性單胺再攝取抑制，對 NE 再攝取作用大於 5-HT，並抑制多巴胺攝取。H1／M／α1 為 TCA 類別藥理，原「H1 強」無同一 SmPC Ki，已撤。",
+      "sources": [
+        {
+          "title": "emc dosulepin 25 mg SmPC",
+          "url": "https://www.medicines.org.uk/emc/product/101603/smpc"
+        },
+        {
+          "title": "HPRA dosulepin SmPC PDF",
+          "url": "https://assets.hpra.ie/products/Human/38254/Licence_PA22871-025-001_14042023161008.pdf"
+        }
+      ],
+      "limitations": "相對「對 NE 較明顯」不可換成數字等級。",
+      "changes": "補 DAT；全部強度未核實。"
+    },
+    {
+      "id": "clomipramine",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：抑制 5-HT 再攝取被認為重要。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "NET",
+          "action": "抑制",
+          "strength": null,
+          "status": "review_supported",
+          "note": "活性代謝物對 NET 較明顯是教科書／綜述說法，此 PD 段未寫。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "M1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "α1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Clomipramine 標籤：抑制 5-HT 再攝取。其餘受體項為 TCA 類別藥理。原綜述 Ki 強度及 5-HT2A 項已撤或移除。",
+      "sources": [
+        {
+          "title": "FDA clomipramine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:clomipramine"
+        }
+      ],
+      "limitations": "未核實個別 Ki。",
+      "changes": "移除 5-HT2A；強度全部未核實。",
+      "hook": "三環類，標籤指抑制 5-HT 再攝取，亦有 NET、H1、M、α1 類別藥理；常用於強迫症。"
+    },
+    {
+      "id": "nortriptyline",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "NET",
+          "action": "抑制",
+          "strength": null,
+          "status": "review_supported",
+          "note": "標籤：干擾兒茶酚胺的轉運、釋放與貯存，並抑制組胺、5-HT、乙醯膽鹼的活性。未直接寫 NET／SERT 名稱。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "review_supported",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "note": "標籤寫抑制組胺活性，接近抗組胺，但非現代 H1 Ki 標籤。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "M",
+          "action": "阻斷",
+          "strength": null,
+          "status": "review_supported",
+          "note": "標籤寫抑制乙醯膽鹼活性。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Nortriptyline 標籤用語較舊（抑制組胺、5-HT、乙醯膽鹼活性；干擾兒茶酚胺轉運）。本頁轉寫為 NET／SERT／H1／M，不沿用 Gillman 強度分級。",
+      "sources": [
+        {
+          "title": "FDA nortriptyline PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:nortriptyline"
+        }
+      ],
+      "limitations": "舊標籤用語不能精確對應現代受體亞型或親和力等級。",
+      "changes": "α1 因本段未述而移除；強度全部撤下。",
+      "hook": "阿米替林的活性代謝物，標籤用語較舊；本頁轉寫為以 NET 為主，並有 SERT、H1、M 作用，仍須注意抗膽鹼效應。"
+    },
+    {
+      "id": "carbamazepine",
+      "status": "review_supported",
+      "receptors": [
+        {
+          "target": "Na通道",
+          "action": "抑制",
+          "strength": null,
+          "status": "review_supported",
+          "note": "本份標籤摘錄寫機制仍未知。教科書與較新綜述常提鈉通道；本頁不把它當成此標籤已核實的個人親和力。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Carbamazepine 標籤（本摘錄）：作用機制仍未知。保留鈉通道抑制作為廣泛引用但未在此段核實的機制，不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA carbamazepine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:carbamazepine"
+        }
+      ],
+      "limitations": "官方寫未知。",
+      "changes": "強度改未核實並降級。"
+    },
+    {
+      "id": "diazepam",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "加強 GABA 在 GABA-A 受體產生的抑制作用，使相關神經元較不易興奮；並非增加 GABA 數量。此為類別機制，不是個別藥物已核實的 Ki「強」。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Diazepam 標籤：多數作用被認為來自促進 GABA 這項抑制性遞質的作用。 苯二氮䓬類經 GABA-A 苯二氮䓬位點正向調節。不把類別機制寫成個別強度等級。",
+      "sources": [
+        {
+          "title": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Diazepam 標籤：多數作用被認為來自促進 GABA 這項抑制性遞質的作用。",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:diazepam"
+        }
+      ],
+      "limitations": "個別藥物的亞型選擇性與半衰期不同，但不構成本頁的親和力等級。",
+      "changes": "強度改未核實。"
+    },
+    {
+      "id": "zopiclone",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "SmPC：在 GABA 大分子受體複合物有高親和力及特定激動作用，調節氯離子通道開放；作用位點與經典苯二氮䓬不完全相同。加強 GABA 的抑制效應，不是增加 GABA 數量。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "英國 Zimovane／zopiclone SmPC：cyclopyrrolone，作用於 GABA 受體複合物、調節氯通道。不作強度分級。",
+      "sources": [
+        {
+          "title": "emc Zimovane 7.5 mg SmPC",
+          "url": "https://www.medicines.org.uk/emc/product/2855/smpc"
+        }
+      ],
+      "limitations": "標籤「agonist action at central receptors belonging to the GABA complex」是位點激動／正向調節用語，不要理解成直接增加 GABA 釋放。",
+      "changes": "強度改未核實。"
+    },
+    {
+      "id": "zolpidem",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：GABA-A 正向調節劑，結合含 α1 亞基 GABA-A 的苯二氮䓬位點，增加氯通道開放頻率，從而抑制神經元興奮。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Zolpidem（Ambien）標籤明確寫 positive modulator。無 Ki，不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA zolpidem PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:zolpidem"
+        }
+      ],
+      "limitations": "偏向 α1 亞型，不等於對其他亞型完全沒有作用。",
+      "changes": "強度改未核實。"
+    },
+    {
+      "id": "bromazepam",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "加強 GABA 在 GABA-A 受體產生的抑制作用，使相關神經元較不易興奮；並非增加 GABA 數量。此為類別機制，不是個別藥物已核實的 Ki「強」。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "多國 bromazepam SmPC／類別藥理：苯二氮䓬，GABA-A 正向調節。本次未逐字抓取單一 SmPC Ki，不另作強度分級。 苯二氮䓬類經 GABA-A 苯二氮䓬位點正向調節。不把類別機制寫成個別強度等級。",
+      "sources": [
+        {
+          "title": "多國 bromazepam SmPC／類別藥理：苯二氮䓬，GABA-A 正向調節。本次未逐字抓取單一 SmPC Ki。",
+          "url": "https://www.medicines.org.uk/emc"
+        }
+      ],
+      "limitations": "個別藥物的亞型選擇性與半衰期不同，但不構成本頁的親和力等級。",
+      "changes": "強度改未核實。"
+    },
+    {
+      "id": "lemborexant",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "OX1R",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "OX2R",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：拮抗食慾素受體，阻斷食慾素 A／B 與 OX1R、OX2R 結合，從而抑制覺醒驅動。不是增加抑制性遞質。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Lemborexant（Dayvigo）標籤。無 Ki，不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA lemborexant PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:lemborexant"
+        }
+      ],
+      "limitations": "兩受體都列，但不表示兩者貢獻相等。",
+      "changes": "強度改未核實。"
+    },
+    {
+      "id": "phenytoin",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "Na通道",
+          "action": "抑制",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：精確機制未確立，但認為涉及電壓依賴性鈉通道阻斷，減少持續高頻放電。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Phenytoin 標籤。無 Ki，不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA phenytoin PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:phenytoin"
+        }
+      ],
+      "limitations": "「認為涉及」仍有未完全確立的成分。",
+      "changes": "強度改未核實。"
+    },
+    {
+      "id": "benztropine",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "M",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：具抗膽鹼及抗組胺作用，對帕金森病治療有確立意義的是抗膽鹼。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤承認抗組胺，但指治療上意義較抗膽鹼為次。不因此自動歸入鎮靜組。",
+          "added": true,
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Benztropine（Cogentin）標籤。不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA benztropine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:benztropine"
+        }
+      ],
+      "limitations": "抗組胺不等於本頁的嗜睡歸因組。",
+      "changes": "M1 改 M；補 H1 並撤強。"
+    },
+    {
+      "id": "esketamine",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "NMDA",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：非選擇性、非競爭性 NMDA（離子型麩胺酸）受體拮抗。抗抑鬱精確機制未知。無本頁 Ki，「強」已撤。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Esketamine（Spravato）標籤。",
+      "sources": [
+        {
+          "title": "FDA esketamine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:esketamine"
+        }
+      ],
+      "limitations": "受體拮抗已寫明，情緒療程機制仍未知。",
+      "changes": "撤「強」。"
+    },
+    {
+      "id": "ketamine",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "NMDA",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：非選擇性、非競爭性 NMDA 拮抗，主要作用機制為此。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Ketamine（Ketalar）標籤。不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA ketamine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:ketamine"
+        }
+      ],
+      "limitations": "麻醉標籤不是抑郁劑量的完整藥理專論。",
+      "changes": "撤「強」。"
+    },
+    {
+      "id": "lisdexamfetamine",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "DAT",
+          "action": "抑制（亦促進釋放）",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "NET",
+          "action": "抑制（亦促進釋放）",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "前藥 lisdexamfetamine 本身不結合再攝取位點；作用來自轉化後的右旋安非他命。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Lisdexamfetamine（Vyvanse）標籤 12.2。不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA lisdexamfetamine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:lisdexamfetamine"
+        }
+      ],
+      "limitations": "前藥本身無結合。",
+      "changes": "補釋放說明；撤強度。"
+    },
+    {
+      "id": "mixed_amphetamines",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "DAT",
+          "action": "抑制（亦促進釋放）",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "NET",
+          "action": "抑制（亦促進釋放）",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Mixed amphetamine salts 標籤 12.2：阻斷 NE／DA 再攝取並增加釋放。不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA mixed amphetamine salts PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:amphetamine"
+        }
+      ],
+      "limitations": "與單一右旋安非他命同一機制句。",
+      "changes": "補釋放說明；撤強度。"
+    },
+    {
+      "id": "dextroamphetamine",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "DAT",
+          "action": "抑制（亦促進釋放）",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        },
+        {
+          "target": "NET",
+          "action": "抑制（亦促進釋放）",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Dextroamphetamine 標籤 12.2。不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA dextroamphetamine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:dextroamphetamine"
+        }
+      ],
+      "limitations": "治療精確機制仍寫未知。",
+      "changes": "補釋放說明；撤強度。"
+    },
+    {
+      "id": "guanfacine",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "α2A",
+          "action": "激動",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：刺激中樞 α2 腎上腺素受體，減少血管運動中樞的交感輸出。這是激動（啟動受體），不是阻斷。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Guanfacine 標籤（Intuniv／降壓標籤同源機制）。不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA guanfacine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:guanfacine"
+        }
+      ],
+      "limitations": "精神科 ADHD 用途與降壓標籤機制句一致，但適應症不同。",
+      "changes": "撤「強」。"
+    },
+    {
+      "id": "cariprazine",
+      "status": "binding_only",
+      "receptors": [
+        {
+          "target": "D3",
+          "action": "部分激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 0.085,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "D2",
+          "action": "部分激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 0.49,
+          "note": "D2L Ki=0.49 nM，D2S 0.69 nM。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "5-HT1A",
+          "action": "部分激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 2.6,
+          "note": "原標「中」不獲同一標籤 Ki=2.6 nM 支持，應為強（僅表示結合強度，不是療效比較）。",
+          "legacy_band_strength": 3
+        },
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 18.8,
+          "legacy_band_strength": 2,
+          "note": null
+        },
+        {
+          "target": "H1",
+          "action": "結合",
+          "strength": null,
+          "status": "binding_only",
+          "ki_nM": 23.2,
+          "note": "標籤列 H1 Ki=23.2 nM 僅為結合，未寫拮抗，不放入阻斷嗜睡組。",
+          "added": true,
+          "legacy_band_strength": 2
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Cariprazine（Vraylar）標籤。5-HT2C、α1A 親和力較低（約 134、155 nM）；M 受體無明顯親和力。",
+      "sources": [
+        {
+          "title": "FDA cariprazine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:cariprazine"
+        }
+      ],
+      "limitations": "H1 僅結合。未窮盡 5-HT2B 等標籤已寫但較不常用於本頁導讀的靶點。",
+      "changes": "5-HT1A 強度按 Ki 改為強；補 H1 結合並註明不可當阻斷。",
+      "hook": "D2／D3 部分激動（標籤結合表上對 D3 的 Ki 低於 D2），並有 5-HT1A 部分激動及 5-HT2A 阻斷。不把表內數字寫成強／弱等級。"
+    },
+    {
+      "id": "lumateperone",
+      "status": "verified",
+      "receptors": [
+        {
+          "target": "5-HT2A",
+          "action": "阻斷",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 0.54,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "D2",
+          "action": "部分激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 32,
+          "note": "12.1 明確為 D2 部分激動，不是阻斷。標籤稱 moderate binding affinity（Ki=32 nM）。",
+          "legacy_band_strength": 2
+        },
+        {
+          "target": "SERT",
+          "action": "抑制",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 33,
+          "note": "標籤：SERT Ki=33 nM，並抑制人類 SERT 細胞攝取（IC50=150 nM）。強度按結合 Ki。",
+          "legacy_band_strength": 2
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Lumateperone（Caplyta）標籤。另有 D1 Ki=41 nM 及 α1 結合（Ki≤100 nM），對 M、H 受體親和力低。",
+      "sources": [
+        {
+          "title": "FDA lumateperone / Caplyta PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:lumateperone"
+        }
+      ],
+      "limitations": "12.1 寫部分激動，12.2 只報結合與佔有率；本頁以 12.1 功能為準。",
+      "changes": "D2 由「阻斷」改為「部分激動」；SERT 強度按 Ki 改中。",
+      "hook": "現行標籤寫對 5-HT2A 為高親和力拮抗（Ki=0.54 nM）、對中樞 D2 為部分激動（Ki=32 nM，標籤稱中等親和力），並抑制血清素再攝取。現行標籤沒有再區分突觸前與突觸後 D2。對毒蕈鹼及組胺受體親和力低。以上高／中等親和力是標籤用語。"
+    },
+    {
+      "id": "brotizolam",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "加強 GABA 在 GABA-A 受體產生的抑制作用，使相關神經元較不易興奮；並非增加 GABA 數量。此為類別機制，不是個別藥物已核實的 Ki「強」。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "brotizolam 為苯二氮䓬類催眠藥，機制按類別 GABA-A 正向調節。本次未逐字抓取單一官方 Ki，不另作強度分級。 苯二氮䓬類經 GABA-A 苯二氮䓬位點正向調節。不把類別機制寫成個別強度等級。",
+      "sources": [
+        {
+          "title": "brotizolam 為苯二氮䓬類催眠藥，機制按類別 GABA-A 正向調節。本次未逐字抓取單一官方 Ki。",
+          "url": "https://www.medicines.org.uk/emc"
+        }
+      ],
+      "limitations": "個別藥物的亞型選擇性與半衰期不同，但不構成本頁的親和力等級。",
+      "changes": "強度改未核實。"
+    },
+    {
+      "id": "estazolam",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "加強 GABA 在 GABA-A 受體產生的抑制作用，使相關神經元較不易興奮；並非增加 GABA 數量。此為類別機制，不是個別藥物已核實的 Ki「強」。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Estazolam（ProSom）標籤屬苯二氮䓬催眠藥，機制按類別正向調節。 苯二氮䓬類經 GABA-A 苯二氮䓬位點正向調節。不把類別機制寫成個別強度等級。",
+      "sources": [
+        {
+          "title": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Estazolam（ProSom）標籤屬苯二氮䓬催眠藥，機制按類別正向調節。",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:estazolam"
+        }
+      ],
+      "limitations": "個別藥物的亞型選擇性與半衰期不同，但不構成本頁的親和力等級。",
+      "changes": "強度改未核實。",
+      "hook": "屬中間時程的苯二氮䓬類，GABA-A 正向調節，用於失眠。"
+    },
+    {
+      "id": "ramelteon",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "MT1",
+          "action": "激動",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：褪黑激素受體激動劑，對 MT1、MT2 高親和力，相對選擇於 MT3。質性「高親和力」不自動寫「強」。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "MT2",
+          "action": "激動",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Ramelteon（Rozerem）標籤。對 GABA 複合物及多種單胺受體無明顯親和力。",
+      "sources": [
+        {
+          "title": "FDA ramelteon PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:ramelteon"
+        }
+      ],
+      "limitations": "高親和力為質性描述。",
+      "changes": "強度改未核實。"
+    },
+    {
+      "id": "gabapentin",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "α2δ",
+          "action": "結合",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：結構與 GABA 相關，但不影響 GABA 結合、攝取或降解；體外高親和力結合電壓激活鈣通道 α2δ 亞基。關係於治療效應仍未知。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Gabapentin 標籤。不另作強度分級。不是 GABA 激動劑。",
+      "sources": [
+        {
+          "title": "FDA gabapentin PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:gabapentin"
+        }
+      ],
+      "limitations": "名稱容易令人以為作用在 GABA，標籤已澄清並非如此。",
+      "changes": "撤「強」。"
+    },
+    {
+      "id": "diphenhydramine",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "H1",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：抗組胺，並有抗膽鹼（乾燥）及鎮靜副作用。抗組胺以競爭組胺受體位點描述。",
+          "legacy_band_strength": 0
+        },
+        {
+          "target": "M",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "legacy_band_strength": 0,
+          "note": null
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Diphenhydramine 標籤。無 Ki，不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA diphenhydramine PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:diphenhydramine"
+        }
+      ],
+      "limitations": "非處方標籤不是完整受體專論。",
+      "changes": "撤「強／中」。",
+      "hook": "第一代抗組胺，標籤指具抗組胺、抗膽鹼（口乾）及鎮靜作用，故嗜睡及口乾常見。現摘錄未用「強力」一詞。"
+    },
+    {
+      "id": "xanomeline_trospium",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "M1",
+          "action": "激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 10,
+          "note": "Xanomeline 對 M1–M5 結合相近（M1 Ki=10 nM），但標籤指對 M1、M4 激動活性較高。強度按 M1 Ki=10 nM 為中。",
+          "legacy_band_strength": 2
+        },
+        {
+          "target": "M4",
+          "action": "激動",
+          "strength": null,
+          "status": "verified",
+          "ki_nM": 7,
+          "legacy_band_strength": 3,
+          "note": null
+        },
+        {
+          "target": "M（周邊，trospium）",
+          "action": "阻斷",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "複方中的 trospium 主要在周邊拮抗毒蕈鹼受體，用來減少 xanomeline 的周邊膽鹼能作用，不是中樞療效靶點。",
+          "added": true,
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Cobenfy（xanomeline／trospium）標籤。",
+      "sources": [
+        {
+          "title": "FDA xanomeline and trospium (Cobenfy) PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.brand_name:cobenfy"
+        }
+      ],
+      "limitations": "M1 Ki=10 正好落在「中」邊界。結合親和力在 M1–M5 相近，功能選擇在激動活性。",
+      "changes": "M1 強度按 Ki=10 為中；補周邊 trospium 阻斷說明。"
+    },
+    {
+      "id": "eszopiclone",
+      "status": "action_verified_strength_unverified",
+      "receptors": [
+        {
+          "target": "GABA-A",
+          "action": "正向調節",
+          "strength": null,
+          "status": "action_verified_strength_unverified",
+          "note": "標籤：機制未完全清楚，作用或與接近或變構偶聯苯二氮䓬受體的 GABA 受體複合物有關。按 z-drug／zopiclone 對映體藥理寫正向調節，並註明此標籤用語較間接。",
+          "legacy_band_strength": 0
+        }
+      ],
+      "rec_source": "美國 FDA 現行處方資料（openFDA／標籤藥理 12.1–12.2 或 Clinical Pharmacology） Eszopiclone（Lunesta）標籤。不另作強度分級。",
+      "sources": [
+        {
+          "title": "FDA eszopiclone PI (openFDA)",
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name:eszopiclone"
+        }
+      ],
+      "limitations": "官方機制句較 zolpidem 含糊。",
+      "changes": "強度改未核實。"
+    }
+  ],
+  "coverage": {
+    "n_drugs": 83,
+    "overall_status_is_worst_target": {
+      "verified": 3,
+      "action_verified_strength_unverified": 46,
+      "binding_only": 10,
+      "review_supported": 19,
+      "uncertain": 4,
+      "hook_only": 1
+    },
+    "drugs_with_at_least_one_official_label_or_SmPC_action": {
+      "n": 68
+    },
+    "hook_only_no_invented_receptor_band": [
+      "lithium"
+    ],
+    "overall_uncertain_because_some_target_uncertain": [
+      "fluoxetine",
+      "sertraline",
+      "paroxetine",
+      "valproate"
+    ],
+    "overall_review_supported_as_weakest_target": {
+      "n": 19,
+      "ids": [
+        "amitriptyline",
+        "imipramine",
+        "promethazine",
+        "perospirone",
+        "chlorpromazine",
+        "sulpiride",
+        "lamotrigine",
+        "buspirone",
+        "dextromethorphan",
+        "deanxit",
+        "trifluoperazine",
+        "periciazine",
+        "flupentixol",
+        "fluphenazine",
+        "doxepin",
+        "dosulepin",
+        "clomipramine",
+        "nortriptyline",
+        "carbamazepine"
+      ]
+    },
+    "target_level": {
+      "verified": 55,
+      "action_verified_strength_unverified": 99,
+      "binding_only": 17,
+      "review_supported": 51,
+      "uncertain": 4,
+      "n": 226
+    },
+    "honesty_note": "整體藥狀態取該藥最弱一項靶點，因此含已核實核心機制、但另有「僅結合」或「強度未核實」項的藥物不會計入 fully verified。例如 ziprasidone 的 D2／5-HT2A／H1 已核實，但 5-HT2C／α1 僅結合，故整體不是 fully verified。",
+    "strength_policy_update": "已取消以 Ki 閾值標示強／中／弱。先前「全部靶點含同一標籤 Ki 強度均已核實」的 3 藥計數不再適用；改為作用類型核實，數字 Ki 僅作文內脈絡。"
+  }
+}
