@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>精神科藥物整理</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="page-head">
+      <div class="head-row">
+        <h1>精神科藥物整理</h1>
+        <details class="auth-entry" id="auth-entry">
+          <summary>管理員</summary>
+          <div id="auth-bar" class="auth-bar"></div>
+        </details>
+      </div>
+      <div class="callout">本頁只是整理公開標籤，並非醫療建議。官方常見副作用只列最常見數項，並非完整說明書，分享內容屬個別經驗，不能推論至所有人。</div>
+      <div class="callout warn"><strong>劑量注意。</strong>劑量僅供一般成人參考，個人劑量以醫生處方為準，切勿自行增減藥物。最高劑量會因適應症、劑型（例如長效針劑按週期計算）、年齡、肝腎功能及血藥濃度（鋰鹽、丙戊酸）而有所不同。</div>
+      <p id="load-status" class="load-status hidden" role="status"></p>
+    </header>
+
+    <div class="sticky-bar" id="sticky-bar">
+      <div class="field">
+        <label for="q">搜尋藥名／簡稱／牌子</label>
+        <input id="q" type="search" placeholder="quetiapine、Q仔、百憂解、Latuda…" autocomplete="off" />
+      </div>
+      <nav class="class-scroll" id="class-nav" aria-label="分類"></nav>
+      <div class="sticky-tools">
+        <p id="count" class="muted"></p>
+        <details class="settings" id="settings">
+          <summary>顯示設定</summary>
+          <div class="settings-body">
+            <div class="seg-wrap">
+              <label>常用標記</label>
+              <div class="seg" role="group" aria-label="常用標記">
+                <button type="button" id="star-only" aria-pressed="false">只顯示 ★</button>
+                <button type="button" id="star-first" aria-pressed="false">★ 優先排序</button>
+              </div>
+            </div>
+            <div class="seg-wrap">
+              <label>讀音速度</label>
+              <div class="seg" role="group" aria-label="讀音速度">
+                <button type="button" id="spd-normal" aria-pressed="true">正常</button>
+                <button type="button" id="spd-slow" aria-pressed="false">慢</button>
+              </div>
+            </div>
+            <div>
+              <button type="button" class="ghost" id="expand-all">全部展開</button>
+              <button type="button" class="ghost" id="clear">清除篩選</button>
+            </div>
+            <div>
+              <label>按副作用篩選</label>
+              <div class="chips" id="chips"></div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <section id="admin-panel" class="admin-panel hidden" hidden>
+      <h2>管理藥物</h2>
+      <p id="admin-status" class="admin-status"></p>
+      <h3 id="upload-heading">上載截圖</h3>
+      <p class="muted">可一次選擇或多張拖放，亦可在手機直接拍攝。上載紀錄會保存；自動分析須後台設定妥當後才可使用，若尚未設定，系統會清楚說明。</p>
+      <div id="upload-wrap">
+        <div class="upload-zone" id="upload-zone">
+          將截圖拖放到此處，或點擊選擇／拍攝（可一次多張）
+          <input id="upload-input" type="file" accept="image/*" multiple>
+        </div>
+        <h3 class="subhead-title">上載紀錄與待核實項目</h3>
+        <ul class="upload-list" id="upload-list"></ul>
+      </div>
+      <details class="settings admin-diagnostics" id="admin-diagnostics">
+        <summary>技術資料</summary>
+        <div class="settings-body" id="admin-diagnostics-body"></div>
+      </details>
+    </section>
+
+
+    <div id="main"></div>
+
+    <section id="rec-section">
+      <h2>受體速查</h2>
+      <div class="act-guide">
+        <h3>作用方式（簡要）</h3>
+        <p>藥物改變的是受體或轉運體上的訊號，不一定等於把某種腦內傳遞物質的總量加大或減少。</p>
+        <ul>
+          <li><strong>阻斷</strong>（又稱拮抗）：藥物佔住該受體，減少內源性傳遞物質把它啟動的機會，從而減低該路徑的訊號，並不是把體內該物質全部清走。例如奧氮平、喹硫平的說明書寫明，阻斷組胺 H1 或可解釋嗜睡；米氮平說明書指對 H1 為拮抗，或可解釋明顯鎮靜。阻斷 H1 受體可能引起嗜睡，但不能單憑這項作用比較不同藥物的嗜睡程度。</li>
+          <li><strong>激動</strong>：藥物本身啟動該受體。啟動後的效果視路徑而定，有時反而是抑制性。例如 5-HT1A 自身受體被激動後，可減少血清素神經元放電，令末梢血清素釋放下降。</li>
+          <li><strong>部分激動</strong>：能啟動受體，但效力低於完整激動劑。當內源性傳遞物質活性高時，可減低淨訊號（近似阻斷）；活性低時，則可提高淨訊號。阿立哌唑對多巴胺 D2 屬此類。</li>
+          <li><strong>結合</strong>：只表示藥物會附著於該靶點，本身沒有說明是阻斷還是激動，不能由「結合」二字推論功能。</li>
+          <li><strong>再攝取抑制</strong>：作用於轉運體，不是受體。例如 NET 負責把去甲腎上腺素回收進神經細胞；抑制 NET 會減少回收，一般增加突觸間可用的去甲腎上腺素，延長其訊號。SERT、DAT 同理。</li>
+          <li><strong>正向調節</strong>（常見於 GABA-A）：加強 GABA 在 GABA-A 受體產生的抑制作用，使相關神經元較不易興奮；並非增加 GABA 數量。</li>
+        </ul>
+        <p>以上只助理解本頁標籤，並非預測個人反應。</p>
+      </div>
+      <p>以下為受體或轉運體被作用時，臨床上常用以記憶副作用或效果的粗略對照，並非每人均會出現。簡易口訣：「D 震、H 睡、M 乾、α 暈」。亦可記 5-HT2C「肥」、SERT「腸」、GABA-A「靜」。</p>
+      <div id="rec-table"></div>
+    </section>
+
+    <footer class="page-foot">
+      <details class="sources-block">
+        <summary>資料來源與限制</summary>
+        <div class="sources-body">
+          <p>藥名及分享主要由原先論壇檔案抽出，其後加入對照表出現而原先未建卡的藥物。官方常見副作用摘自美國 FDA／DailyMed 標籤、BNF、MedlinePlus，或 EMA／PMDA 等地區說明書，只列最常見數項。讀音重音主要轉寫自 MedlinePlus。中文名以香港常見譯名為主，台灣商品名／譯名另外標示。劑量以成人標籤為主，未能核對則寫未核實。</p>
+          <p>受體作用類型以官方標籤／SmPC 為準，這不是完整的脫靶清單。本頁不以自訂親和力數值分成強／中／弱，亦不另加強度徽章。若官方標籤本身使用高／中等／相對較弱等用語，說明中會按原文保留並註明出處；同一份標籤列出的 Ki 只以數值顯示，不能用來比較不同藥物或不同試驗。結合不等於阻斷。鋰鹽機制不明，不編造受體帶。</p>
+          <p class="cite-list">作用方式主要依據：FDA 奧氮平、喹硫平標籤；DailyMed 米氮平、多塞平（Silenor）、異丙嗪說明書；NCBI StatPearls〈Selective Serotonin Reuptake Inhibitors〉；PMC 文獻〈5-HT1A receptors in mood and anxiety〉（PMC3927969）；Lieberman〈Dopamine partial agonists〉（PubMed 15015905）；IUPHAR Review 2（PMC3579279）指出親和力本身不能決定激動或拮抗。</p>
+        </div>
+      </details>
+    </footer>
+  </div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
